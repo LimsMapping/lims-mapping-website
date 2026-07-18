@@ -1389,3 +1389,46 @@ footer {
         gap: 8px;
     }
 }
+/* RESPONSIVE PROSES — TABLET */
+@media (max-width: 1050px) {
+    .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .process-card {
+        min-height: 350px;
+    }
+
+    .process-number {
+        font-size: 76px;
+    }
+}
+
+/* RESPONSIVE PROSES — HP */
+@media (max-width: 650px) {
+    .process-section {
+        padding-bottom: 85px;
+        padding-top: 85px;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-card {
+        min-height: 330px;
+        padding: 26px;
+    }
+
+    .process-number {
+        font-size: 68px;
+    }
+
+    .process-card h3 {
+        font-size: 38px;
+    }
+
+    .process-route {
+        margin-bottom: 27px;
+    }
+}
