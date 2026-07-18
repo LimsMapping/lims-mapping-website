@@ -224,4 +224,19 @@ footer {
 
 .portofolio-info p {
     color: #68736f;
+}#portofolio {
+    text-align: center;
+}
+
+.portofolio-card {
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: left;
+}
+
+.portofolio-card img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
 }
