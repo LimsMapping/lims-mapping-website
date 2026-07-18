@@ -313,4 +313,62 @@ footer {
     .portofolio-info h3 {
         font-size: 22px;
     }
+}/* UKURAN PORTOFOLIO */
+.portfolio-card {
+    display: grid !important;
+    grid-template-columns: 420px 1fr !important;
+    margin: 0 auto !important;
+    max-width: 900px !important;
+    width: 100% !important;
+}
+
+.portfolio-media {
+    align-items: center !important;
+    background-color: #e8ebe5 !important;
+    display: flex !important;
+    justify-content: center !important;
+    min-height: 340px !important;
+    padding: 24px !important;
+}
+
+.portfolio-media a {
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+.portfolio-media img {
+    display: block !important;
+    height: auto !important;
+    max-height: 300px !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    width: auto !important;
+}
+
+.portfolio-content {
+    align-self: center !important;
+    padding: 32px !important;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 700px) {
+    .portfolio-card {
+        display: block !important;
+        max-width: 420px !important;
+    }
+
+    .portfolio-media {
+        min-height: 280px !important;
+        padding: 16px !important;
+    }
+
+    .portfolio-media img {
+        max-height: 240px !important;
+    }
+
+    .portfolio-content {
+        padding: 24px !important;
+    }
 }
