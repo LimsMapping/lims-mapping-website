@@ -194,5 +194,34 @@ footer {
 
     section h2 {
         font-size: 34px;
-    }
+        #portofolio {
+    background-color: white;
+}
+
+.portofolio-card {
+    background-color: #f4f1e8;
+    border: 1px solid #d9d2c4;
+    max-width: 850px;
+    overflow: hidden;
+}
+
+.portofolio-card img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.portofolio-info {
+    padding: 28px;
+}
+
+.portofolio-info h3 {
+    color: #173f35;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.portofolio-info p {
+    color: #68736f;
 }
