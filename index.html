@@ -33,6 +33,62 @@
     >
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Penyesuaian layout studi kasus menjadi dua kartu -->
+    <style>
+        .case-study-flow.case-study-flow-two {
+            grid-template-columns:
+                minmax(0, 390px)
+                76px
+                minmax(0, 390px);
+            justify-content: center;
+        }
+
+        .case-study-flow-two .case-stage {
+            height: 100%;
+            width: 100%;
+        }
+
+        .case-study-flow-two .case-stage-media,
+        .case-study-flow-two .case-stage-media a {
+            min-height: 245px;
+        }
+
+        .case-study-flow-two .case-stage-media img {
+            height: 245px;
+            width: 100%;
+        }
+
+        .case-study-flow-two .case-stage-before .case-stage-media img {
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .case-study-flow-two .case-stage-after .case-stage-media img {
+            object-fit: contain;
+            object-position: center;
+        }
+
+        @media (max-width: 900px) {
+            .case-study-flow.case-study-flow-two {
+                grid-template-columns: minmax(0, 520px);
+                justify-content: center;
+            }
+
+            .case-study-flow-two .case-flow-connector {
+                height: 64px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .case-study-flow.case-study-flow-two {
+                grid-template-columns: minmax(0, 1fr);
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -564,10 +620,10 @@
 
                     </header>
 
-                    <!-- BEFORE, REFERENCE, AFTER -->
+                    <!-- BEFORE & AFTER -->
                     <div
-                        class="case-study-flow"
-                        aria-label="Tahapan pembaruan peta Sausapor"
+                        class="case-study-flow case-study-flow-two"
+                        aria-label="Perbandingan peta Sausapor sebelum dan sesudah pembaruan"
                     >
 
                         <!-- 01 PETA AWAL -->
@@ -583,7 +639,7 @@
                                 >
                                     <img
                                         src="peta-awal-sausapor.jpg"
-                                        alt="Peta awal Sausapor sebelum dilakukan pembaruan data dan visual"
+                                        alt="Peta lama Sausapor dengan visual buram dan batas bangunan yang belum terlihat jelas"
                                         loading="lazy"
                                     >
                                 </a>
@@ -608,16 +664,19 @@
                                 </p>
 
                                 <h4>
-                                    Informasi belum cukup jelas untuk
-                                    mendukung orientasi lapangan.
+                                    Visual peta masih buram dan belum
+                                    menunjukkan batas bangunan serta
+                                    kondisi wilayah secara jelas.
                                 </h4>
 
                                 <p>
-                                    Peta awal belum menggambarkan sejumlah
-                                    perubahan terbaru. Detail jalan,
-                                    bangunan, batas wilayah, dan objek
-                                    penting juga masih sulit dikenali saat
-                                    digunakan di lapangan.
+                                    Peta awal masih menggunakan referensi
+                                    lama, sehingga detail jalan, bangunan,
+                                    batas wilayah, dan objek penting sulit
+                                    dikenali. Akibatnya, informasi pada
+                                    peta dapat berbeda jauh dengan kondisi
+                                    aktual ketika petugas survei turun
+                                    langsung ke lapangan.
                                 </p>
 
                             </figcaption>
@@ -631,26 +690,26 @@
                             <span></span>
                         </div>
 
-                        <!-- 02 REFERENSI -->
-                        <figure class="case-stage case-stage-reference">
+                        <!-- 02 PETA HASIL -->
+                        <figure class="case-stage case-stage-after">
 
                             <div class="case-stage-media">
 
                                 <a
-                                    href="peta-referensi-satelit-sausapor.jpg"
+                                    href="peta-hasil-sausapor.png"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    aria-label="Buka citra referensi Sausapor ukuran penuh"
+                                    aria-label="Buka peta hasil Sausapor ukuran penuh"
                                 >
                                     <img
-                                        src="peta-referensi-satelit-sausapor.jpg"
-                                        alt="Citra drone yang digunakan sebagai referensi pembaruan peta Sausapor"
+                                        src="peta-hasil-sausapor.png"
+                                        alt="Peta hasil Sausapor yang dibuat ulang menggunakan citra drone terbaru dengan batas wilayah survei yang lebih presisi"
                                         loading="lazy"
                                     >
                                 </a>
 
                                 <span class="case-stage-label">
-                                    Reference
+                                    After
                                 </span>
 
                                 <span
@@ -665,79 +724,24 @@
                             <figcaption>
 
                                 <p class="case-stage-kicker">
-                                    Referensi Kondisi Aktual
-                                </p>
-
-                                <h4>
-                                    Citra drone digunakan untuk
-                                    mencocokkan kondisi wilayah terbaru.
-                                </h4>
-
-                                <p>
-                                    Referensi citra membantu mengenali
-                                    posisi jalan, bangunan, akses, batas
-                                    wilayah, dan unsur lain yang terlihat
-                                    pada kondisi terkini.
-                                </p>
-
-                            </figcaption>
-
-                        </figure>
-
-                        <div
-                            class="case-flow-connector"
-                            aria-hidden="true"
-                        >
-                            <span></span>
-                        </div>
-
-                        <!-- 03 PETA HASIL -->
-                        <figure class="case-stage case-stage-after">
-
-                            <div class="case-stage-media">
-
-                                <a
-                                    href="peta-hasil-sausapor.png"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="Buka peta hasil Sausapor ukuran penuh"
-                                >
-                                    <img
-                                        src="peta-hasil-sausapor.png"
-                                        alt="Peta hasil pembaruan Sausapor yang lebih jelas dan relevan dengan kondisi lapangan"
-                                        loading="lazy"
-                                    >
-                                </a>
-
-                                <span class="case-stage-label">
-                                    After
-                                </span>
-
-                                <span
-                                    class="case-stage-number"
-                                    aria-hidden="true"
-                                >
-                                    03
-                                </span>
-
-                            </div>
-
-                            <figcaption>
-
-                                <p class="case-stage-kicker">
                                     Peta Hasil
                                 </p>
 
                                 <h4>
-                                    Visual lebih terstruktur dan mudah
-                                    digunakan oleh petugas lapangan.
+                                    Dibuat ulang dengan citra drone
+                                    terbaru dan batas wilayah survei
+                                    yang digambar lebih presisi.
                                 </h4>
 
                                 <p>
-                                    Jalan, bangunan, batas wilayah, label,
-                                    dan objek penting disusun kembali agar
-                                    informasi lebih mudah dibaca dalam
-                                    format digital maupun cetak.
+                                    Peta direkonstruksi menggunakan citra
+                                    drone terkini sebagai referensi utama.
+                                    Garis batas wilayah survei, jalan,
+                                    bangunan, dan objek penting digambar
+                                    kembali secara presisi sehingga
+                                    hasilnya lebih jelas, terstruktur,
+                                    dan mudah dibandingkan dengan peta
+                                    sebelumnya.
                                 </p>
 
                             </figcaption>
@@ -1407,7 +1411,7 @@
             </div>
 
             <p>
-                © 2026 Lim’s Mapping. Seluruh hak dilindungi.
+                © 2024 Lim’s Mapping. Seluruh hak dilindungi.
             </p>
 
         </div>
