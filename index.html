@@ -1863,6 +1863,513 @@
 
         </div>
     </footer>
+<!-- PORTFOLIO LIGHTBOX -->
+<div
+    class="portfolio-lightbox"
+    id="portfolio-lightbox"
+    aria-hidden="true"
+>
+    <div
+        class="portfolio-lightbox-backdrop"
+        data-lightbox-close
+    ></div>
 
+    <section
+        class="portfolio-lightbox-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="portfolio-lightbox-title"
+    >
+        <header class="portfolio-lightbox-header">
+
+            <div class="portfolio-lightbox-heading">
+                <span class="portfolio-lightbox-kicker">
+                    Portofolio Lim’s Mapping
+                </span>
+
+                <h2
+                    class="portfolio-lightbox-title"
+                    id="portfolio-lightbox-title"
+                >
+                    Detail Peta
+                </h2>
+            </div>
+
+            <div class="portfolio-lightbox-actions">
+
+                <button
+                    class="portfolio-lightbox-action portfolio-lightbox-zoom"
+                    id="portfolio-lightbox-zoom"
+                    type="button"
+                    aria-label="Perbesar gambar"
+                >
+                    Perbesar
+                </button>
+
+                <a
+                    class="portfolio-lightbox-action"
+                    id="portfolio-lightbox-original"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Buka gambar resolusi penuh di tab baru"
+                >
+                    Resolusi Penuh ↗
+                </a>
+
+                <button
+                    class="portfolio-lightbox-close"
+                    id="portfolio-lightbox-close"
+                    type="button"
+                    aria-label="Tutup tampilan gambar"
+                >
+                    ×
+                </button>
+
+            </div>
+
+        </header>
+
+        <div class="portfolio-lightbox-stage">
+
+            <button
+                class="portfolio-lightbox-nav portfolio-lightbox-prev"
+                id="portfolio-lightbox-prev"
+                type="button"
+                aria-label="Lihat gambar sebelumnya"
+            >
+                ‹
+            </button>
+
+            <div
+                class="portfolio-lightbox-image-wrap"
+                id="portfolio-lightbox-image-wrap"
+            >
+                <div
+                    class="portfolio-lightbox-loader"
+                    id="portfolio-lightbox-loader"
+                    aria-hidden="true"
+                ></div>
+
+                <img
+                    class="portfolio-lightbox-image"
+                    id="portfolio-lightbox-image"
+                    src=""
+                    alt=""
+                >
+            </div>
+
+            <button
+                class="portfolio-lightbox-nav portfolio-lightbox-next"
+                id="portfolio-lightbox-next"
+                type="button"
+                aria-label="Lihat gambar berikutnya"
+            >
+                ›
+            </button>
+
+        </div>
+
+        <footer class="portfolio-lightbox-footer">
+
+            <p
+                class="portfolio-lightbox-caption"
+                id="portfolio-lightbox-caption"
+            ></p>
+
+            <span
+                class="portfolio-lightbox-counter"
+                id="portfolio-lightbox-counter"
+            >
+                01 / 01
+            </span>
+
+        </footer>
+
+    </section>
+</div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const lightbox = document.getElementById("portfolio-lightbox");
+    const lightboxImage = document.getElementById(
+        "portfolio-lightbox-image"
+    );
+    const imageWrap = document.getElementById(
+        "portfolio-lightbox-image-wrap"
+    );
+    const loader = document.getElementById(
+        "portfolio-lightbox-loader"
+    );
+    const titleElement = document.getElementById(
+        "portfolio-lightbox-title"
+    );
+    const captionElement = document.getElementById(
+        "portfolio-lightbox-caption"
+    );
+    const counterElement = document.getElementById(
+        "portfolio-lightbox-counter"
+    );
+    const originalLink = document.getElementById(
+        "portfolio-lightbox-original"
+    );
+    const closeButton = document.getElementById(
+        "portfolio-lightbox-close"
+    );
+    const previousButton = document.getElementById(
+        "portfolio-lightbox-prev"
+    );
+    const nextButton = document.getElementById(
+        "portfolio-lightbox-next"
+    );
+    const zoomButton = document.getElementById(
+        "portfolio-lightbox-zoom"
+    );
+
+    if (
+        !lightbox ||
+        !lightboxImage ||
+        !imageWrap ||
+        !titleElement
+    ) {
+        return;
+    }
+
+    const supportedExtensions =
+        /\.(jpe?g|png|webp|gif|avif)(\?.*)?$/i;
+
+    /*
+     * Ambil seluruh tautan gambar di bagian portofolio.
+     * Termasuk gambar Before/After dan tombol "Lihat detail".
+     */
+    const imageLinks = Array.from(
+        document.querySelectorAll("#portofolio a[href]")
+    ).filter(function (link) {
+        const href = link.getAttribute("href");
+
+        if (!href) {
+            return false;
+        }
+
+        return supportedExtensions.test(href);
+    });
+
+    const portfolioItems = [];
+    const itemIndexes = new Map();
+
+    function cleanText(element) {
+        return element
+            ? element.textContent.replace(/\s+/g, " ").trim()
+            : "";
+    }
+
+    function getItemInformation(link) {
+        const card = link.closest(".portfolio-card");
+        const stage = link.closest(".case-stage");
+        const image = link.querySelector("img");
+
+        let title = "";
+        let caption = "";
+        let altText = "";
+
+        if (card) {
+            title =
+                cleanText(
+                    card.querySelector(".portfolio-category")
+                ) ||
+                cleanText(card.querySelector("h3"));
+
+            const paragraphs = Array.from(
+                card.querySelectorAll(".portfolio-copy > p")
+            ).filter(function (paragraph) {
+                return !paragraph.classList.contains(
+                    "portfolio-category"
+                );
+            });
+
+            caption = paragraphs
+                .map(cleanText)
+                .filter(Boolean)
+                .join(" ");
+        }
+
+        if (stage) {
+            title =
+                cleanText(
+                    stage.querySelector(".case-stage-kicker")
+                ) ||
+                cleanText(stage.querySelector("h4"));
+
+            caption =
+                cleanText(
+                    stage.querySelector("figcaption > p:last-of-type")
+                ) ||
+                cleanText(stage.querySelector("h4"));
+        }
+
+        if (image) {
+            altText = image.getAttribute("alt") || "";
+        }
+
+        if (!title) {
+            title =
+                link.getAttribute("aria-label") ||
+                altText ||
+                "Portofolio Lim’s Mapping";
+        }
+
+        return {
+            title: title,
+            caption: caption || altText,
+            alt: altText || title
+        };
+    }
+
+    /*
+     * Hilangkan gambar ganda.
+     * Gambar dan tombol detail sering memakai href yang sama.
+     */
+    imageLinks.forEach(function (link) {
+        const absoluteUrl = new URL(
+            link.getAttribute("href"),
+            document.baseURI
+        ).href;
+
+        let itemIndex;
+
+        if (!itemIndexes.has(absoluteUrl)) {
+            const information = getItemInformation(link);
+
+            itemIndex = portfolioItems.length;
+
+            portfolioItems.push({
+                src: absoluteUrl,
+                title: information.title,
+                caption: information.caption,
+                alt: information.alt
+            });
+
+            itemIndexes.set(absoluteUrl, itemIndex);
+        } else {
+            itemIndex = itemIndexes.get(absoluteUrl);
+        }
+
+        link.dataset.lightboxIndex = itemIndex;
+
+        link.addEventListener("click", function (event) {
+            /*
+             * Cmd/Ctrl + klik tetap membuka tab baru seperti biasa.
+             */
+            if (
+                event.metaKey ||
+                event.ctrlKey ||
+                event.shiftKey ||
+                event.altKey ||
+                event.button !== 0
+            ) {
+                return;
+            }
+
+            event.preventDefault();
+
+            openLightbox(
+                Number(link.dataset.lightboxIndex),
+                link
+            );
+        });
+    });
+
+    let currentIndex = 0;
+    let lastFocusedElement = null;
+    let touchStartX = 0;
+
+    function resetZoom() {
+        imageWrap.classList.remove("is-zoomed");
+        zoomButton.textContent = "Perbesar";
+        zoomButton.setAttribute(
+            "aria-label",
+            "Perbesar gambar"
+        );
+
+        imageWrap.scrollTop = 0;
+        imageWrap.scrollLeft = 0;
+    }
+
+    function updateLightbox(index) {
+        if (!portfolioItems.length) {
+            return;
+        }
+
+        currentIndex =
+            (index + portfolioItems.length) %
+            portfolioItems.length;
+
+        const item = portfolioItems[currentIndex];
+
+        resetZoom();
+
+        loader.classList.add("is-visible");
+        lightboxImage.classList.add("is-loading");
+
+        titleElement.textContent = item.title;
+        captionElement.textContent = item.caption;
+        counterElement.textContent =
+            String(currentIndex + 1).padStart(2, "0") +
+            " / " +
+            String(portfolioItems.length).padStart(2, "0");
+
+        originalLink.href = item.src;
+
+        lightboxImage.alt = item.alt;
+        lightboxImage.src = item.src;
+
+        const showNavigation = portfolioItems.length > 1;
+
+        previousButton.hidden = !showNavigation;
+        nextButton.hidden = !showNavigation;
+    }
+
+    function openLightbox(index, triggerElement) {
+        lastFocusedElement = triggerElement;
+
+        updateLightbox(index);
+
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.classList.add("lightbox-open");
+
+        window.requestAnimationFrame(function () {
+            closeButton.focus();
+        });
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove("is-open");
+        lightbox.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("lightbox-open");
+
+        resetZoom();
+
+        if (lastFocusedElement) {
+            lastFocusedElement.focus();
+        }
+    }
+
+    function showPrevious() {
+        updateLightbox(currentIndex - 1);
+    }
+
+    function showNext() {
+        updateLightbox(currentIndex + 1);
+    }
+
+    function toggleZoom() {
+        const isZoomed =
+            imageWrap.classList.toggle("is-zoomed");
+
+        zoomButton.textContent = isZoomed
+            ? "Kecilkan"
+            : "Perbesar";
+
+        zoomButton.setAttribute(
+            "aria-label",
+            isZoomed
+                ? "Kembalikan ukuran gambar"
+                : "Perbesar gambar"
+        );
+
+        if (!isZoomed) {
+            imageWrap.scrollTop = 0;
+            imageWrap.scrollLeft = 0;
+        }
+    }
+
+    lightboxImage.addEventListener("load", function () {
+        loader.classList.remove("is-visible");
+        lightboxImage.classList.remove("is-loading");
+    });
+
+    lightboxImage.addEventListener("error", function () {
+        loader.classList.remove("is-visible");
+        lightboxImage.classList.remove("is-loading");
+
+        captionElement.textContent =
+            "Gambar tidak dapat dimuat. Periksa kembali nama dan lokasi file di repository.";
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+    previousButton.addEventListener("click", showPrevious);
+    nextButton.addEventListener("click", showNext);
+    zoomButton.addEventListener("click", toggleZoom);
+
+    imageWrap.addEventListener("click", function (event) {
+        if (event.target === lightboxImage) {
+            toggleZoom();
+        }
+    });
+
+    lightbox.querySelectorAll("[data-lightbox-close]")
+        .forEach(function (element) {
+            element.addEventListener(
+                "click",
+                closeLightbox
+            );
+        });
+
+    document.addEventListener("keydown", function (event) {
+        if (!lightbox.classList.contains("is-open")) {
+            return;
+        }
+
+        if (event.key === "Escape") {
+            closeLightbox();
+        }
+
+        if (event.key === "ArrowLeft") {
+            showPrevious();
+        }
+
+        if (event.key === "ArrowRight") {
+            showNext();
+        }
+    });
+
+    /*
+     * Swipe pada HP.
+     */
+    imageWrap.addEventListener(
+        "touchstart",
+        function (event) {
+            touchStartX =
+                event.changedTouches[0].clientX;
+        },
+        { passive: true }
+    );
+
+    imageWrap.addEventListener(
+        "touchend",
+        function (event) {
+            if (imageWrap.classList.contains("is-zoomed")) {
+                return;
+            }
+
+            const touchEndX =
+                event.changedTouches[0].clientX;
+
+            const distance = touchEndX - touchStartX;
+
+            if (Math.abs(distance) < 55) {
+                return;
+            }
+
+            if (distance > 0) {
+                showPrevious();
+            } else {
+                showNext();
+            }
+        },
+        { passive: true }
+    );
+});
+</script>
 </body>
 </html>
