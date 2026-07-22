@@ -2904,3 +2904,693 @@ body.lightbox-open {
         transition: none;
     }
 }
+/* ==========================================================
+   STUDI KASUS MAKASSAR
+========================================================== */
+
+.makassar-case {
+    margin-top: 70px;
+}
+
+/* BEFORE DAN AFTER */
+
+.makassar-comparison {
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(255, 255, 255, 0.06),
+            transparent 30%
+        ),
+        var(--navy);
+    padding: 52px 42px 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.makassar-comparison-heading {
+    margin: 0 auto 34px;
+    max-width: 760px;
+    text-align: center;
+}
+
+.makassar-comparison-heading > p {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+}
+
+.makassar-comparison-heading h4 {
+    color: var(--white);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(37px, 4.5vw, 58px);
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 1;
+}
+
+.makassar-comparison-grid {
+    align-items: stretch;
+    display: grid;
+    gap: 0;
+    grid-template-columns:
+        minmax(0, 1fr)
+        76px
+        minmax(0, 1fr);
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.makassar-map-card {
+    background-color: var(--cream);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-width: 0;
+    overflow: hidden;
+    transition:
+        box-shadow 0.28s ease,
+        transform 0.28s ease;
+}
+
+.makassar-map-card:hover {
+    box-shadow: 0 24px 48px rgba(2, 20, 36, 0.3);
+    transform: translateY(-7px);
+}
+
+.makassar-map-after {
+    background:
+        linear-gradient(
+            150deg,
+            #f8f7f3 0%,
+            #e9efe6 100%
+        );
+    border-color: rgba(140, 161, 126, 0.75);
+    box-shadow:
+        0 0 0 3px rgba(140, 161, 126, 0.13),
+        0 20px 44px rgba(2, 20, 36, 0.18);
+}
+
+.makassar-map-media {
+    align-items: center;
+    background-color: #dfe5dc;
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    overflow: hidden;
+    padding: 14px;
+    position: relative;
+    text-decoration: none;
+}
+
+.makassar-map-media img {
+    display: block;
+    height: 280px;
+    object-fit: contain;
+    object-position: center;
+    transition:
+        filter 0.35s ease,
+        transform 0.55s ease;
+    width: 100%;
+}
+
+.makassar-map-before .makassar-map-media img {
+    filter: saturate(0.75) contrast(0.96);
+}
+
+.makassar-map-after .makassar-map-media img {
+    filter: saturate(1.04) contrast(1.02);
+}
+
+.makassar-map-card:hover .makassar-map-media img {
+    transform: scale(1.035);
+}
+
+.makassar-map-label {
+    background-color: rgba(8, 40, 70, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    color: var(--white);
+    font-size: 9px;
+    font-weight: 800;
+    left: 16px;
+    letter-spacing: 1.4px;
+    padding: 7px 12px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 16px;
+    z-index: 2;
+}
+
+.makassar-map-after .makassar-map-label {
+    background-color: rgba(78, 103, 72, 0.95);
+}
+
+.makassar-map-number {
+    color: rgba(13, 52, 93, 0.82);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 1;
+    position: absolute;
+    right: 15px;
+    text-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
+    top: 10px;
+    z-index: 2;
+}
+
+.makassar-map-card figcaption {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 30px 29px 31px;
+}
+
+.makassar-map-kicker {
+    color: var(--rust);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.7px;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+}
+
+.makassar-map-card h5 {
+    color: var(--navy);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.45;
+    margin-bottom: 13px;
+}
+
+.makassar-map-card figcaption > p:not(.makassar-map-kicker) {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.makassar-image-link {
+    align-items: center;
+    color: var(--navy);
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 800;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 23px;
+    text-decoration: none;
+}
+
+.makassar-image-link span {
+    font-size: 17px;
+    transition: transform 0.2s ease;
+}
+
+.makassar-image-link:hover span {
+    transform: translate(3px, -3px);
+}
+
+.makassar-comparison-arrow {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.makassar-comparison-arrow::before {
+    background-color: rgba(255, 255, 255, 0.18);
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.makassar-comparison-arrow span {
+    align-items: center;
+    background-color: var(--rust);
+    border: 5px solid var(--navy);
+    border-radius: 50%;
+    color: var(--white);
+    display: flex;
+    font-size: 25px;
+    height: 52px;
+    justify-content: center;
+    position: relative;
+    width: 52px;
+    z-index: 2;
+}
+
+/* HASIL PEMBARUAN */
+
+.makassar-results {
+    background-color: var(--white);
+    padding: 58px 56px 62px;
+    position: relative;
+    z-index: 2;
+}
+
+.makassar-results-heading {
+    display: grid;
+    gap: 25px;
+    grid-template-columns:
+        minmax(180px, 0.4fr)
+        minmax(0, 1fr);
+    margin-bottom: 40px;
+}
+
+.makassar-results-heading h4 {
+    color: var(--navy);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(37px, 4.2vw, 56px);
+    font-weight: 400;
+    line-height: 1;
+    max-width: 720px;
+}
+
+.makassar-results-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.makassar-result-item {
+    border-top: 2px solid rgba(13, 52, 93, 0.16);
+    padding-top: 22px;
+}
+
+.makassar-result-item > span {
+    color: var(--rust);
+    display: block;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 31px;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.makassar-result-item h5 {
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 9px;
+    text-transform: uppercase;
+}
+
+.makassar-result-item p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* TESTIMONI */
+
+.makassar-testimonial {
+    align-items: center;
+    background:
+        linear-gradient(
+            145deg,
+            #e9efe6 0%,
+            #f5f3ec 100%
+        );
+    display: grid;
+    gap: 60px;
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(300px, 400px);
+    padding: 62px 56px;
+    position: relative;
+    z-index: 2;
+}
+
+.makassar-testimonial-copy h4 {
+    color: var(--navy);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(42px, 5vw, 65px);
+    font-weight: 400;
+    line-height: 0.98;
+    margin-bottom: 22px;
+    max-width: 650px;
+}
+
+.makassar-testimonial-copy > p:not(
+    .portfolio-category,
+    .makassar-privacy-note
+) {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+.makassar-rating {
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(13, 52, 93, 0.13);
+    border-top: 1px solid rgba(13, 52, 93, 0.13);
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    padding: 23px 0;
+}
+
+.makassar-stars {
+    color: #a65d35;
+    font-size: 19px;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+.makassar-rating strong {
+    color: var(--navy);
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.makassar-rating span {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.makassar-client {
+    align-items: center;
+    display: flex;
+    gap: 14px;
+}
+
+.makassar-client-avatar {
+    align-items: center;
+    background-color: var(--navy);
+    border-radius: 50%;
+    color: var(--white);
+    display: flex;
+    font-size: 12px;
+    font-weight: 800;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: 1px;
+    width: 48px;
+}
+
+.makassar-client > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.makassar-client strong {
+    color: var(--navy);
+    font-size: 13px;
+}
+
+.makassar-client span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.makassar-privacy-note {
+    color: var(--muted);
+    font-size: 10px;
+    font-style: italic;
+    line-height: 1.6;
+    margin-top: 22px;
+    max-width: 520px;
+}
+
+.makassar-testimonial-media {
+    margin: 0 auto;
+    max-width: 380px;
+    width: 100%;
+}
+
+.makassar-testimonial-media > a {
+    background-color: #071f36;
+    border: 8px solid #071f36;
+    border-radius: 31px;
+    box-shadow: 0 25px 55px rgba(13, 52, 93, 0.25);
+    display: block;
+    overflow: hidden;
+    padding: 7px;
+    position: relative;
+    text-decoration: none;
+}
+
+.makassar-testimonial-media img {
+    background-color: var(--white);
+    border-radius: 19px;
+    display: block;
+    height: auto;
+    max-height: 680px;
+    object-fit: contain;
+    object-position: top center;
+    width: 100%;
+}
+
+.makassar-testimonial-label {
+    background-color: rgba(13, 52, 93, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 999px;
+    color: var(--white);
+    font-size: 9px;
+    font-weight: 800;
+    left: 21px;
+    letter-spacing: 1.3px;
+    padding: 8px 12px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 21px;
+    z-index: 2;
+}
+
+.makassar-testimonial-media figcaption {
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.6;
+    margin-top: 14px;
+    text-align: center;
+}
+
+/* CTA */
+
+.makassar-case-footer {
+    align-items: center;
+    background-color: var(--navy);
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    padding: 45px 56px;
+    position: relative;
+    z-index: 2;
+}
+
+.makassar-case-footer p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+
+.makassar-case-footer h4 {
+    color: var(--white);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 400;
+    line-height: 1;
+    max-width: 620px;
+}
+
+.makassar-cta-button {
+    align-items: center;
+    background-color: var(--rust);
+    border: 1px solid var(--rust);
+    border-radius: 999px;
+    color: var(--white);
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: 12px;
+    font-weight: 800;
+    gap: 10px;
+    justify-content: center;
+    padding: 15px 23px;
+    text-decoration: none;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.makassar-cta-button:hover {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.7);
+    transform: translateY(-3px);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .makassar-comparison-grid {
+        grid-template-columns: minmax(0, 560px);
+        justify-content: center;
+    }
+
+    .makassar-comparison-arrow {
+        height: 76px;
+        width: 100%;
+    }
+
+    .makassar-comparison-arrow::before {
+        bottom: 0;
+        height: auto;
+        left: 50%;
+        top: 0;
+        width: 1px;
+    }
+
+    .makassar-comparison-arrow span {
+        transform: rotate(90deg);
+    }
+
+    .makassar-results-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 32px;
+    }
+
+    .makassar-testimonial {
+        grid-template-columns: 1fr;
+    }
+
+    .makassar-testimonial-copy {
+        text-align: center;
+    }
+
+    .makassar-testimonial-copy > p:not(
+        .portfolio-category,
+        .makassar-privacy-note
+    ) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .makassar-rating {
+        align-items: center;
+    }
+
+    .makassar-client {
+        justify-content: center;
+    }
+
+    .makassar-privacy-note {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .makassar-case {
+        border-radius: 24px;
+        margin-top: 45px;
+    }
+
+    .makassar-case .case-study-header {
+        padding: 38px 22px 34px;
+    }
+
+    .makassar-case .case-study-heading {
+        gap: 25px;
+        grid-template-columns: 1fr;
+    }
+
+    .makassar-case .case-study-title h3 {
+        font-size: clamp(42px, 14vw, 60px);
+    }
+
+    .makassar-case .case-study-intro {
+        padding-left: 16px;
+    }
+
+    .makassar-comparison {
+        padding: 42px 17px 45px;
+    }
+
+    .makassar-comparison-heading {
+        margin-bottom: 27px;
+    }
+
+    .makassar-map-media {
+        min-height: 220px;
+        padding: 10px;
+    }
+
+    .makassar-map-media img {
+        height: 210px;
+    }
+
+    .makassar-map-card figcaption {
+        padding: 25px 22px 27px;
+    }
+
+    .makassar-results {
+        padding: 45px 22px 49px;
+    }
+
+    .makassar-results-heading {
+        gap: 8px;
+        grid-template-columns: 1fr;
+    }
+
+    .makassar-results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .makassar-result-item {
+        display: grid;
+        gap: 4px 15px;
+        grid-template-columns: 45px 1fr;
+    }
+
+    .makassar-result-item > span {
+        grid-row: 1 / 3;
+        margin-bottom: 0;
+    }
+
+    .makassar-testimonial {
+        gap: 38px;
+        padding: 47px 20px;
+    }
+
+    .makassar-testimonial-copy h4 {
+        font-size: clamp(39px, 13vw, 55px);
+    }
+
+    .makassar-testimonial-media {
+        max-width: 320px;
+    }
+
+    .makassar-testimonial-media > a {
+        border-radius: 25px;
+        border-width: 6px;
+        padding: 5px;
+    }
+
+    .makassar-testimonial-media img {
+        border-radius: 16px;
+        max-height: 590px;
+    }
+
+    .makassar-case-footer {
+        align-items: stretch;
+        flex-direction: column;
+        padding: 38px 22px;
+        text-align: center;
+    }
+
+    .makassar-cta-button {
+        width: 100%;
+    }
+}
