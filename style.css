@@ -2905,466 +2905,514 @@ body.lightbox-open {
     }
 }
 /* ==========================================================
-   STUDI KASUS MAKASSAR
+
+/* ==========================================================
+   PENYESUAIAN UNTUK INDEX.HTML BARU — LIM'S MAPPING 2026
+   Bagian ini menggantikan dan melengkapi aturan layout lama.
 ========================================================== */
 
-.makassar-case {
-    margin-top: 70px;
+/* ANCHOR OFFSET */
+#portofolio,
+#tentang,
+#layanan,
+#studi-kasus,
+#studi-kasus-sausapor,
+#studi-kasus-makassar,
+#output,
+#proses,
+#testimoni,
+#faq,
+#kontak {
+    scroll-margin-top: 105px;
 }
 
-/* BEFORE DAN AFTER */
+button,
+summary {
+    font: inherit;
+}
 
-.makassar-comparison {
-    background:
-        radial-gradient(
-            circle at 10% 10%,
-            rgba(255, 255, 255, 0.06),
-            transparent 30%
-        ),
-        var(--navy);
-    padding: 52px 42px 60px;
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 3px solid var(--rust);
+    outline-offset: 4px;
+}
+
+/* HERO BARU */
+.showcase-frame a {
+    display: block;
+    width: 100%;
+}
+
+.hero-showcase .showcase-frame img {
+    transition: transform 0.45s ease;
+}
+
+.hero-showcase .showcase-frame a:hover img {
+    transform: scale(1.025);
+}
+
+/* RINGKASAN KREDIBILITAS */
+.credibility-section {
+    margin-top: -42px;
+    padding: 0 0 92px;
     position: relative;
-    z-index: 2;
+    z-index: 4;
 }
 
-.makassar-comparison-heading {
-    margin: 0 auto 34px;
-    max-width: 760px;
-    text-align: center;
+.credibility-panel {
+    border: 1px solid rgba(13, 52, 93, 0.09);
 }
 
-.makassar-comparison-heading > p {
-    color: rgba(255, 255, 255, 0.68);
+.credibility-panel .feature-item {
+    min-height: 155px;
+}
+
+/* PORTOFOLIO TERPILIH */
+.portfolio-list-compact {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.portfolio-list-compact .portfolio-card {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-width: none;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.portfolio-list-compact .portfolio-card-featured {
+    grid-column: span 6;
+}
+
+.portfolio-list-compact .portfolio-card-compact {
+    grid-column: span 4;
+}
+
+.portfolio-list-compact .portfolio-image {
+    min-height: 280px;
+    padding: 23px;
+    width: 100%;
+}
+
+.portfolio-list-compact .portfolio-card-featured .portfolio-image {
+    min-height: 360px;
+}
+
+.portfolio-list-compact .portfolio-image a {
+    height: 100%;
+    min-height: inherit;
+}
+
+.portfolio-list-compact .portfolio-image img {
+    height: 100%;
+    max-height: 310px;
+    max-width: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.portfolio-list-compact .portfolio-card-featured .portfolio-image img {
+    max-height: 320px;
+}
+
+.portfolio-list-compact .portfolio-copy {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 34px;
+}
+
+.portfolio-list-compact .portfolio-card-featured .portfolio-copy {
+    padding: 38px;
+}
+
+.portfolio-list-compact .portfolio-copy h3 {
+    font-size: clamp(35px, 3.6vw, 49px);
+}
+
+.portfolio-list-compact .portfolio-card-compact .portfolio-copy h3 {
+    font-size: clamp(31px, 2.8vw, 39px);
+}
+
+.portfolio-list-compact .portfolio-copy > p {
+    font-size: 14px;
+}
+
+.portfolio-list-compact .portfolio-link {
+    margin-top: auto;
+    padding-top: 25px;
+}
+
+.result-list-compact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 22px;
+}
+
+.result-list-compact span {
+    background-color: rgba(96, 122, 88, 0.11);
+    border: 1px solid rgba(96, 122, 88, 0.2);
+    border-radius: 999px;
+    color: var(--olive-dark);
     font-size: 10px;
     font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 11px;
+    letter-spacing: 0.5px;
+    padding: 7px 11px;
     text-transform: uppercase;
 }
 
-.makassar-comparison-heading h4 {
-    color: var(--white);
-    font-family: "Bebas Neue", sans-serif;
-    font-size: clamp(37px, 4.5vw, 58px);
-    font-weight: 400;
-    letter-spacing: 0.3px;
+/* TENTANG */
+.about-section {
+    background-color: var(--cream);
+    border-top: 1px solid rgba(13, 52, 93, 0.06);
+}
+
+.about-copy {
+    max-width: 670px;
+}
+
+.about-credentials {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about-credentials strong {
+    font-size: 34px;
     line-height: 1;
 }
 
-.makassar-comparison-grid {
-    align-items: stretch;
-    display: grid;
-    gap: 0;
+.about-credentials span {
+    color: var(--olive-dark);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    max-width: none;
+    text-transform: uppercase;
+}
+
+/* LAYANAN EMPAT KOLOM */
+.service-grid-four {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.service-grid-four .service-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 330px;
+}
+
+.service-grid-four .service-card p {
+    margin-bottom: 24px;
+}
+
+.service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: auto;
+}
+
+.service-tags span {
+    background-color: rgba(13, 52, 93, 0.055);
+    border: 1px solid rgba(13, 52, 93, 0.1);
+    border-radius: 999px;
+    color: var(--olive-dark);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.7px;
+    padding: 7px 10px;
+    text-transform: uppercase;
+}
+
+/* STUDI KASUS */
+.case-studies-section {
+    background:
+        radial-gradient(
+            circle at 92% 9%,
+            rgba(96, 122, 88, 0.07),
+            transparent 23%
+        ),
+        var(--white);
+}
+
+.case-studies-section .case-study:last-child {
+    margin-bottom: 0;
+}
+
+.case-study-flow.case-study-flow-two {
     grid-template-columns:
         minmax(0, 1fr)
         76px
         minmax(0, 1fr);
-    margin: 0 auto;
-    max-width: 940px;
-}
-
-.makassar-map-card {
-    background-color: var(--cream);
-    border: 1px solid rgba(255, 255, 255, 0.13);
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    min-width: 0;
-    overflow: hidden;
-    transition:
-        box-shadow 0.28s ease,
-        transform 0.28s ease;
-}
-
-.makassar-map-card:hover {
-    box-shadow: 0 24px 48px rgba(2, 20, 36, 0.3);
-    transform: translateY(-7px);
-}
-
-.makassar-map-after {
-    background:
-        linear-gradient(
-            150deg,
-            #f8f7f3 0%,
-            #e9efe6 100%
-        );
-    border-color: rgba(140, 161, 126, 0.75);
-    box-shadow:
-        0 0 0 3px rgba(140, 161, 126, 0.13),
-        0 20px 44px rgba(2, 20, 36, 0.18);
-}
-
-.makassar-map-media {
-    align-items: center;
-    background-color: #dfe5dc;
-    display: flex;
     justify-content: center;
-    min-height: 300px;
-    overflow: hidden;
-    padding: 14px;
-    position: relative;
-    text-decoration: none;
 }
 
-.makassar-map-media img {
-    display: block;
-    height: 280px;
-    object-fit: contain;
-    object-position: center;
-    transition:
-        filter 0.35s ease,
-        transform 0.55s ease;
+.case-study-flow-two .case-stage {
+    height: 100%;
     width: 100%;
 }
 
-.makassar-map-before .makassar-map-media img {
-    filter: saturate(0.75) contrast(0.96);
+.case-study-flow-two .case-stage-media,
+.case-study-flow-two .case-stage-media a {
+    min-height: 290px;
 }
 
-.makassar-map-after .makassar-map-media img {
-    filter: saturate(1.04) contrast(1.02);
+.case-study-flow-two .case-stage-media img {
+    height: 290px;
+    width: 100%;
 }
 
-.makassar-map-card:hover .makassar-map-media img {
-    transform: scale(1.035);
+.case-study-flow-two .case-stage-before .case-stage-media img {
+    object-fit: cover;
+    object-position: center;
 }
 
-.makassar-map-label {
-    background-color: rgba(8, 40, 70, 0.94);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 999px;
-    color: var(--white);
-    font-size: 9px;
-    font-weight: 800;
-    left: 16px;
-    letter-spacing: 1.4px;
-    padding: 7px 12px;
-    position: absolute;
-    text-transform: uppercase;
-    top: 16px;
-    z-index: 2;
+.case-study-flow-two .case-stage-after .case-stage-media img {
+    object-fit: contain;
+    object-position: center;
 }
 
-.makassar-map-after .makassar-map-label {
-    background-color: rgba(78, 103, 72, 0.95);
+.case-result-grid-three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.makassar-map-number {
-    color: rgba(13, 52, 93, 0.82);
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 54px;
-    font-weight: 400;
-    line-height: 1;
-    position: absolute;
-    right: 15px;
-    text-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
-    top: 10px;
-    z-index: 2;
+.case-study-compact {
+    margin-top: 56px;
 }
 
-.makassar-map-card figcaption {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    padding: 30px 29px 31px;
+.case-study-compact .case-study-header {
+    padding-bottom: 38px;
 }
 
-.makassar-map-kicker {
-    color: var(--rust);
-    font-size: 10px;
-    font-weight: 800;
-    letter-spacing: 1.7px;
-    margin-bottom: 11px;
-    text-transform: uppercase;
+.case-study-compact .case-study-title h3 {
+    font-size: clamp(49px, 5.3vw, 70px);
 }
 
-.makassar-map-card h5 {
-    color: var(--navy);
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.45;
-    margin-bottom: 13px;
+.case-study-summary-compact {
+    display: block;
+    padding-bottom: 44px;
+    padding-top: 44px;
 }
 
-.makassar-map-card figcaption > p:not(.makassar-map-kicker) {
-    color: var(--muted);
-    font-size: 13px;
-    line-height: 1.75;
+.case-study-summary-compact .portfolio-link {
+    margin-top: 25px;
 }
 
-.makassar-image-link {
-    align-items: center;
-    color: var(--navy);
-    display: inline-flex;
-    font-size: 12px;
-    font-weight: 800;
-    gap: 8px;
-    margin-top: auto;
-    padding-top: 23px;
-    text-decoration: none;
+/* OUTPUT PROYEK */
+.output-section {
+    background-color: var(--cream);
+    border-top: 1px solid rgba(13, 52, 93, 0.06);
 }
 
-.makassar-image-link span {
-    font-size: 17px;
-    transition: transform 0.2s ease;
-}
-
-.makassar-image-link:hover span {
-    transform: translate(3px, -3px);
-}
-
-.makassar-comparison-arrow {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.makassar-comparison-arrow::before {
-    background-color: rgba(255, 255, 255, 0.18);
-    content: "";
-    height: 1px;
-    left: 0;
-    position: absolute;
-    right: 0;
-}
-
-.makassar-comparison-arrow span {
-    align-items: center;
-    background-color: var(--rust);
-    border: 5px solid var(--navy);
-    border-radius: 50%;
-    color: var(--white);
-    display: flex;
-    font-size: 25px;
-    height: 52px;
-    justify-content: center;
-    position: relative;
-    width: 52px;
-    z-index: 2;
-}
-
-/* HASIL PEMBARUAN */
-
-.makassar-results {
-    background-color: var(--white);
-    padding: 58px 56px 62px;
-    position: relative;
-    z-index: 2;
-}
-
-.makassar-results-heading {
-    display: grid;
-    gap: 25px;
-    grid-template-columns:
-        minmax(180px, 0.4fr)
-        minmax(0, 1fr);
-    margin-bottom: 40px;
-}
-
-.makassar-results-heading h4 {
-    color: var(--navy);
-    font-family: "Bebas Neue", sans-serif;
-    font-size: clamp(37px, 4.2vw, 56px);
-    font-weight: 400;
-    line-height: 1;
-    max-width: 720px;
-}
-
-.makassar-results-grid {
+.output-grid {
     display: grid;
     gap: 18px;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.makassar-result-item {
-    border-top: 2px solid rgba(13, 52, 93, 0.16);
-    padding-top: 22px;
-}
-
-.makassar-result-item > span {
-    color: var(--rust);
-    display: block;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 31px;
-    line-height: 1;
-    margin-bottom: 16px;
-}
-
-.makassar-result-item h5 {
-    color: var(--navy);
-    font-size: 14px;
-    font-weight: 800;
-    margin-bottom: 9px;
-    text-transform: uppercase;
-}
-
-.makassar-result-item p {
-    color: var(--muted);
-    font-size: 12px;
-    line-height: 1.7;
-}
-
-/* TESTIMONI */
-
-.makassar-testimonial {
-    align-items: center;
+.output-card {
     background:
         linear-gradient(
             145deg,
-            #e9efe6 0%,
-            #f5f3ec 100%
+            rgba(255, 255, 255, 0.96),
+            rgba(246, 245, 240, 0.92)
         );
-    display: grid;
-    gap: 60px;
-    grid-template-columns:
-        minmax(0, 1fr)
-        minmax(300px, 400px);
-    padding: 62px 56px;
+    border: 1px solid rgba(13, 52, 93, 0.1);
+    border-radius: 24px;
+    min-height: 255px;
+    overflow: hidden;
+    padding: 29px;
+    position: relative;
+    transition:
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.output-card::after {
+    border: 1px solid rgba(96, 122, 88, 0.13);
+    border-radius: 48% 52% 44% 56%;
+    content: "";
+    height: 150px;
+    position: absolute;
+    right: -76px;
+    top: -82px;
+    transform: rotate(19deg);
+    width: 185px;
+}
+
+.output-card:hover {
+    box-shadow: var(--soft-shadow);
+    transform: translateY(-6px);
+}
+
+.output-number {
+    color: rgba(166, 93, 53, 0.18);
+    display: block;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 66px;
+    line-height: 0.85;
+    margin-bottom: 30px;
+    position: relative;
+    -webkit-text-stroke: 1px var(--rust);
+    z-index: 2;
+}
+
+.output-card h3 {
+    color: var(--navy);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 13px;
     position: relative;
     z-index: 2;
 }
 
-.makassar-testimonial-copy h4 {
+.output-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.72;
+    position: relative;
+    z-index: 2;
+}
+
+/* ESTIMASI BIAYA */
+.pricing-panel {
+    align-items: center;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.035)
+        );
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 30px;
+    display: grid;
+    gap: 42px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    margin-top: 38px;
+    padding: 37px 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.pricing-panel .section-label {
+    color: #dd8653;
+    margin-bottom: 9px;
+}
+
+.pricing-panel h3 {
+    color: var(--white);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(36px, 4vw, 52px);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.pricing-panel p:not(.section-label) {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 13px;
+    max-width: 780px;
+}
+
+.pricing-panel .button-green {
+    background-color: var(--rust);
+    flex-shrink: 0;
+}
+
+.pricing-panel .button-green:hover {
+    background-color: #8e4b2a;
+}
+
+/* TESTIMONI ASLI */
+.testimonial-section {
+    background:
+        radial-gradient(
+            circle at 8% 15%,
+            rgba(96, 122, 88, 0.07),
+            transparent 25%
+        ),
+        var(--white);
+}
+
+.testimonial-showcase-authentic {
+    border: 1px solid rgba(13, 52, 93, 0.1);
+    border-radius: 32px;
+    box-shadow: var(--soft-shadow);
+    gap: 70px;
+    grid-template-columns: minmax(0, 1fr) minmax(290px, 430px);
+    overflow: hidden;
+    padding: 68px;
+}
+
+.testimonial-showcase-authentic .testimonial-copy h2 {
     color: var(--navy);
     font-family: "Bebas Neue", sans-serif;
-    font-size: clamp(42px, 5vw, 65px);
+    font-size: clamp(50px, 5.6vw, 74px);
     font-weight: 400;
     line-height: 0.98;
     margin-bottom: 22px;
-    max-width: 650px;
 }
 
-.makassar-testimonial-copy > p:not(
-    .portfolio-category,
-    .makassar-privacy-note
-) {
-    color: var(--muted);
-    font-size: 14px;
-    line-height: 1.8;
-    max-width: 650px;
+.testimonial-showcase-authentic .testimonial-copy > p:not(.section-label) {
+    max-width: 610px;
 }
 
-.makassar-rating {
-    align-items: flex-start;
-    border-bottom: 1px solid rgba(13, 52, 93, 0.13);
-    border-top: 1px solid rgba(13, 52, 93, 0.13);
+.testimonial-facts {
     display: flex;
-    flex-direction: column;
-    margin: 30px 0;
-    padding: 23px 0;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 27px;
 }
 
-.makassar-stars {
-    color: #a65d35;
-    font-size: 19px;
-    letter-spacing: 4px;
-    margin-bottom: 8px;
-}
-
-.makassar-rating strong {
-    color: var(--navy);
-    font-size: 15px;
-    margin-bottom: 3px;
-}
-
-.makassar-rating span {
-    color: var(--muted);
-    font-size: 12px;
-}
-
-.makassar-client {
-    align-items: center;
-    display: flex;
-    gap: 14px;
-}
-
-.makassar-client-avatar {
-    align-items: center;
-    background-color: var(--navy);
-    border-radius: 50%;
-    color: var(--white);
-    display: flex;
-    font-size: 12px;
+.testimonial-facts span {
+    background-color: rgba(96, 122, 88, 0.11);
+    border: 1px solid rgba(96, 122, 88, 0.2);
+    border-radius: 999px;
+    color: var(--olive-dark);
+    font-size: 9px;
     font-weight: 800;
-    height: 48px;
-    justify-content: center;
-    letter-spacing: 1px;
-    width: 48px;
+    letter-spacing: 0.7px;
+    padding: 8px 11px;
+    text-transform: uppercase;
 }
 
-.makassar-client > div:last-child {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.makassar-client strong {
-    color: var(--navy);
-    font-size: 13px;
-}
-
-.makassar-client span {
-    color: var(--muted);
-    font-size: 11px;
-}
-
-.makassar-privacy-note {
-    color: var(--muted);
-    font-size: 10px;
-    font-style: italic;
-    line-height: 1.6;
-    margin-top: 22px;
-    max-width: 520px;
-}
-
-.makassar-testimonial-media {
+.testimonial-proof {
     margin: 0 auto;
-    max-width: 380px;
+    max-width: 390px;
     width: 100%;
 }
 
-.makassar-testimonial-media > a {
+.testimonial-proof > a {
     background-color: #071f36;
-    border: 8px solid #071f36;
-    border-radius: 31px;
-    box-shadow: 0 25px 55px rgba(13, 52, 93, 0.25);
+    border: 7px solid #071f36;
+    border-radius: 30px;
+    box-shadow: 0 26px 58px rgba(13, 52, 93, 0.25);
     display: block;
     overflow: hidden;
-    padding: 7px;
+    padding: 6px;
     position: relative;
-    text-decoration: none;
 }
 
-.makassar-testimonial-media img {
+.testimonial-proof img {
     background-color: var(--white);
-    border-radius: 19px;
-    display: block;
+    border-radius: 18px;
     height: auto;
-    max-height: 680px;
+    max-height: 650px;
     object-fit: contain;
     object-position: top center;
     width: 100%;
 }
 
-.makassar-testimonial-label {
-    background-color: rgba(13, 52, 93, 0.92);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 999px;
-    color: var(--white);
-    font-size: 9px;
-    font-weight: 800;
-    left: 21px;
-    letter-spacing: 1.3px;
-    padding: 8px 12px;
-    position: absolute;
-    text-transform: uppercase;
-    top: 21px;
-    z-index: 2;
-}
-
-.makassar-testimonial-media figcaption {
+.testimonial-proof figcaption {
     color: var(--muted);
     font-size: 10px;
     line-height: 1.6;
@@ -3372,225 +3420,488 @@ body.lightbox-open {
     text-align: center;
 }
 
-/* CTA */
-
-.makassar-case-footer {
-    align-items: center;
-    background-color: var(--navy);
-    display: flex;
-    gap: 35px;
-    justify-content: space-between;
-    padding: 45px 56px;
-    position: relative;
-    z-index: 2;
+/* FAQ */
+.faq-section {
+    background-color: var(--cream);
 }
 
-.makassar-case-footer p {
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 10px;
+.faq-layout {
+    align-items: start;
+    display: grid;
+    gap: 85px;
+    grid-template-columns: minmax(290px, 0.75fr) minmax(0, 1.25fr);
+}
+
+.faq-layout .section-heading {
+    position: sticky;
+    top: 130px;
+}
+
+.faq-list {
+    border-top: 1px solid rgba(13, 52, 93, 0.16);
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(13, 52, 93, 0.16);
+}
+
+.faq-item summary {
+    align-items: center;
+    color: var(--navy);
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
     font-weight: 800;
+    gap: 25px;
+    justify-content: space-between;
+    list-style: none;
+    min-height: 84px;
+    padding: 22px 4px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    align-items: center;
+    background-color: var(--navy);
+    border-radius: 50%;
+    color: var(--white);
+    content: "+";
+    display: flex;
+    flex: 0 0 auto;
+    font-size: 21px;
+    font-weight: 500;
+    height: 38px;
+    justify-content: center;
+    transition:
+        background-color 0.2s ease,
+        transform 0.25s ease;
+    width: 38px;
+}
+
+.faq-item[open] summary::after {
+    background-color: var(--rust);
+    content: "−";
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 60px 27px 4px;
+}
+
+.faq-answer p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* KONTAK */
+.contact-secondary-link {
+    color: var(--navy);
+    font-size: 12px;
+    font-weight: 800;
+    margin-left: 15px;
+    text-decoration: underline;
+    text-decoration-color: rgba(13, 52, 93, 0.3);
+    text-underline-offset: 5px;
+}
+
+.contact-secondary-link:hover {
+    color: var(--rust);
+}
+
+/* FOOTER BARU */
+.site-footer {
+    background-color: var(--navy-dark);
+    color: rgba(255, 255, 255, 0.68);
+    padding: 65px 0 24px;
+}
+
+.footer-layout-expanded {
+    align-items: start;
+    display: grid;
+    gap: 70px;
+    grid-template-columns: minmax(0, 1.25fr) minmax(145px, 0.55fr) minmax(210px, 0.7fr);
+    padding-bottom: 48px;
+}
+
+.footer-intro {
+    max-width: 440px;
+}
+
+.footer-intro p {
+    font-size: 13px;
+    line-height: 1.75;
+    margin-top: 15px;
+}
+
+.footer-navigation,
+.footer-contact {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-navigation strong,
+.footer-contact strong {
+    color: var(--white);
+    font-size: 11px;
     letter-spacing: 1.5px;
-    margin-bottom: 7px;
+    margin-bottom: 4px;
     text-transform: uppercase;
 }
 
-.makassar-case-footer h4 {
-    color: var(--white);
-    font-family: "Bebas Neue", sans-serif;
-    font-size: clamp(28px, 3vw, 40px);
-    font-weight: 400;
-    line-height: 1;
-    max-width: 620px;
-}
-
-.makassar-cta-button {
-    align-items: center;
-    background-color: var(--rust);
-    border: 1px solid var(--rust);
-    border-radius: 999px;
-    color: var(--white);
-    display: inline-flex;
-    flex-shrink: 0;
+.footer-navigation a,
+.footer-contact a {
+    color: rgba(255, 255, 255, 0.73);
     font-size: 12px;
-    font-weight: 800;
-    gap: 10px;
-    justify-content: center;
-    padding: 15px 23px;
     text-decoration: none;
+}
+
+.footer-navigation a:hover,
+.footer-contact a:hover {
+    color: var(--white);
+}
+
+.footer-contact span {
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+    display: flex;
+    font-size: 10px;
+    gap: 22px;
+    justify-content: space-between;
+    padding-top: 23px;
+}
+
+/* INDIKATOR LIGHTBOX PADA ELEMEN BARU */
+.showcase-frame a,
+.testimonial-proof a {
+    cursor: zoom-in;
+    overflow: hidden;
+    position: relative;
+}
+
+.showcase-frame a::after,
+.testimonial-proof a::after {
+    background: rgba(13, 52, 93, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 999px;
+    bottom: 14px;
+    color: var(--white);
+    content: "PERBESAR ↗";
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    opacity: 0;
+    padding: 8px 12px;
+    position: absolute;
+    right: 14px;
+    transform: translateY(7px);
     transition:
-        background-color 0.2s ease,
-        border-color 0.2s ease,
-        transform 0.2s ease;
+        opacity 0.25s ease,
+        transform 0.25s ease;
+    z-index: 4;
 }
 
-.makassar-cta-button:hover {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.7);
-    transform: translateY(-3px);
+.showcase-frame a:hover::after,
+.testimonial-proof a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* TABLET */
+/* RESPONSIVE — LAPTOP KECIL */
+@media (max-width: 1120px) {
+    .service-grid-four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
+    .service-grid-four .service-card {
+        min-height: 290px;
+    }
+
+    .portfolio-list-compact .portfolio-card-compact {
+        grid-column: span 6;
+    }
+
+    .output-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* RESPONSIVE — TABLET */
 @media (max-width: 900px) {
-    .makassar-comparison-grid {
+    .credibility-section {
+        margin-top: -20px;
+    }
+
+    .portfolio-list-compact {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .portfolio-list-compact .portfolio-card-featured,
+    .portfolio-list-compact .portfolio-card-compact {
+        grid-column: auto;
+    }
+
+    .portfolio-list-compact .portfolio-image,
+    .portfolio-list-compact .portfolio-card-featured .portfolio-image {
+        min-height: 300px;
+    }
+
+    .case-study-flow.case-study-flow-two {
         grid-template-columns: minmax(0, 560px);
         justify-content: center;
     }
 
-    .makassar-comparison-arrow {
-        height: 76px;
+    .case-study-flow-two .case-flow-connector {
+        display: flex;
+        height: 70px;
         width: 100%;
     }
 
-    .makassar-comparison-arrow::before {
-        bottom: 0;
-        height: auto;
-        left: 50%;
-        top: 0;
-        width: 1px;
+    .case-study-flow-two .case-flow-connector::before {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(255, 255, 255, 0.28),
+                rgba(140, 161, 126, 0.92)
+            );
+        height: 100%;
+        width: 2px;
     }
 
-    .makassar-comparison-arrow span {
-        transform: rotate(90deg);
+    .case-study-flow-two .case-flow-connector::after {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 9px solid var(--sage);
+        bottom: 5px;
+        right: auto;
+        top: auto;
     }
 
-    .makassar-results-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        row-gap: 32px;
-    }
-
-    .makassar-testimonial {
+    .case-result-grid-three {
         grid-template-columns: 1fr;
     }
 
-    .makassar-testimonial-copy {
-        text-align: center;
+    .pricing-panel {
+        align-items: start;
+        grid-template-columns: 1fr;
     }
 
-    .makassar-testimonial-copy > p:not(
-        .portfolio-category,
-        .makassar-privacy-note
-    ) {
-        margin-left: auto;
-        margin-right: auto;
+    .pricing-panel .button {
+        width: fit-content;
     }
 
-    .makassar-rating {
-        align-items: center;
+    .testimonial-showcase-authentic {
+        grid-template-columns: 1fr;
+        padding: 52px 40px;
     }
 
-    .makassar-client {
-        justify-content: center;
+    .testimonial-proof {
+        max-width: 350px;
     }
 
-    .makassar-privacy-note {
-        margin-left: auto;
-        margin-right: auto;
+    .faq-layout {
+        gap: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .faq-layout .section-heading {
+        position: static;
+    }
+
+    .footer-layout-expanded {
+        gap: 45px;
+        grid-template-columns: 1.4fr 0.6fr 0.8fr;
     }
 }
 
-/* MOBILE */
-
-@media (max-width: 600px) {
-    .makassar-case {
-        border-radius: 24px;
-        margin-top: 45px;
-    }
-
-    .makassar-case .case-study-header {
-        padding: 38px 22px 34px;
-    }
-
-    .makassar-case .case-study-heading {
-        gap: 25px;
+/* RESPONSIVE — TABLET KECIL */
+@media (max-width: 760px) {
+    .portfolio-list-compact {
         grid-template-columns: 1fr;
     }
 
-    .makassar-case .case-study-title h3 {
-        font-size: clamp(42px, 14vw, 60px);
+    .portfolio-list-compact .portfolio-image,
+    .portfolio-list-compact .portfolio-card-featured .portfolio-image {
+        min-height: 290px;
     }
 
-    .makassar-case .case-study-intro {
-        padding-left: 16px;
+    .output-grid {
+        grid-template-columns: 1fr;
     }
 
-    .makassar-comparison {
-        padding: 42px 17px 45px;
-    }
-
-    .makassar-comparison-heading {
-        margin-bottom: 27px;
-    }
-
-    .makassar-map-media {
+    .output-card {
         min-height: 220px;
-        padding: 10px;
     }
 
-    .makassar-map-media img {
-        height: 210px;
+    .footer-layout-expanded {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .makassar-map-card figcaption {
-        padding: 25px 22px 27px;
+    .footer-intro {
+        grid-column: 1 / -1;
+    }
+}
+
+/* RESPONSIVE — HP */
+@media (max-width: 650px) {
+    #portofolio,
+    #tentang,
+    #layanan,
+    #studi-kasus,
+    #studi-kasus-sausapor,
+    #studi-kasus-makassar,
+    #output,
+    #proses,
+    #testimoni,
+    #faq,
+    #kontak {
+        scroll-margin-top: 86px;
     }
 
-    .makassar-results {
-        padding: 45px 22px 49px;
+    .credibility-section {
+        margin-top: -22px;
+        padding-bottom: 68px;
     }
 
-    .makassar-results-heading {
-        gap: 8px;
+    .credibility-panel .feature-item {
+        min-height: auto;
+    }
+
+    .portfolio-list-compact .portfolio-image,
+    .portfolio-list-compact .portfolio-card-featured .portfolio-image {
+        min-height: 260px;
+    }
+
+    .portfolio-list-compact .portfolio-image img,
+    .portfolio-list-compact .portfolio-card-featured .portfolio-image img {
+        max-height: 230px;
+    }
+
+    .portfolio-list-compact .portfolio-copy,
+    .portfolio-list-compact .portfolio-card-featured .portfolio-copy {
+        padding: 27px 23px;
+    }
+
+    .portfolio-list-compact .portfolio-copy h3,
+    .portfolio-list-compact .portfolio-card-compact .portfolio-copy h3 {
+        font-size: 37px;
+    }
+
+    .about-credentials strong {
+        font-size: 31px;
+    }
+
+    .service-grid-four {
         grid-template-columns: 1fr;
     }
 
-    .makassar-results-grid {
-        grid-template-columns: 1fr;
+    .service-grid-four .service-card {
+        min-height: 285px;
     }
 
-    .makassar-result-item {
-        display: grid;
-        gap: 4px 15px;
-        grid-template-columns: 45px 1fr;
+    .case-study-flow-two .case-stage-media,
+    .case-study-flow-two .case-stage-media a {
+        min-height: 230px;
     }
 
-    .makassar-result-item > span {
-        grid-row: 1 / 3;
-        margin-bottom: 0;
+    .case-study-flow-two .case-stage-media img {
+        height: 230px;
     }
 
-    .makassar-testimonial {
-        gap: 38px;
-        padding: 47px 20px;
+    .case-study-compact {
+        margin-top: 40px;
     }
 
-    .makassar-testimonial-copy h4 {
-        font-size: clamp(39px, 13vw, 55px);
+    .case-study-summary-compact {
+        padding-bottom: 35px;
+        padding-top: 35px;
     }
 
-    .makassar-testimonial-media {
-        max-width: 320px;
+    .output-card {
+        padding: 25px 23px;
     }
 
-    .makassar-testimonial-media > a {
-        border-radius: 25px;
-        border-width: 6px;
-        padding: 5px;
+    .output-number {
+        font-size: 58px;
+        margin-bottom: 25px;
     }
 
-    .makassar-testimonial-media img {
-        border-radius: 16px;
-        max-height: 590px;
+    .pricing-panel {
+        gap: 28px;
+        padding: 29px 23px;
     }
 
-    .makassar-case-footer {
-        align-items: stretch;
-        flex-direction: column;
-        padding: 38px 22px;
-        text-align: center;
-    }
-
-    .makassar-cta-button {
+    .pricing-panel .button {
         width: 100%;
+    }
+
+    .testimonial-showcase-authentic {
+        border-radius: 24px;
+        gap: 37px;
+        padding: 43px 21px;
+    }
+
+    .testimonial-showcase-authentic .testimonial-copy h2 {
+        font-size: 48px;
+    }
+
+    .testimonial-proof {
+        max-width: 310px;
+    }
+
+    .faq-item summary {
+        font-size: 14px;
+        gap: 16px;
+        min-height: 74px;
+        padding: 19px 2px;
+    }
+
+    .faq-item summary::after {
+        height: 34px;
+        width: 34px;
+    }
+
+    .faq-answer {
+        padding: 0 45px 23px 2px;
+    }
+
+    .contact-secondary-link {
+        margin-left: 0;
+    }
+
+    .site-footer {
+        padding-top: 52px;
+    }
+
+    .footer-layout-expanded {
+        gap: 34px;
+        grid-template-columns: 1fr;
+        padding-bottom: 37px;
+    }
+
+    .footer-intro {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .showcase-frame a::after,
+    .testimonial-proof a::after {
+        opacity: 1;
+        transform: none;
     }
 }
