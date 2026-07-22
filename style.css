@@ -232,7 +232,7 @@ a {
 }
 
 .hero-label span::after {
-    content: "⌃";
+    content: "âŒƒ";
     font-size: 10px;
     line-height: 0.5;
     text-align: center;
@@ -318,7 +318,7 @@ a {
 
 .hero-points span::before {
     color: var(--olive);
-    content: "✓";
+    content: "âœ“";
     margin-right: 7px;
 }
 
@@ -2371,7 +2371,7 @@ body.lightbox-open {
 
 #portofolio .portfolio-image a::after,
 #portofolio .case-stage-media a::after {
-    content: "PERBESAR ↗";
+    content: "PERBESAR â†—";
     position: absolute;
     right: 16px;
     bottom: 16px;
@@ -2831,7 +2831,7 @@ body.lightbox-open {
     }
 
     .portfolio-lightbox-action::before {
-        content: "↗";
+        content: "â†—";
         font-size: 20px;
     }
 
@@ -2907,7 +2907,7 @@ body.lightbox-open {
 /* ==========================================================
 
 /* ==========================================================
-   PENYESUAIAN UNTUK INDEX.HTML BARU — LIM'S MAPPING 2026
+   PENYESUAIAN UNTUK INDEX.HTML BARU â€” LIM'S MAPPING 2026
    Bagian ini menggantikan dan melengkapi aturan layout lama.
 ========================================================== */
 
@@ -3483,7 +3483,7 @@ summary:focus-visible {
 
 .faq-item[open] summary::after {
     background-color: var(--rust);
-    content: "−";
+    content: "âˆ’";
     transform: rotate(180deg);
 }
 
@@ -3596,7 +3596,7 @@ summary:focus-visible {
     border-radius: 999px;
     bottom: 14px;
     color: var(--white);
-    content: "PERBESAR ↗";
+    content: "PERBESAR â†—";
     font-size: 9px;
     font-weight: 800;
     letter-spacing: 0.14em;
@@ -3617,7 +3617,7 @@ summary:focus-visible {
     transform: translateY(0);
 }
 
-/* RESPONSIVE — LAPTOP KECIL */
+/* RESPONSIVE â€” LAPTOP KECIL */
 @media (max-width: 1120px) {
     .service-grid-four {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3636,7 +3636,7 @@ summary:focus-visible {
     }
 }
 
-/* RESPONSIVE — TABLET */
+/* RESPONSIVE â€” TABLET */
 @media (max-width: 900px) {
     .credibility-section {
         margin-top: -20px;
@@ -3724,7 +3724,7 @@ summary:focus-visible {
     }
 }
 
-/* RESPONSIVE — TABLET KECIL */
+/* RESPONSIVE â€” TABLET KECIL */
 @media (max-width: 760px) {
     .portfolio-list-compact {
         grid-template-columns: 1fr;
@@ -3752,7 +3752,7 @@ summary:focus-visible {
     }
 }
 
-/* RESPONSIVE — HP */
+/* RESPONSIVE â€” HP */
 @media (max-width: 650px) {
     #portofolio,
     #tentang,
