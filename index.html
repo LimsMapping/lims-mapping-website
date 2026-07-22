@@ -1,175 +1,86 @@
-<!DOCTYPE html>
-<html lang="id">
 <head>
-    <!-- SOCIAL MEDIA PREVIEW -->
-<meta property="og:type" content="website">
-
-<meta
-    property="og:site_name"
-    content="Lim’s Mapping"
->
-
-<meta
-    property="og:title"
-    content="Lim’s Mapping | Jasa Pemetaan dan Visualisasi Data"
->
-
-<meta
-    property="og:description"
-    content="Mengolah informasi lokasi menjadi peta yang presisi, terukur, dan siap digunakan."
->
-
-<meta
-    property="og:url"
-    content="https://limsmapping.github.io/lims-mapping-website/"
->
-
-<meta
-    property="og:image"
-    content="https://limsmapping.github.io/lims-mapping-website/social-preview.jpg"
->
-
-<meta
-    property="og:image:secure_url"
-    content="https://limsmapping.github.io/lims-mapping-website/social-preview.jpg"
->
-
-<meta
-    property="og:image:type"
-    content="image/jpeg"
->
-
-<meta
-    property="og:image:width"
-    content="1200"
->
-
-<meta
-    property="og:image:height"
-    content="630"
->
-
-<meta
-    property="og:image:alt"
-    content="Logo Lim’s Mapping — Jasa Pemetaan dan Visualisasi Data"
->
-
-<!-- PREVIEW UNTUK PLATFORM YANG MENDUKUNG TWITTER CARD -->
-<meta
-    name="twitter:card"
-    content="summary_large_image"
->
-
-<meta
-    name="twitter:title"
-    content="Lim’s Mapping | Jasa Pemetaan dan Visualisasi Data"
->
-
-<meta
-    name="twitter:description"
-    content="Mengolah informasi lokasi menjadi peta yang presisi, terukur, dan siap digunakan."
->
-
-<meta
-    name="twitter:image"
-    content="https://limsmapping.github.io/lims-mapping-website/social-preview.jpg"
->
     <meta charset="UTF-8">
-
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
 
+    <title>Lim’s Mapping | Jasa Pemetaan dan Visualisasi Data</title>
+
     <meta
         name="description"
-        content="Lim’s Mapping menyediakan jasa pemetaan lahan, analisis spasial, pembaruan peta, peta tematik, digitasi data, dan visualisasi informasi geografis."
+        content="Lim’s Mapping membantu mengolah koordinat, citra, dan data spasial menjadi peta yang jelas, terstruktur, dan siap digunakan."
     >
-
     <meta name="theme-color" content="#0d345d">
 
-    <title>
-        Lim’s Mapping | Jasa Pemetaan dan Visualisasi Data
-    </title>
+    <link
+        rel="canonical"
+        href="https://limsmapping.github.io/lims-mapping-website/"
+    >
+
+    <!-- SOCIAL MEDIA PREVIEW -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lim’s Mapping">
+    <meta
+        property="og:title"
+        content="Lim’s Mapping | Jasa Pemetaan dan Visualisasi Data"
+    >
+    <meta
+        property="og:description"
+        content="Ubah koordinat, citra, dan data lapangan menjadi peta yang jelas, terstruktur, dan siap digunakan."
+    >
+    <meta
+        property="og:url"
+        content="https://limsmapping.github.io/lims-mapping-website/"
+    >
+    <meta
+        property="og:image"
+        content="https://limsmapping.github.io/lims-mapping-website/social-preview.jpg"
+    >
+    <meta
+        property="og:image:secure_url"
+        content="https://limsmapping.github.io/lims-mapping-website/social-preview.jpg"
+    >
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta
+        property="og:image:alt"
+        content="Lim’s Mapping — Jasa Pemetaan dan Visualisasi Data"
+    >
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta
+        name="twitter:title"
+        content="Lim’s Mapping | Jasa Pemetaan dan Visualisasi Data"
+    >
+    <meta
+        name="twitter:description"
+        content="Ubah koordinat, citra, dan data lapangan menjadi peta yang jelas, terstruktur, dan siap digunakan."
+    >
+    <meta
+        name="twitter:image"
+        content="https://limsmapping.github.io/lims-mapping-website/social-preview.jpg"
+    >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link
         rel="preconnect"
         href="https://fonts.gstatic.com"
         crossorigin
     >
-
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet"
     >
 
     <link rel="stylesheet" href="style.css">
-
-    <!-- Penyesuaian layout studi kasus menjadi dua kartu -->
-    <style>
-        .case-study-flow.case-study-flow-two {
-            grid-template-columns:
-                minmax(0, 390px)
-                76px
-                minmax(0, 390px);
-            justify-content: center;
-        }
-
-        .case-study-flow-two .case-stage {
-            height: 100%;
-            width: 100%;
-        }
-
-        .case-study-flow-two .case-stage-media,
-        .case-study-flow-two .case-stage-media a {
-            min-height: 245px;
-        }
-
-        .case-study-flow-two .case-stage-media img {
-            height: 245px;
-            width: 100%;
-        }
-
-        .case-study-flow-two .case-stage-before .case-stage-media img {
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .case-study-flow-two .case-stage-after .case-stage-media img {
-            object-fit: contain;
-            object-position: center;
-        }
-
-        @media (max-width: 900px) {
-            .case-study-flow.case-study-flow-two {
-                grid-template-columns: minmax(0, 520px);
-                justify-content: center;
-            }
-
-            .case-study-flow-two .case-flow-connector {
-                height: 64px;
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 560px) {
-            .case-study-flow.case-study-flow-two {
-                grid-template-columns: minmax(0, 1fr);
-                padding-left: 18px;
-                padding-right: 18px;
-            }
-        }
-    </style>
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header class="site-header">
         <div class="shell navigation">
-
             <a
                 href="#beranda"
                 class="brand"
@@ -184,22 +95,18 @@
                         class="contour contour-one"
                         d="M21 64C5 50 13 23 35 19C55 7 73 18 76 32C93 35 101 50 91 63C82 77 62 77 49 68C39 74 29 72 21 64Z"
                     />
-
                     <path
                         class="contour contour-two"
                         d="M29 58C18 48 24 31 39 28C53 19 66 27 68 39C81 40 87 49 80 59C73 68 59 67 49 61C41 66 34 64 29 58Z"
                     />
-
                     <path
                         class="contour contour-three"
                         d="M38 52C31 46 35 37 44 35C53 30 61 35 62 42C70 43 73 48 69 53C65 59 56 58 50 54C45 57 41 56 38 52Z"
                     />
-
                     <polyline
                         class="route"
                         points="8,68 28,60 48,62 69,47 106,30"
                     />
-
                     <circle class="route-point" cx="8" cy="68" r="4"/>
                     <circle class="route-point" cx="28" cy="60" r="4"/>
                     <circle class="route-point" cx="48" cy="62" r="4"/>
@@ -213,1148 +120,874 @@
                 </span>
             </a>
 
-            <nav
-                class="desktop-nav"
-                aria-label="Navigasi utama"
-            >
-                <a href="#tentang">Tentang</a>
-                <a href="#layanan">Layanan</a>
+            <nav class="desktop-nav" aria-label="Navigasi utama">
                 <a href="#portofolio">Portofolio</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#tentang">Tentang</a>
                 <a href="#proses">Proses</a>
+                <a href="#faq">FAQ</a>
             </nav>
 
             <a
                 class="header-button"
-                href="https://wa.me/6285947185576?text=Halo%20Lim%27s%20Mapping%2C%20saya%20ingin%20mendiskusikan%20kebutuhan%20pemetaan%20saya."
+                href="https://wa.me/6285947185576?text=Halo%20Lim%27s%20Mapping%2C%20saya%20ingin%20meminta%20estimasi%20proyek%20pemetaan.%0A%0AJenis%20kebutuhan%3A%0ALokasi%20proyek%3A%0AData%20yang%20tersedia%3A%0AFormat%20hasil%3A%0ATenggat%20waktu%3A"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Konsultasi
+                Minta Estimasi
             </a>
 
             <details class="mobile-menu">
                 <summary>Menu</summary>
 
                 <div class="mobile-menu-content">
-                    <a href="#tentang">Tentang</a>
-                    <a href="#layanan">Layanan</a>
                     <a href="#portofolio">Portofolio</a>
+                    <a href="#layanan">Layanan</a>
+                    <a href="#tentang">Tentang</a>
                     <a href="#proses">Proses</a>
+                    <a href="#faq">FAQ</a>
                     <a href="#kontak">Kontak</a>
                 </div>
             </details>
-
         </div>
     </header>
 
     <main>
-
         <!-- HERO -->
-        <section
-            class="hero"
-            id="beranda"
-        >
+        <section class="hero" id="beranda">
             <div class="hero-contour hero-contour-one"></div>
             <div class="hero-contour hero-contour-two"></div>
             <div class="dot-pattern hero-dots"></div>
 
             <div class="shell hero-layout">
-
                 <div class="hero-copy">
-
                     <div class="hero-label">
                         <span>LM</span>
-                        Jasa Pemetaan & Visualisasi Data
+                        Pemetaan dan Visualisasi Data Spasial
                     </div>
 
                     <h1>
-                        Peta yang akurat
-                        <span>
-                            untuk keputusan yang lebih meyakinkan.
-                        </span>
+                        Ubah data dan koordinat
+                        <span>menjadi peta yang jelas.</span>
                     </h1>
 
                     <p class="hero-description">
-                        Lim’s Mapping mengolah koordinat, citra, dan
-                        data spasial menjadi peta yang jelas, terukur,
-                        serta siap digunakan untuk analisis,
-                        perencanaan, presentasi, dan dokumentasi proyek.
+                        Lim’s Mapping membantu mengolah koordinat,
+                        citra, dan data lapangan menjadi peta yang
+                        terstruktur, mudah dipahami, dan siap digunakan.
                     </p>
 
                     <div class="hero-actions">
-
                         <a
                             class="button button-green"
-                            href="https://wa.me/6285947185576?text=Halo%20Lim%27s%20Mapping%2C%20saya%20ingin%20mendiskusikan%20kebutuhan%20pemetaan%20saya."
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="#portofolio"
                         >
-                            Diskusikan Proyek
+                            Lihat Portofolio
                         </a>
 
                         <a
                             class="button button-outline"
-                            href="#portofolio"
+                            href="https://wa.me/6285947185576?text=Halo%20Lim%27s%20Mapping%2C%20saya%20ingin%20meminta%20estimasi%20proyek%20pemetaan.%0A%0AJenis%20kebutuhan%3A%0ALokasi%20proyek%3A%0AData%20yang%20tersedia%3A%0AFormat%20hasil%3A%0ATenggat%20waktu%3A"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            Lihat Hasil Pemetaan
+                            Minta Estimasi
                         </a>
-
                     </div>
 
                     <div class="hero-points">
-                        <span>Batas dan luas terukur</span>
-                        <span>Visual mudah dipahami</span>
-                        <span>Output sesuai kebutuhan</span>
+                        <span>Tim kecil GIS</span>
+                        <span>Komunikasi langsung</span>
+                        <span>Output fleksibel</span>
                     </div>
-
                 </div>
 
                 <div class="hero-showcase">
-
                     <div class="showcase-pill">
                         Contoh Hasil Pemetaan
                     </div>
 
                     <div class="showcase-frame">
-                        <img
-                            src="Peta%20Lahan%20Pertanian.jpeg"
-                            alt="Contoh hasil pemetaan luas dan batas lahan pertanian"
+                        <a
+                            href="Peta%20Lahan%20Pertanian.jpeg"
+                            data-lightbox
+                            data-title="Pemetaan Lahan Pertanian"
+                            data-caption="Contoh hasil pemetaan batas dan luas lahan berbasis koordinat."
+                            aria-label="Buka contoh peta lahan pertanian"
                         >
+                            <img
+                                src="Peta%20Lahan%20Pertanian.jpeg"
+                                alt="Contoh hasil pemetaan luas dan batas lahan pertanian"
+                            >
+                        </a>
                     </div>
 
                     <div class="showcase-result">
-                        <span class="check-icon">✓</span>
+                        <span class="check-icon" aria-hidden="true">✓</span>
 
                         <div>
                             <small>Hasil pemetaan</small>
-
                             <strong>
-                                Terukur • Informatif • Siap Digunakan
+                                Terstruktur • Informatif • Siap Digunakan
                             </strong>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- RINGKASAN KREDIBILITAS -->
+        <section
+            class="feature-section credibility-section"
+            aria-label="Ringkasan Lim’s Mapping"
+        >
+            <div class="shell feature-panel credibility-panel">
+                <article class="feature-item">
+                    <div class="feature-symbol" aria-hidden="true">
+                        <svg
+                            viewBox="0 0 48 48"
+                            width="38"
+                            height="38"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <circle cx="18" cy="17" r="6"/>
+                            <circle cx="32" cy="19" r="5"/>
+                            <path d="M7 39C8 30 13 26 19 26C25 26 30 30 31 39"/>
+                            <path d="M29 28C35 27 40 31 41 38"/>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <strong>Tim Kecil GIS</strong>
+                        <span>
+                            Proyek ditangani secara lebih personal,
+                            terarah, dan komunikatif.
+                        </span>
+                    </div>
+                </article>
+
+                <article class="feature-item">
+                    <div class="feature-symbol" aria-hidden="true">
+                        <svg
+                            viewBox="0 0 48 48"
+                            width="38"
+                            height="38"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M7 11L18 7L30 11L41 7V37L30 41L18 37L7 41Z"/>
+                            <path d="M18 7V37"/>
+                            <path d="M30 11V41"/>
+                            <circle cx="24" cy="24" r="4"/>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <strong>Pengalaman Proyek GIS</strong>
+                        <span>
+                            Berpengalaman menangani pemetaan, digitasi,
+                            dan visualisasi data spasial.
+                        </span>
+                    </div>
+                </article>
+
+                <article class="feature-item">
+                    <div class="feature-symbol" aria-hidden="true">
+                        <svg
+                            viewBox="0 0 48 48"
+                            width="38"
+                            height="38"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <path d="M10 7H31L39 15V41H10Z"/>
+                            <path d="M31 7V15H39"/>
+                            <path d="M16 24H33"/>
+                            <path d="M16 30H33"/>
+                            <path d="M16 36H27"/>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <strong>Output Fleksibel</strong>
+                        <span>
+                            Format hasil disesuaikan dengan ruang lingkup
+                            dan kebutuhan penggunaan.
+                        </span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PORTOFOLIO TERPILIH -->
+        <section id="portofolio" class="section portfolio-section">
+            <div class="dot-pattern portfolio-dots"></div>
+
+            <div class="shell">
+                <div class="section-heading wide-heading">
+                    <p class="section-label">01 / Portofolio Terpilih</p>
+
+                    <h2>Bukti pekerjaan, bukan sekadar klaim.</h2>
+
+                    <p>
+                        Lihat contoh hasil pemetaan, pembaruan visual,
+                        analisis spasial, dan layout peta yang telah
+                        dikerjakan untuk berbagai kebutuhan.
+                    </p>
                 </div>
 
+                <div class="portfolio-list portfolio-list-compact">
+                    <!-- SAUSAPOR -->
+                    <article class="portfolio-card portfolio-card-featured">
+                        <div class="portfolio-image">
+                            <a
+                                href="peta-hasil-sausapor.png"
+                                data-lightbox
+                                data-title="Pembaruan Peta Sausapor"
+                                data-caption="Peta kerja diperbarui menggunakan referensi terbaru agar jalan, bangunan, batas wilayah, dan objek penting lebih mudah dibaca."
+                                aria-label="Buka hasil pembaruan peta Sausapor"
+                            >
+                                <img
+                                    src="peta-hasil-sausapor.png"
+                                    alt="Peta hasil pembaruan wilayah Sausapor"
+                                    loading="lazy"
+                                >
+                            </a>
+
+                            <span class="portfolio-badge">
+                                Studi Kasus Utama
+                            </span>
+                        </div>
+
+                        <div class="portfolio-copy">
+                            <p class="portfolio-category">
+                                Pembaruan Peta Kerja
+                            </p>
+
+                            <h3>
+                                Pembaruan data dan visual peta Sausapor.
+                            </h3>
+
+                            <p>
+                                Peta lama disusun ulang menggunakan
+                                referensi terbaru agar lebih jelas dan
+                                relevan untuk kegiatan lapangan.
+                            </p>
+
+                            <div class="result-list result-list-compact">
+                                <span>Data terbaru</span>
+                                <span>Before dan after</span>
+                                <span>Siap digunakan</span>
+                            </div>
+
+                            <a
+                                class="portfolio-link"
+                                href="#studi-kasus-sausapor"
+                            >
+                                Lihat studi kasus
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- MAKASSAR -->
+                    <article class="portfolio-card portfolio-card-featured">
+                        <div class="portfolio-image">
+                            <a
+                                href="Peta-After-Makassar.jpeg"
+                                data-lightbox
+                                data-title="Penyempurnaan Peta Makassar"
+                                data-caption="Peta awal disempurnakan menjadi visual yang lebih jelas, rapi, dan mudah dipahami."
+                                aria-label="Buka hasil penyempurnaan peta Makassar"
+                            >
+                                <img
+                                    src="Peta-After-Makassar.jpeg"
+                                    alt="Peta Makassar setelah penyempurnaan visual"
+                                    loading="lazy"
+                                >
+                            </a>
+
+                            <span class="portfolio-badge">
+                                Before dan After
+                            </span>
+                        </div>
+
+                        <div class="portfolio-copy">
+                            <p class="portfolio-category">
+                                Penyempurnaan Visual Peta
+                            </p>
+
+                            <h3>
+                                Peta Makassar yang lebih jelas dan terstruktur.
+                            </h3>
+
+                            <p>
+                                Elemen visual ditata ulang agar informasi
+                                utama lebih mudah dikenali dan dipresentasikan.
+                            </p>
+
+                            <div class="result-list result-list-compact">
+                                <span>Lebih jelas</span>
+                                <span>Lebih rapi</span>
+                                <span>Testimoni asli</span>
+                            </div>
+
+                            <a
+                                class="portfolio-link"
+                                href="#studi-kasus-makassar"
+                            >
+                                Lihat perbandingan
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- LAHAN PERTANIAN -->
+                    <article class="portfolio-card portfolio-card-compact">
+                        <div class="portfolio-image">
+                            <a
+                                href="Peta%20Lahan%20Pertanian.jpeg"
+                                data-lightbox
+                                data-title="Pemetaan Lahan Pertanian"
+                                data-caption="Pengolahan titik koordinat dan citra menjadi peta batas, posisi patok, dan luas lahan."
+                                aria-label="Buka peta lahan pertanian"
+                            >
+                                <img
+                                    src="Peta%20Lahan%20Pertanian.jpeg"
+                                    alt="Pemetaan batas dan luas lahan pertanian berbasis koordinat"
+                                    loading="lazy"
+                                >
+                            </a>
+
+                            <span class="portfolio-badge">Pemetaan Lahan</span>
+                        </div>
+
+                        <div class="portfolio-copy">
+                            <p class="portfolio-category">
+                                Pemetaan Lahan Pertanian
+                            </p>
+                            <h3>Batas dan luas lahan berbasis koordinat.</h3>
+                            <p>
+                                Menampilkan bentuk bidang, titik patok,
+                                koordinat, dan luas area secara terstruktur.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- PERSEBARAN INDUSTRI -->
+                    <article class="portfolio-card portfolio-card-compact">
+                        <div class="portfolio-image">
+                            <a
+                                href="Visual%20Sebaran%20Sarana%20Industri%20.png"
+                                data-lightbox
+                                data-title="Pemetaan Persebaran Industri"
+                                data-caption="Visualisasi lokasi industri, jaringan jalan, batas administrasi, dan klasifikasi skala industri."
+                                aria-label="Buka peta persebaran sarana industri"
+                            >
+                                <img
+                                    src="Visual%20Sebaran%20Sarana%20Industri%20.png"
+                                    alt="Peta persebaran sarana industri"
+                                    loading="lazy"
+                                >
+                            </a>
+
+                            <span class="portfolio-badge">Peta Tematik</span>
+                        </div>
+
+                        <div class="portfolio-copy">
+                            <p class="portfolio-category">
+                                Persebaran Sarana Industri
+                            </p>
+                            <h3>Lokasi dan klasifikasi industri dalam satu peta.</h3>
+                            <p>
+                                Informasi persebaran disajikan bersama
+                                jaringan jalan dan batas wilayah.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- KEMIRINGAN LERENG -->
+                    <article class="portfolio-card portfolio-card-compact">
+                        <div class="portfolio-image">
+                            <a
+                                href="Peta-Kemiringan-Lereng.jpeg"
+                                data-lightbox
+                                data-title="Peta Kemiringan Lereng"
+                                data-caption="Klasifikasi tingkat kecuraman wilayah untuk membantu analisis kondisi topografi dan perencanaan lahan."
+                                aria-label="Buka peta kemiringan lereng"
+                            >
+                                <img
+                                    src="Peta-Kemiringan-Lereng.jpeg"
+                                    alt="Peta klasifikasi kemiringan lereng"
+                                    loading="lazy"
+                                >
+                            </a>
+
+                            <span class="portfolio-badge">
+                                Analisis Topografi
+                            </span>
+                        </div>
+
+                        <div class="portfolio-copy">
+                            <p class="portfolio-category">
+                                Peta Kemiringan Lereng
+                            </p>
+                            <h3>Klasifikasi area datar hingga curam.</h3>
+                            <p>
+                                Kondisi topografi divisualisasikan untuk
+                                membantu evaluasi dan perencanaan lahan.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- PENGGUNAAN LAHAN -->
+                    <article class="portfolio-card portfolio-card-compact">
+                        <div class="portfolio-image">
+                            <a
+                                href="Peta-Penggunaan-Lahan.jpeg"
+                                data-lightbox
+                                data-title="Peta Penggunaan Lahan"
+                                data-caption="Visualisasi fungsi dominan dan pola pemanfaatan ruang pada suatu kawasan."
+                                aria-label="Buka peta penggunaan lahan"
+                            >
+                                <img
+                                    src="Peta-Penggunaan-Lahan.jpeg"
+                                    alt="Peta penggunaan lahan"
+                                    loading="lazy"
+                                >
+                            </a>
+
+                            <span class="portfolio-badge">
+                                Penggunaan Lahan
+                            </span>
+                        </div>
+
+                        <div class="portfolio-copy">
+                            <p class="portfolio-category">
+                                Peta Penggunaan Lahan
+                            </p>
+                            <h3>Fungsi dan pola pemanfaatan ruang.</h3>
+                            <p>
+                                Membantu memahami persebaran permukiman,
+                                fasilitas, jalan, dan fungsi kawasan lainnya.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- POLA RUANG -->
+                    <article class="portfolio-card portfolio-card-compact">
+                        <div class="portfolio-image">
+                            <a
+                                href="Peta-Pola-Ruang.jpeg"
+                                data-lightbox
+                                data-title="Peta Pola Ruang Eksisting"
+                                data-caption="Visualisasi struktur dan fungsi pemanfaatan kawasan berdasarkan kondisi aktual."
+                                aria-label="Buka peta pola ruang eksisting"
+                            >
+                                <img
+                                    src="Peta-Pola-Ruang.jpeg"
+                                    alt="Peta pola ruang eksisting"
+                                    loading="lazy"
+                                >
+                            </a>
+
+                            <span class="portfolio-badge">
+                                Analisis Tata Ruang
+                            </span>
+                        </div>
+
+                        <div class="portfolio-copy">
+                            <p class="portfolio-category">
+                                Peta Pola Ruang Eksisting
+                            </p>
+                            <h3>Struktur ruang aktual dalam satu visual.</h3>
+                            <p>
+                                Menampilkan hubungan antarfungsi kawasan
+                                sebagai referensi evaluasi tata ruang.
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
 
         <!-- TENTANG -->
-<section
-    id="tentang"
-    class="section about-section"
->
-    <div class="shell about-layout">
+        <section id="tentang" class="section about-section">
+            <div class="shell about-layout">
+                <div class="section-heading">
+                    <p class="section-label">02 / Tentang Lim’s Mapping</p>
 
-        <div class="section-heading">
-
-            <p class="section-label">
-                Tentang Lim’s Mapping
-            </p>
-
-            <h2>
-                Mengolah informasi lokasi menjadi peta yang
-                presisi, terukur, dan siap digunakan.
-            </h2>
-
-        </div>
-
-        <div class="about-copy">
-
-            <p>
-                Lim’s Mapping membantu individu, perusahaan,
-                organisasi, dan instansi mengolah data berbasis
-                lokasi menjadi informasi geospasial yang akurat,
-                terstruktur, dan relevan dengan kebutuhan proyek.
-            </p>
-
-            <p>
-                Kami mengintegrasikan titik koordinat, citra,
-                data lapangan, serta referensi spasial untuk
-                menghasilkan peta yang tidak hanya jelas secara
-                visual, tetapi juga dapat dipertanggungjawabkan
-                secara teknis.
-            </p>
-
-            <p>
-                Setiap hasil dirancang agar mudah dipahami dan
-                siap digunakan untuk kebutuhan survei, analisis,
-                perencanaan, dokumentasi, pelaporan, presentasi,
-                hingga pengambilan keputusan.
-            </p>
-
-            <div class="about-stat">
-
-                <strong>
-                    Presisi &amp; Adaptif
-                </strong>
-
-                <span>
-                    Skala, tingkat detail, format keluaran, dan
-                    gaya visual disesuaikan dengan karakter data,
-                    tujuan proyek, serta konteks penggunaannya.
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
-       <!-- LAYANAN -->
-<section
-    id="layanan"
-    class="section services-section"
->
-    <div class="shell">
-
-        <div class="section-heading wide-heading">
-
-            <p class="section-label">
-                Layanan Kami
-            </p>
-
-            <h2>
-                Dari data lapangan menjadi peta yang siap digunakan.
-            </h2>
-
-            <p>
-                Kami membantu mengolah koordinat, citra, dan informasi
-                wilayah menjadi peta yang akurat, mudah dipahami, serta
-                relevan untuk kebutuhan survei, analisis, perencanaan,
-                dokumentasi, dan pengambilan keputusan.
-            </p>
-
-        </div>
-
-        <div class="service-grid">
-
-            <!-- 01 PEMETAAN LAHAN -->
-            <article class="service-card">
-
-                <span class="service-number">
-                    01
-                </span>
-
-                <div
-                    class="service-icon"
-                    aria-hidden="true"
-                >
-                    <svg
-                        viewBox="0 0 48 48"
-                        width="34"
-                        height="34"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        focusable="false"
-                    >
-                        <path d="M11 13L29 8L39 18L35 36L17 40L8 28Z"/>
-                        <circle cx="11" cy="13" r="2.5"/>
-                        <circle cx="29" cy="8" r="2.5"/>
-                        <circle cx="39" cy="18" r="2.5"/>
-                        <circle cx="35" cy="36" r="2.5"/>
-                        <circle cx="17" cy="40" r="2.5"/>
-                        <circle cx="8" cy="28" r="2.5"/>
-                        <path d="M17 18L29 15L33 24L27 33L16 30Z"/>
-                    </svg>
+                    <h2>Tim kecil dengan pendekatan yang terarah.</h2>
                 </div>
 
-                <h3>
-                    Pemetaan dan Delineasi Lahan
-                </h3>
-
-                <p>
-                    Menentukan batas, bentuk, luas, dan posisi lahan
-                    berdasarkan titik koordinat, citra, serta data
-                    lapangan. Hasil pemetaan disusun secara terukur
-                    agar mudah digunakan untuk dokumentasi,
-                    perencanaan, maupun verifikasi lokasi.
-                </p>
-
-            </article>
-
-            <!-- 02 ANALISIS POTENSI WILAYAH -->
-            <article class="service-card">
-
-                <span class="service-number">
-                    02
-                </span>
-
-                <div
-                    class="service-icon"
-                    aria-hidden="true"
-                >
-                    <svg
-                        viewBox="0 0 48 48"
-                        width="34"
-                        height="34"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        focusable="false"
-                    >
-                        <path d="M8 33C13 25 18 38 24 28C30 18 34 28 40 17"/>
-                        <path d="M9 16C15 10 22 18 28 12C34 7 38 12 41 10"/>
-                        <circle cx="24" cy="24" r="5"/>
-                        <path d="M24 19V29"/>
-                        <path d="M19 24H29"/>
-                        <path d="M11 40H39"/>
-                    </svg>
-                </div>
-
-                <h3>
-                    Analisis Potensi Wilayah
-                </h3>
-
-                <p>
-                    Mengolah berbagai parameter lokasi untuk mengenali
-                    karakteristik, peluang, dan keterbatasan suatu
-                    wilayah. Analisis membantu memberikan gambaran
-                    yang lebih objektif sebelum menentukan rencana
-                    pemanfaatan atau pengembangan lahan.
-                </p>
-
-            </article>
-
-            <!-- 03 PETA TEMATIK -->
-            <article class="service-card">
-
-                <span class="service-number">
-                    03
-                </span>
-
-                <div
-                    class="service-icon"
-                    aria-hidden="true"
-                >
-                    <svg
-                        viewBox="0 0 48 48"
-                        width="34"
-                        height="34"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        focusable="false"
-                    >
-                        <path d="M7 11L18 7L30 11L41 7V37L30 41L18 37L7 41Z"/>
-                        <path d="M18 7V37"/>
-                        <path d="M30 11V41"/>
-                        <path d="M10 18L15 16"/>
-                        <path d="M21 15L27 18"/>
-                        <path d="M33 17L38 14"/>
-                        <path d="M10 29L15 31"/>
-                        <path d="M21 28L27 25"/>
-                        <path d="M33 29L38 31"/>
-                    </svg>
-                </div>
-
-                <h3>
-                    Pembuatan Peta Tematik
-                </h3>
-
-                <p>
-                    Menyajikan data berdasarkan tema tertentu, seperti
-                    penggunaan lahan, kepadatan, potensi wilayah,
-                    infrastruktur, atau kondisi lingkungan. Informasi
-                    yang kompleks diubah menjadi visual yang lebih
-                    ringkas dan mudah dipahami.
-                </p>
-
-            </article>
-
-            <!-- 04 DIGITASI DATA -->
-            <article class="service-card">
-
-                <span class="service-number">
-                    04
-                </span>
-
-                <div
-                    class="service-icon"
-                    aria-hidden="true"
-                >
-                    <svg
-                        viewBox="0 0 48 48"
-                        width="34"
-                        height="34"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        focusable="false"
-                    >
-                        <path d="M11 35L15 25L32 8L40 16L23 33L11 35Z"/>
-                        <path d="M29 11L37 19"/>
-                        <path d="M15 25L23 33"/>
-                        <circle cx="10" cy="39" r="2.5"/>
-                        <circle cx="24" cy="39" r="2.5"/>
-                        <circle cx="38" cy="35" r="2.5"/>
-                        <path d="M12.5 39H21.5"/>
-                        <path d="M26.5 39L35.5 35.8"/>
-                    </svg>
-                </div>
-
-                <h3>
-                    Digitasi dan Pembaruan Data Spasial
-                </h3>
-
-                <p>
-                    Menggambar ulang batas wilayah, jalan, bangunan,
-                    sungai, serta objek lainnya dari citra atau peta
-                    referensi. Data lama juga dapat diperbarui agar
-                    lebih sesuai dengan perubahan dan kondisi terbaru
-                    di lapangan.
-                </p>
-
-            </article>
-
-            <!-- 05 ANALISIS PERSEBARAN -->
-            <article class="service-card">
-
-                <span class="service-number">
-                    05
-                </span>
-
-                <div
-                    class="service-icon"
-                    aria-hidden="true"
-                >
-                    <svg
-                        viewBox="0 0 48 48"
-                        width="34"
-                        height="34"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        focusable="false"
-                    >
-                        <circle cx="15" cy="15" r="3"/>
-                        <circle cx="33" cy="12" r="2.5"/>
-                        <circle cx="36" cy="31" r="4"/>
-                        <circle cx="18" cy="35" r="2.5"/>
-                        <circle cx="25" cy="24" r="5"/>
-                        <path d="M17.5 16.5L21 20.5"/>
-                        <path d="M29 20L32 15"/>
-                        <path d="M29 27L33 29"/>
-                        <path d="M22 29L19.5 33"/>
-                        <circle cx="25" cy="24" r="10" opacity="0.45"/>
-                    </svg>
-                </div>
-
-                <h3>
-                    Analisis Persebaran dan Pola Lokasi
-                </h3>
-
-                <p>
-                    Memetakan sebaran objek untuk melihat pola,
-                    konsentrasi, keterhubungan, dan perbedaan
-                    antarwilayah. Hasil analisis membantu
-                    mengidentifikasi area prioritas serta mendukung
-                    keputusan berbasis lokasi.
-                </p>
-
-            </article>
-
-            <!-- 06 VISUALISASI DATA -->
-            <article class="service-card">
-
-                <span class="service-number">
-                    06
-                </span>
-
-                <div
-                    class="service-icon"
-                    aria-hidden="true"
-                >
-                    <svg
-                        viewBox="0 0 48 48"
-                        width="34"
-                        height="34"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        focusable="false"
-                    >
-                        <rect x="7" y="8" width="34" height="32" rx="3"/>
-                        <path d="M7 18H41"/>
-                        <path d="M25 18V40"/>
-                        <path d="M12 34V27"/>
-                        <path d="M17 34V23"/>
-                        <path d="M22 34V29"/>
-                        <path d="M30 31L34 26L38 28"/>
-                        <circle cx="30" cy="31" r="1.5"/>
-                        <circle cx="34" cy="26" r="1.5"/>
-                        <circle cx="38" cy="28" r="1.5"/>
-                    </svg>
-                </div>
-
-                <h3>
-                    Visualisasi Data Geospasial
-                </h3>
-
-                <p>
-                    Mengubah data spasial dan statistik menjadi peta,
-                    grafik, tabel, dan infografik yang komunikatif.
-                    Setiap visual dirancang agar informasi penting
-                    lebih cepat dipahami dan siap digunakan dalam
-                    laporan atau presentasi.
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-</section>
-
-        <!-- KEUNGGULAN -->
-<section
-    class="feature-section"
-    aria-label="Keunggulan layanan Lim’s Mapping"
->
-    <div class="shell feature-panel">
-
-        <!-- 01 DATA AKURAT -->
-        <article class="feature-item">
-
-            <div
-                class="feature-symbol"
-                aria-hidden="true"
-            >
-                <!-- Ikon layer peta dengan tanda centang -->
-                <svg
-                    viewBox="0 0 48 48"
-                    width="38"
-                    height="38"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    focusable="false"
-                >
-                    <path d="M7 15L24 7L41 15L24 23L7 15Z"/>
-                    <path d="M7 23L24 31L41 23"/>
-                    <path d="M7 31L24 39L32 35"/>
-                    <circle cx="37" cy="34" r="7"/>
-                    <path d="M33.5 34L36 36.5L41 31.5"/>
-                </svg>
-            </div>
-
-            <div>
-                <strong>
-                    Data Akurat, Mudah Dibaca
-                </strong>
-
-                <span>
-                    Koordinat, batas wilayah, dan atribut penting
-                    disusun secara sistematis agar informasi lebih
-                    cepat dipahami serta minim kesalahan interpretasi.
-                </span>
-            </div>
-
-        </article>
-
-        <!-- 02 SESUAI TUJUAN PROYEK -->
-        <article class="feature-item">
-
-            <div
-                class="feature-symbol"
-                aria-hidden="true"
-            >
-                <!-- Ikon peta dengan slider pengaturan -->
-                <svg
-                    viewBox="0 0 48 48"
-                    width="38"
-                    height="38"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    focusable="false"
-                >
-                    <path d="M6 11L17 7L29 11L42 7V30"/>
-                    <path d="M6 11V37L17 33L29 37L34 35"/>
-                    <path d="M17 7V33"/>
-                    <path d="M29 11V29"/>
-
-                    <path d="M32 19H43"/>
-                    <circle cx="36" cy="19" r="2.5"/>
-
-                    <path d="M32 27H43"/>
-                    <circle cx="40" cy="27" r="2.5"/>
-
-                    <path d="M32 35H43"/>
-                    <circle cx="35" cy="35" r="2.5"/>
-                </svg>
-            </div>
-
-            <div>
-                <strong>
-                    Dirancang Sesuai Tujuan Proyek
-                </strong>
-
-                <span>
-                    Skala, simbol, tingkat detail, dan format keluaran
-                    disesuaikan dengan kebutuhan survei, analisis,
-                    perencanaan, maupun dokumentasi.
-                </span>
-            </div>
-
-        </article>
-
-        <!-- 03 SIAP DIGUNAKAN -->
-        <article class="feature-item">
-
-            <div
-                class="feature-symbol"
-                aria-hidden="true"
-            >
-                <!-- Ikon layar presentasi dengan peta dan centang -->
-                <svg
-                    viewBox="0 0 48 48"
-                    width="38"
-                    height="38"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    focusable="false"
-                >
-                    <rect
-                        x="6"
-                        y="7"
-                        width="36"
-                        height="27"
-                        rx="2"
-                    />
-
-                    <path d="M24 34V41"/>
-                    <path d="M17 41H31"/>
-
-                    <path d="M11 14L18 11L25 14L31 11V26L25 29L18 26L11 29Z"/>
-                    <path d="M18 11V26"/>
-                    <path d="M25 14V29"/>
-
-                    <circle cx="36" cy="26" r="7"/>
-                    <path d="M32.5 26L35 28.5L40 23.5"/>
-                </svg>
-            </div>
-
-            <div>
-                <strong>
-                    Siap Digunakan dan Dipresentasikan
-                </strong>
-
-                <span>
-                    Hasil akhir dirancang agar efektif digunakan di
-                    lapangan sekaligus tampil profesional dalam
-                    laporan, bahan presentasi, publikasi, dan cetakan.
-                </span>
-            </div>
-
-        </article>
-
-    </div>
-</section>
-
-        <!-- PORTOFOLIO -->
-        <section
-            id="portofolio"
-            class="section portfolio-section"
-        >
-            <div class="dot-pattern portfolio-dots"></div>
-
-            <div class="shell">
-
-                <div class="section-heading wide-heading">
-
-                    <p class="section-label">
-                        Studi Kasus
+                <div class="about-copy">
+                    <p>
+                        Lim’s Mapping merupakan layanan pemetaan yang
+                        dikerjakan oleh tim kecil dengan pengalaman dalam
+                        berbagai kebutuhan proyek GIS.
                     </p>
 
+                    <p>
+                        Setiap proyek ditangani melalui komunikasi langsung,
+                        pemeriksaan data, pengolahan spasial, dan penyusunan
+                        visual sesuai tujuan penggunaan.
+                    </p>
+
+                    <div class="about-stat about-credentials">
+                        <strong>Fokus Keahlian</strong>
+
+                        <span>
+                            GIS Mapping • Spatial Data • Map Visualization
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYANAN -->
+        <section id="layanan" class="section services-section">
+            <div class="shell">
+                <div class="section-heading wide-heading">
+                    <p class="section-label">03 / Layanan</p>
+
                     <h2>
-                        Hasil pemetaan untuk berbagai kebutuhan.
+                        Layanan pemetaan yang disesuaikan dengan kebutuhan data.
                     </h2>
 
                     <p>
-                        Contoh pengolahan data spasial menjadi peta yang
-                        lebih terstruktur, komunikatif, dan siap
-                        digunakan untuk kebutuhan lapangan.
+                        Empat kelompok layanan utama untuk membantu mengubah
+                        data lokasi menjadi informasi visual yang lebih jelas.
                     </p>
-
                 </div>
 
-                <!-- STUDI KASUS UTAMA SAUSAPOR -->
+                <div class="service-grid service-grid-four">
+                    <article class="service-card">
+                        <span class="service-number">01</span>
+
+                        <div class="service-icon" aria-hidden="true">
+                            <svg
+                                viewBox="0 0 48 48"
+                                width="34"
+                                height="34"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M11 13L29 8L39 18L35 36L17 40L8 28Z"/>
+                                <circle cx="11" cy="13" r="2.5"/>
+                                <circle cx="29" cy="8" r="2.5"/>
+                                <circle cx="39" cy="18" r="2.5"/>
+                                <circle cx="35" cy="36" r="2.5"/>
+                                <circle cx="17" cy="40" r="2.5"/>
+                                <circle cx="8" cy="28" r="2.5"/>
+                            </svg>
+                        </div>
+
+                        <h3>Pemetaan Lahan dan Batas</h3>
+
+                        <p>
+                            Pengolahan koordinat, delineasi area, serta
+                            penyajian batas wilayah atau bidang lahan.
+                        </p>
+
+                        <div class="service-tags" aria-label="Cakupan layanan">
+                            <span>Koordinat</span>
+                            <span>Batas</span>
+                            <span>Luas area</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-number">02</span>
+
+                        <div class="service-icon" aria-hidden="true">
+                            <svg
+                                viewBox="0 0 48 48"
+                                width="34"
+                                height="34"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M11 35L15 25L32 8L40 16L23 33L11 35Z"/>
+                                <path d="M29 11L37 19"/>
+                                <path d="M15 25L23 33"/>
+                                <circle cx="10" cy="39" r="2.5"/>
+                                <circle cx="24" cy="39" r="2.5"/>
+                                <circle cx="38" cy="35" r="2.5"/>
+                            </svg>
+                        </div>
+
+                        <h3>Digitasi dan Pembaruan Peta</h3>
+
+                        <p>
+                            Mengubah peta lama atau data mentah menjadi
+                            data spasial yang lebih rapi dan relevan.
+                        </p>
+
+                        <div class="service-tags" aria-label="Cakupan layanan">
+                            <span>Digitasi</span>
+                            <span>Redrawing</span>
+                            <span>Update data</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-number">03</span>
+
+                        <div class="service-icon" aria-hidden="true">
+                            <svg
+                                viewBox="0 0 48 48"
+                                width="34"
+                                height="34"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <circle cx="15" cy="15" r="3"/>
+                                <circle cx="33" cy="12" r="2.5"/>
+                                <circle cx="36" cy="31" r="4"/>
+                                <circle cx="18" cy="35" r="2.5"/>
+                                <circle cx="25" cy="24" r="5"/>
+                                <circle cx="25" cy="24" r="10" opacity="0.45"/>
+                            </svg>
+                        </div>
+
+                        <h3>Analisis Spasial dan Tematik</h3>
+
+                        <p>
+                            Penyajian pola persebaran, potensi wilayah,
+                            topografi, dan informasi tematik lainnya.
+                        </p>
+
+                        <div class="service-tags" aria-label="Cakupan layanan">
+                            <span>Tematik</span>
+                            <span>Persebaran</span>
+                            <span>Topografi</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-number">04</span>
+
+                        <div class="service-icon" aria-hidden="true">
+                            <svg
+                                viewBox="0 0 48 48"
+                                width="34"
+                                height="34"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect x="7" y="8" width="34" height="32" rx="3"/>
+                                <path d="M7 18H41"/>
+                                <path d="M25 18V40"/>
+                                <path d="M12 34V27"/>
+                                <path d="M17 34V23"/>
+                                <path d="M22 34V29"/>
+                                <path d="M30 31L34 26L38 28"/>
+                            </svg>
+                        </div>
+
+                        <h3>Layout dan Visualisasi Peta</h3>
+
+                        <p>
+                            Penyusunan peta untuk laporan, presentasi,
+                            dokumentasi, publikasi, dan kebutuhan cetak.
+                        </p>
+
+                        <div class="service-tags" aria-label="Cakupan layanan">
+                            <span>Layout</span>
+                            <span>Presentasi</span>
+                            <span>Siap cetak</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- STUDI KASUS UTAMA -->
+        <section id="studi-kasus" class="section case-studies-section">
+            <div class="shell">
+                <div class="section-heading wide-heading">
+                    <p class="section-label">Studi Kasus</p>
+                    <h2>Melihat proses perubahan secara lebih dekat.</h2>
+                    <p>
+                        Dua contoh proyek yang menunjukkan bagaimana data
+                        dan peta awal disempurnakan menjadi hasil yang lebih jelas.
+                    </p>
+                </div>
+
+                <!-- SAUSAPOR -->
                 <article
+                    id="studi-kasus-sausapor"
                     class="case-study case-study-featured"
                     aria-labelledby="sausapor-title"
                 >
-
-                    <!-- HEADER STUDI KASUS -->
                     <header class="case-study-header">
-
                         <div class="case-study-meta">
-                            <span>Studi Kasus</span>
+                            <span>Studi Kasus Utama</span>
                             <span>Sausapor</span>
-                            <span>Sensus Ekonomi 2026</span>
+                            <span>Pembaruan Peta Kerja</span>
                         </div>
 
                         <div class="case-study-heading">
-
                             <div class="case-study-title">
-
                                 <p class="portfolio-category">
-                                    Pembaruan Peta Kerja
+                                    Pembaruan Data dan Visual
                                 </p>
 
                                 <h3 id="sausapor-title">
-                                    Pembaruan Data dan Visual Peta
-                                    untuk Kegiatan Lapangan
+                                    Peta kerja yang lebih sesuai dengan kondisi lapangan.
                                 </h3>
-
                             </div>
 
                             <p class="case-study-intro">
-                                Peta wilayah Sausapor diperbarui
-                                menggunakan citra drone dan data terbaru
-                                agar informasi jalan, bangunan, batas
-                                wilayah, serta objek penting lebih jelas
-                                dan relevan dengan kondisi lapangan.
+                                Peta wilayah Sausapor diperbarui menggunakan
+                                citra dan data terbaru agar jalan, bangunan,
+                                batas wilayah, dan objek penting lebih mudah dibaca.
                             </p>
-
                         </div>
-
                     </header>
 
-                    <!-- BEFORE & AFTER -->
                     <div
                         class="case-study-flow case-study-flow-two"
                         aria-label="Perbandingan peta Sausapor sebelum dan sesudah pembaruan"
                     >
-
-                        <!-- 01 PETA AWAL -->
                         <figure class="case-stage case-stage-before">
-
                             <div class="case-stage-media">
-
                                 <a
                                     href="peta-awal-sausapor.jpg"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="Buka peta awal Sausapor ukuran penuh"
+                                    data-lightbox
+                                    data-title="Peta Awal Sausapor"
+                                    data-caption="Referensi lama masih buram dan belum menunjukkan kondisi wilayah secara jelas."
+                                    aria-label="Buka peta awal Sausapor"
                                 >
                                     <img
                                         src="peta-awal-sausapor.jpg"
-                                        alt="Peta lama Sausapor dengan visual buram dan batas bangunan yang belum terlihat jelas"
+                                        alt="Peta awal Sausapor sebelum pembaruan"
                                         loading="lazy"
                                     >
                                 </a>
 
-                                <span class="case-stage-label">
-                                    Before
-                                </span>
-
-                                <span
-                                    class="case-stage-number"
-                                    aria-hidden="true"
-                                >
-                                    01
-                                </span>
-
+                                <span class="case-stage-label">Before</span>
+                                <span class="case-stage-number" aria-hidden="true">01</span>
                             </div>
 
                             <figcaption>
-
-                                <p class="case-stage-kicker">
-                                    Peta Awal
-                                </p>
-
+                                <p class="case-stage-kicker">Peta Awal</p>
                                 <h4>
-                                    Visual peta masih buram dan belum
-                                    menunjukkan batas bangunan serta
-                                    kondisi wilayah secara jelas.
+                                    Detail wilayah belum mudah dikenali.
                                 </h4>
-
                                 <p>
-                                    Peta awal masih menggunakan referensi
-                                    lama, sehingga detail jalan, bangunan,
-                                    batas wilayah, dan objek penting sulit
-                                    dikenali. Akibatnya, informasi pada
-                                    peta dapat berbeda jauh dengan kondisi
-                                    aktual ketika petugas survei turun
-                                    langsung ke lapangan.
+                                    Referensi lama membuat jalan, bangunan,
+                                    batas, dan objek penting sulit dibandingkan
+                                    dengan keadaan terbaru di lapangan.
                                 </p>
-
                             </figcaption>
-
                         </figure>
 
-                        <div
-                            class="case-flow-connector"
-                            aria-hidden="true"
-                        >
+                        <div class="case-flow-connector" aria-hidden="true">
                             <span></span>
                         </div>
 
-                        <!-- 02 PETA HASIL -->
                         <figure class="case-stage case-stage-after">
-
                             <div class="case-stage-media">
-
                                 <a
                                     href="peta-hasil-sausapor.png"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label="Buka peta hasil Sausapor ukuran penuh"
+                                    data-lightbox
+                                    data-title="Peta Hasil Sausapor"
+                                    data-caption="Peta disusun ulang menggunakan referensi terbaru agar lebih jelas dan siap digunakan."
+                                    aria-label="Buka peta hasil Sausapor"
                                 >
                                     <img
                                         src="peta-hasil-sausapor.png"
-                                        alt="Peta hasil Sausapor yang dibuat ulang menggunakan citra drone terbaru dengan batas wilayah survei yang lebih presisi"
+                                        alt="Peta Sausapor setelah pembaruan"
                                         loading="lazy"
                                     >
                                 </a>
 
-                                <span class="case-stage-label">
-                                    After
-                                </span>
-
-                                <span
-                                    class="case-stage-number"
-                                    aria-hidden="true"
-                                >
-                                    02
-                                </span>
-
+                                <span class="case-stage-label">After</span>
+                                <span class="case-stage-number" aria-hidden="true">02</span>
                             </div>
 
                             <figcaption>
-
-                                <p class="case-stage-kicker">
-                                    Peta Hasil
-                                </p>
-
+                                <p class="case-stage-kicker">Peta Hasil</p>
                                 <h4>
-                                    Dibuat ulang dengan citra drone
-                                    terbaru dan batas wilayah survei
-                                    yang digambar lebih presisi.
+                                    Informasi disusun lebih jelas dan terstruktur.
                                 </h4>
-
                                 <p>
-                                    Peta direkonstruksi menggunakan citra
-                                    drone terkini sebagai referensi utama.
-                                    Garis batas wilayah survei, jalan,
-                                    bangunan, dan objek penting digambar
-                                    kembali secara presisi sehingga
-                                    hasilnya lebih jelas, terstruktur,
-                                    dan mudah dibandingkan dengan peta
-                                    sebelumnya.
+                                    Jalan, bangunan, batas wilayah, dan label
+                                    digambar kembali agar lebih mudah digunakan
+                                    untuk kegiatan lapangan maupun dokumentasi.
                                 </p>
-
                             </figcaption>
-
                         </figure>
-
                     </div>
 
-                    <!-- RINGKASAN HASIL -->
                     <div class="case-study-summary">
-
                         <div class="case-summary-heading">
-
-                            <p class="section-label">
-                                Hasil Pembaruan
-                            </p>
-
+                            <p class="section-label">Hasil Pembaruan</p>
                             <h4>
-                                Informasi yang lebih jelas untuk
-                                membantu kegiatan di lapangan.
+                                Tiga perbaikan yang langsung mendukung penggunaan peta.
                             </h4>
-
                         </div>
 
-                        <div class="case-result-grid">
-
+                        <div class="case-result-grid case-result-grid-three">
                             <article class="case-result-item">
-
-                                <span
-                                    class="case-result-icon"
-                                    aria-hidden="true"
-                                >
-                                    01
-                                </span>
-
+                                <span class="case-result-icon" aria-hidden="true">01</span>
                                 <div>
                                     <strong>Lebih Jelas</strong>
-
                                     <p>
-                                        Jalan, bangunan, batas wilayah,
-                                        dan label lebih mudah dibedakan.
+                                        Jalan, bangunan, batas, dan label
+                                        lebih mudah dibedakan.
                                     </p>
                                 </div>
-
                             </article>
 
                             <article class="case-result-item">
-
-                                <span
-                                    class="case-result-icon"
-                                    aria-hidden="true"
-                                >
-                                    02
-                                </span>
-
+                                <span class="case-result-icon" aria-hidden="true">02</span>
                                 <div>
                                     <strong>Lebih Relevan</strong>
-
                                     <p>
-                                        Peta disusun menggunakan
-                                        referensi data terbaru yang
-                                        tersedia.
+                                        Referensi pembaruan disesuaikan dengan
+                                        data terbaru yang tersedia.
                                     </p>
                                 </div>
-
                             </article>
 
                             <article class="case-result-item">
-
-                                <span
-                                    class="case-result-icon"
-                                    aria-hidden="true"
-                                >
-                                    03
-                                </span>
-
-                                <div>
-                                    <strong>Lebih Presisi</strong>
-
-                                    <p>
-                                        Objek penting dicocokkan kembali
-                                        menggunakan citra drone.
-                                    </p>
-                                </div>
-
-                            </article>
-
-                            <article class="case-result-item">
-
-                                <span
-                                    class="case-result-icon"
-                                    aria-hidden="true"
-                                >
-                                    04
-                                </span>
-
+                                <span class="case-result-icon" aria-hidden="true">03</span>
                                 <div>
                                     <strong>Siap Digunakan</strong>
-
                                     <p>
-                                        Layout mudah dipahami untuk
+                                        Layout akhir dapat digunakan untuk
                                         kebutuhan digital maupun cetak.
                                     </p>
                                 </div>
-
                             </article>
-
                         </div>
-
                     </div>
 
-                    <!-- TESTIMONI KLIEN -->
-                    <section
-                        class="testimonial-showcase"
-                        aria-labelledby="testimonial-title"
-                    >
-
-                        <div class="testimonial-copy">
-
-                            <p class="section-label">
-                                Pengalaman Klien
-                            </p>
-
-                            <h4 id="testimonial-title">
-                                Kendala peta lama diselesaikan melalui
-                                pembaruan data dan visual.
-                            </h4>
-
-                            <p>
-                                Klien merupakan mitra lapangan yang
-                                membutuhkan peta lebih jelas untuk
-                                persiapan kegiatan Sensus Ekonomi 2026.
-                                Peta sebelumnya masih menggunakan data
-                                lama, sehingga kondisi jalan dan
-                                bangunan berbeda ketika dibandingkan
-                                dengan keadaan terbaru di lokasi.
-                            </p>
-
-                            <div class="testimonial-rating">
-
-                                <div
-                                    class="testimonial-stars"
-                                    aria-label="Penilaian lima dari lima bintang"
-                                >
-                                    <span aria-hidden="true">★</span>
-                                    <span aria-hidden="true">★</span>
-                                    <span aria-hidden="true">★</span>
-                                    <span aria-hidden="true">★</span>
-                                    <span aria-hidden="true">★</span>
-                                </div>
-
-                                <div>
-                                    <strong>5.0 / 5.0</strong>
-
-                                    <span>
-                                        Pelayanan dan hasil pengerjaan
-                                    </span>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <!-- VISUAL CHAT -->
-                        <div
-                            class="chat-card"
-                            aria-label="Ilustrasi percakapan dengan klien"
-                        >
-
-                            <div class="chat-header">
-
-                                <div
-                                    class="chat-avatar"
-                                    aria-hidden="true"
-                                >
-                                    ML
-                                </div>
-
-                                <div class="chat-contact">
-                                    <strong>Mitra Lapangan</strong>
-                                    <span>Identitas disamarkan</span>
-                                </div>
-
-                                <span class="chat-status">
-                                    Online
-                                </span>
-
-                            </div>
-
-                            <div class="chat-body">
-
-                                <div class="chat-date">
-                                    Persiapan Sensus Ekonomi 2026
-                                </div>
-
-                                <div class="chat-message chat-message-client">
-
-                                    <p>
-                                        Mas, saya mitra BPS yang sedang
-                                        mempersiapkan kegiatan lapangan
-                                        Sensus Ekonomi 2026.
-                                    </p>
-
-                                    <p>
-                                        Peta wilayah yang saya pegang
-                                        kurang jelas dan masih memakai
-                                        data lama. Saat datang ke lokasi,
-                                        kondisi jalan dan bangunannya
-                                        sudah banyak berbeda, jadi cukup
-                                        sulit memastikan wilayah kerja.
-                                    </p>
-
-                                    <span class="chat-time">
-                                        09.14
-                                    </span>
-
-                                </div>
-
-                                <div class="chat-message chat-message-business">
-
-                                    <p>
-                                        Baik, Kak. Peta akan saya
-                                        perbarui menggunakan citra drone
-                                        dan data terbaru yang tersedia.
-                                    </p>
-
-                                    <p>
-                                        Jalan, bangunan, batas wilayah,
-                                        label, dan objek penting akan
-                                        disusun ulang agar lebih mudah
-                                        digunakan di lapangan.
-                                    </p>
-
-                                    <span class="chat-time">
-                                        09.18 ✓✓
-                                    </span>
-
-                                </div>
-
-                                <div class="chat-divider">
-                                    Setelah peta selesai
-                                </div>
-
-                                <div class="chat-message chat-message-client">
-
-                                    <p>
-                                        Sudah saya cek, Mas. Hasilnya
-                                        jauh lebih jelas dan lebih sesuai
-                                        dengan kondisi terbaru di lokasi.
-                                    </p>
-
-                                    <p>
-                                        Jalan, bangunan, dan batas
-                                        wilayahnya sekarang mudah dibaca.
-                                        Ini sangat membantu untuk
-                                        persiapan kegiatan lapangan.
-                                        Pelayanannya juga cepat dan
-                                        komunikatif. Terima kasih banyak.
-                                    </p>
-
-                                    <div
-                                        class="chat-inline-stars"
-                                        aria-label="Penilaian lima bintang"
-                                    >
-                                        <span aria-hidden="true">★</span>
-                                        <span aria-hidden="true">★</span>
-                                        <span aria-hidden="true">★</span>
-                                        <span aria-hidden="true">★</span>
-                                        <span aria-hidden="true">★</span>
-                                    </div>
-
-                                    <span class="chat-time">
-                                        16.42
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                            <p class="chat-note">
-                                Ilustrasi percakapan disusun kembali
-                                berdasarkan pengalaman klien. Identitas
-                                disamarkan untuk menjaga privasi.
-                            </p>
-
-                        </div>
-
-                    </section>
-
-                    <!-- CTA STUDI KASUS -->
                     <footer class="case-study-footer">
-
                         <p>
                             Memiliki peta lama yang perlu disesuaikan
                             dengan kondisi terbaru?
@@ -1368,1415 +1001,995 @@
                         >
                             Konsultasikan Pembaruan Peta
                         </a>
-
                     </footer>
-
                 </article>
 
-                <!-- PROYEK LAINNYA -->
-                <div class="portfolio-subheading">
-
-                    <p class="section-label">
-                        Proyek Lainnya
-                    </p>
-
-                    <h3>
-                        Contoh hasil pemetaan dan visualisasi lainnya.
-                    </h3>
-
-                </div>
-
-                <div class="portfolio-list">
-
-                    <!-- PROYEK PEMETAAN LAHAN -->
-                    <article class="portfolio-card">
-
-                        <div class="portfolio-image">
-
-                            <a
-                                href="Peta%20Lahan%20Pertanian.jpeg"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Buka peta lahan pertanian ukuran penuh"
-                            >
-                                <img
-                                    src="Peta%20Lahan%20Pertanian.jpeg"
-                                    alt="Pemetaan batas dan luas lahan pertanian berbasis koordinat"
-                                    loading="lazy"
-                                >
-                            </a>
-
-                            <span class="portfolio-badge">
-                                Pemetaan Lahan
-                            </span>
-
+                <!-- MAKASSAR RINGKAS -->
+                <article
+                    id="studi-kasus-makassar"
+                    class="case-study case-study-featured case-study-compact"
+                    aria-labelledby="makassar-title"
+                >
+                    <header class="case-study-header">
+                        <div class="case-study-meta">
+                            <span>Studi Kasus 02</span>
+                            <span>Makassar</span>
+                            <span>Before dan After</span>
                         </div>
 
-                        <div class="portfolio-copy">
+                        <div class="case-study-heading">
+                            <div class="case-study-title">
+                                <p class="portfolio-category">
+                                    Penyempurnaan Visual Peta
+                                </p>
 
-                            <p class="portfolio-category">
-                                Pemetaan Lahan Pertanian
-                            </p>
-
-                            <h3>
-                                Pemetaan batas dan luas lahan berbasis
-                                koordinat.
-                            </h3>
-
-                            <p>
-                                Pengolahan titik koordinat dan citra
-                                udara menjadi peta batas lahan yang
-                                menampilkan posisi patok, bentuk bidang,
-                                dan luas setiap area.
-                            </p>
-
-                            <div class="result-list">
-                                <span>✓ Batas bidang lahan</span>
-                                <span>✓ Titik dan tabel koordinat</span>
-                                <span>✓ Perhitungan luas area</span>
-                                <span>✓ Layout peta siap cetak</span>
+                                <h3 id="makassar-title">
+                                    Peta Makassar yang lebih jelas dan rapi.
+                                </h3>
                             </div>
 
-                            <a
-                                class="portfolio-link"
-                                href="Peta%20Lahan%20Pertanian.jpeg"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Lihat detail hasil pemetaan
-                                <span>→</span>
-                            </a>
-
+                            <p class="case-study-intro">
+                                Peta awal disempurnakan agar informasi utama,
+                                simbol, label, dan komposisi visual lebih mudah
+                                dipahami serta siap digunakan oleh klien.
+                            </p>
                         </div>
+                    </header>
 
-                    </article>
-                    <!-- =======================================================
-     STUDI KASUS MAKASSAR
-======================================================== -->
-<article
-    class="case-study case-study-featured makassar-case"
-    aria-labelledby="makassar-title"
->
-    <!-- HEADER STUDI KASUS -->
-    <header class="case-study-header">
-        <div class="case-study-meta">
-            <span>Studi Kasus</span>
-            <span>Makassar</span>
-            <span>Pembaruan Peta</span>
-        </div>
-
-        <div class="case-study-heading">
-            <div class="case-study-title">
-                <p class="portfolio-category">
-                    Before dan After
-                </p>
-
-                <h3 id="makassar-title">
-                    Penyempurnaan Visual Peta Makassar
-                </h3>
-            </div>
-
-            <p class="case-study-intro">
-                Peta awal disempurnakan menjadi visual yang lebih jelas,
-                terstruktur, dan komunikatif. Informasi penting ditampilkan
-                dengan susunan yang lebih rapi agar peta lebih mudah dipahami
-                serta siap digunakan untuk kebutuhan klien.
-            </p>
-        </div>
-    </header>
-
-    <!-- BEFORE DAN AFTER -->
-    <section
-        class="makassar-comparison"
-        aria-labelledby="makassar-comparison-title"
-    >
-        <div class="makassar-comparison-heading">
-            <p>Perbandingan Hasil</p>
-
-            <h4 id="makassar-comparison-title">
-                Dari peta awal menuju visual yang lebih informatif.
-            </h4>
-        </div>
-
-        <div class="makassar-comparison-grid">
-            <!-- PETA BEFORE -->
-            <figure class="makassar-map-card makassar-map-before">
-                <a
-                    href="Peta-before-Makassar.jpeg"
-                    class="makassar-map-media"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Buka peta Makassar sebelum diperbarui dalam ukuran penuh"
-                >
-                    <img
-                        src="Peta-before-Makassar.jpeg"
-                        alt="Peta Makassar sebelum dilakukan penyempurnaan visual"
-                        loading="lazy"
-                        decoding="async"
+                    <div
+                        class="case-study-flow case-study-flow-two"
+                        aria-label="Perbandingan peta Makassar sebelum dan sesudah penyempurnaan"
                     >
-
-                    <span class="makassar-map-label">
-                        Before
-                    </span>
-
-                    <span
-                        class="makassar-map-number"
-                        aria-hidden="true"
-                    >
-                        01
-                    </span>
-                </a>
-
-                <figcaption>
-                    <p class="makassar-map-kicker">
-                        Peta Awal
-                    </p>
-
-                    <h5>
-                        Tampilan awal sebelum dilakukan penyempurnaan.
-                    </h5>
-
-                    <p>
-                        Peta awal menjadi referensi utama untuk memahami
-                        informasi, susunan elemen, dan bagian-bagian yang
-                        perlu diperjelas dalam proses pembaruan.
-                    </p>
-
-                    <a
-                        href="Peta-before-Makassar.jpeg"
-                        class="makassar-image-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Lihat resolusi penuh
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </figcaption>
-            </figure>
-
-            <!-- PANAH -->
-            <div
-                class="makassar-comparison-arrow"
-                aria-hidden="true"
-            >
-                <span>→</span>
-            </div>
-
-            <!-- PETA AFTER -->
-            <figure class="makassar-map-card makassar-map-after">
-                <a
-                    href="Peta-After-Makassar.jpeg"
-                    class="makassar-map-media"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Buka peta Makassar setelah diperbarui dalam ukuran penuh"
-                >
-                    <img
-                        src="Peta-After-Makassar.jpeg"
-                        alt="Peta Makassar setelah dilakukan penyempurnaan visual"
-                        loading="lazy"
-                        decoding="async"
-                    >
-
-                    <span class="makassar-map-label">
-                        After
-                    </span>
-
-                    <span
-                        class="makassar-map-number"
-                        aria-hidden="true"
-                    >
-                        02
-                    </span>
-                </a>
-
-                <figcaption>
-                    <p class="makassar-map-kicker">
-                        Peta Hasil
-                    </p>
-
-                    <h5>
-                        Visual lebih jelas, terstruktur, dan siap digunakan.
-                    </h5>
-
-                    <p>
-                        Elemen peta disusun kembali agar informasi utama,
-                        simbol, label, batas, dan komposisi visual dapat
-                        dibaca dengan lebih mudah oleh pengguna.
-                    </p>
-
-                    <a
-                        href="Peta-After-Makassar.jpeg"
-                        class="makassar-image-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Lihat resolusi penuh
-                        <span aria-hidden="true">↗</span>
-                    </a>
-                </figcaption>
-            </figure>
-        </div>
-    </section>
-
-    <!-- HASIL PEMBARUAN -->
-    <section
-        class="makassar-results"
-        aria-labelledby="makassar-results-title"
-    >
-        <div class="makassar-results-heading">
-            <p class="portfolio-category">
-                Hasil Pembaruan
-            </p>
-
-            <h4 id="makassar-results-title">
-                Peta yang lebih mudah dibaca dan dipresentasikan.
-            </h4>
-        </div>
-
-        <div class="makassar-results-grid">
-            <article class="makassar-result-item">
-                <span>01</span>
-
-                <h5>Lebih Jelas</h5>
-
-                <p>
-                    Informasi penting pada peta lebih mudah dikenali dan
-                    dibedakan.
-                </p>
-            </article>
-
-            <article class="makassar-result-item">
-                <span>02</span>
-
-                <h5>Lebih Terstruktur</h5>
-
-                <p>
-                    Elemen visual disusun dengan hierarki dan komposisi
-                    yang lebih rapi.
-                </p>
-            </article>
-
-            <article class="makassar-result-item">
-                <span>03</span>
-
-                <h5>Lebih Komunikatif</h5>
-
-                <p>
-                    Data yang kompleks disajikan menjadi informasi visual
-                    yang lebih mudah dipahami.
-                </p>
-            </article>
-
-            <article class="makassar-result-item">
-                <span>04</span>
-
-                <h5>Siap Digunakan</h5>
-
-                <p>
-                    Hasil akhir dapat digunakan untuk dokumentasi,
-                    presentasi, publikasi, maupun kebutuhan proyek.
-                </p>
-            </article>
-        </div>
-    </section>
-
-    <!-- TESTIMONI KLIEN -->
-    <section
-        class="makassar-testimonial"
-        aria-labelledby="makassar-testimonial-title"
-    >
-        <div class="makassar-testimonial-copy">
-            <p class="portfolio-category">
-                Pengalaman Klien
-            </p>
-
-            <h4 id="makassar-testimonial-title">
-                Hasil pemetaan diterima dengan baik oleh klien.
-            </h4>
-
-            <p>
-                Setelah proses penyempurnaan selesai, hasil peta dikirimkan
-                kepada klien untuk diperiksa. Testimoni berikut merupakan
-                tanggapan klien terhadap proses pelayanan dan hasil akhir
-                pemetaan.
-            </p>
-
-            <div
-                class="makassar-rating"
-                aria-label="Penilaian lima dari lima bintang"
-            >
-                <div class="makassar-stars" aria-hidden="true">
-                    ★ ★ ★ ★ ★
-                </div>
-
-                <strong>5.0 / 5.0</strong>
-
-                <span>
-                    Pelayanan dan hasil pengerjaan
-                </span>
-            </div>
-
-            <div class="makassar-client">
-                <div
-                    class="makassar-client-avatar"
-                    aria-hidden="true"
-                >
-                    KL
-                </div>
-
-                <div>
-                    <strong>Klien Pemetaan</strong>
-                    <span>Makassar · Identitas disamarkan</span>
-                </div>
-            </div>
-
-            <p class="makassar-privacy-note">
-                Informasi pribadi pada percakapan sebaiknya disamarkan
-                sebelum gambar dipublikasikan.
-            </p>
-        </div>
-
-        <figure class="makassar-testimonial-media">
-            <a
-                href="Terstimoni-Peta-Makassar.jpeg"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Buka screenshot testimoni klien dalam ukuran penuh"
-            >
-                <span class="makassar-testimonial-label">
-                    Testimoni Klien
-                </span>
-
-                <img
-                    src="Terstimoni-Peta-Makassar.jpeg"
-                    alt="Screenshot testimoni WhatsApp klien pemetaan Makassar"
-                    loading="lazy"
-                    decoding="async"
-                >
-            </a>
-
-            <figcaption>
-                Klik gambar untuk melihat testimoni dalam resolusi penuh.
-            </figcaption>
-        </figure>
-    </section>
-
-    <!-- CTA -->
-    <footer class="makassar-case-footer">
-        <div>
-            <p>Punya peta yang perlu diperbarui?</p>
-
-            <h4>
-                Ubah data dan peta lama menjadi visual yang lebih jelas.
-            </h4>
-        </div>
-
-        <a
-            href="https://wa.me/6285947185576?text=Halo%20Lim%27s%20Mapping%2C%20saya%20ingin%20mendiskusikan%20pembaruan%20peta."
-            target="_blank"
-            rel="noopener noreferrer"
-            class="makassar-cta-button"
-        >
-            Konsultasikan Proyek
-            <span aria-hidden="true">↗</span>
-        </a>
-    </footer>
-</article>
-<!-- AKHIR STUDI KASUS MAKASSAR -->
-
-                    <!-- PROYEK PETA TEMATIK -->
-                    <article class="portfolio-card">
-
-                        <div class="portfolio-image">
-
-                            <a
-                                href="Visual%20Sebaran%20Sarana%20Industri%20.png"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Buka peta sebaran sarana industri ukuran penuh"
-                            >
-                                <img
-                                    src="Visual%20Sebaran%20Sarana%20Industri%20.png"
-                                    alt="Peta persebaran sarana industri berdasarkan klasifikasi skala industri"
-                                    loading="lazy"
+                        <figure class="case-stage case-stage-before">
+                            <div class="case-stage-media">
+                                <a
+                                    href="Peta-before-Makassar.jpeg"
+                                    data-lightbox
+                                    data-title="Peta Awal Makassar"
+                                    data-caption="Tampilan peta sebelum dilakukan penyempurnaan visual."
+                                    aria-label="Buka peta Makassar sebelum diperbarui"
                                 >
-                            </a>
+                                    <img
+                                        src="Peta-before-Makassar.jpeg"
+                                        alt="Peta Makassar sebelum penyempurnaan visual"
+                                        loading="lazy"
+                                    >
+                                </a>
 
-                            <span class="portfolio-badge">
-                                Peta Tematik
-                            </span>
-
-                        </div>
-
-                        <div class="portfolio-copy">
-
-                            <p class="portfolio-category">
-                                Pemetaan Persebaran Industri
-                            </p>
-
-                            <h3>
-                                Visualisasi persebaran sarana industri
-                                dalam satu wilayah.
-                            </h3>
-
-                            <p>
-                                Peta tematik yang menyajikan lokasi
-                                industri, jaringan jalan, batas
-                                administrasi, kawasan perairan, serta
-                                klasifikasi industri berdasarkan skala
-                                kegiatan.
-                            </p>
-
-                            <div class="result-list">
-                                <span>✓ Persebaran lokasi industri</span>
-                                <span>✓ Klasifikasi skala industri</span>
-                                <span>✓ Jaringan jalan</span>
-                                <span>✓ Batas administrasi</span>
+                                <span class="case-stage-label">Before</span>
+                                <span class="case-stage-number" aria-hidden="true">01</span>
                             </div>
 
-                            <a
-                                class="portfolio-link"
-                                href="Visual%20Sebaran%20Sarana%20Industri%20.png"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                
-                            >
-                                Lihat detail hasil pemetaan
-                                <span>→</span>
-                            </a>
+                            <figcaption>
+                                <p class="case-stage-kicker">Peta Awal</p>
+                                <h4>Tampilan sebelum penyempurnaan.</h4>
+                                <p>
+                                    Peta awal menjadi dasar untuk menentukan
+                                    bagian yang perlu diperjelas dan ditata ulang.
+                                </p>
+                            </figcaption>
+                        </figure>
 
+                        <div class="case-flow-connector" aria-hidden="true">
+                            <span></span>
                         </div>
 
-                    </article>
+                        <figure class="case-stage case-stage-after">
+                            <div class="case-stage-media">
+                                <a
+                                    href="Peta-After-Makassar.jpeg"
+                                    data-lightbox
+                                    data-title="Peta Hasil Makassar"
+                                    data-caption="Hasil penyempurnaan dengan komposisi yang lebih rapi dan informasi yang lebih mudah dibaca."
+                                    aria-label="Buka peta Makassar setelah diperbarui"
+                                >
+                                    <img
+                                        src="Peta-After-Makassar.jpeg"
+                                        alt="Peta Makassar setelah penyempurnaan visual"
+                                        loading="lazy"
+                                    >
+                                </a>
 
-                </div>
+                                <span class="case-stage-label">After</span>
+                                <span class="case-stage-number" aria-hidden="true">02</span>
+                            </div>
 
+                            <figcaption>
+                                <p class="case-stage-kicker">Peta Hasil</p>
+                                <h4>Visual lebih jelas dan terstruktur.</h4>
+                                <p>
+                                    Elemen peta disusun kembali agar informasi
+                                    utama lebih mudah dikenali dan dipresentasikan.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="case-study-summary case-study-summary-compact">
+                        <div class="case-result-grid case-result-grid-three">
+                            <article class="case-result-item">
+                                <span class="case-result-icon" aria-hidden="true">01</span>
+                                <div>
+                                    <strong>Lebih Jelas</strong>
+                                    <p>Informasi utama lebih mudah dikenali.</p>
+                                </div>
+                            </article>
+
+                            <article class="case-result-item">
+                                <span class="case-result-icon" aria-hidden="true">02</span>
+                                <div>
+                                    <strong>Lebih Rapi</strong>
+                                    <p>Hierarki dan komposisi visual lebih teratur.</p>
+                                </div>
+                            </article>
+
+                            <article class="case-result-item">
+                                <span class="case-result-icon" aria-hidden="true">03</span>
+                                <div>
+                                    <strong>Siap Digunakan</strong>
+                                    <p>Hasil akhir siap disampaikan kepada klien.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <a class="portfolio-link" href="#testimoni">
+                            Lihat testimoni asli klien
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
             </div>
         </section>
-<!-- PROYEK PETA KEMIRINGAN LERENG -->
-<article class="portfolio-card">
 
-    <div class="portfolio-image">
+        <!-- OUTPUT YANG DITERIMA -->
+        <section id="output" class="section output-section">
+            <div class="shell">
+                <div class="section-heading wide-heading">
+                    <p class="section-label">04 / Output Proyek</p>
 
-        <a
-            href="Peta-Kemiringan-Lereng.jpeg"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Buka peta kemiringan lereng ukuran penuh"
-        >
-            <img
-                src="Peta-Kemiringan-Lereng.jpeg"
-                alt="Peta klasifikasi kemiringan lereng untuk analisis kondisi topografi wilayah"
-                loading="lazy"
-            >
-        </a>
+                    <h2>
+                        Hasil yang dapat disesuaikan dengan kebutuhan Anda.
+                    </h2>
 
-        <span class="portfolio-badge">
-            Analisis Topografi
-        </span>
+                    <p>
+                        Jenis file dan kelengkapan output ditentukan berdasarkan
+                        ruang lingkup pekerjaan dan kesepakatan awal proyek.
+                    </p>
+                </div>
 
-    </div>
+                <div class="output-grid">
+                    <article class="output-card">
+                        <span class="output-number">01</span>
+                        <h3>PDF dan JPEG</h3>
+                        <p>
+                            File siap digunakan untuk laporan, presentasi,
+                            dokumentasi, publikasi, atau kebutuhan cetak.
+                        </p>
+                    </article>
 
-    <div class="portfolio-copy">
+                    <article class="output-card">
+                        <span class="output-number">02</span>
+                        <h3>Data Spasial</h3>
+                        <p>
+                            SHP, KML, GeoJSON, atau format lain dapat
+                            disediakan sesuai ruang lingkup pekerjaan.
+                        </p>
+                    </article>
 
-        <p class="portfolio-category">
-            Peta Kemiringan Lereng
-        </p>
+                    <article class="output-card">
+                        <span class="output-number">03</span>
+                        <h3>Layout Lengkap</h3>
+                        <p>
+                            Judul, legenda, skala, arah utara, sumber data,
+                            dan informasi pendukung lainnya.
+                        </p>
+                    </article>
 
-        <h3>
-            Memetakan tingkat kecuraman wilayah sebagai dasar
-            analisis dan perencanaan lahan.
-        </h3>
+                    <article class="output-card">
+                        <span class="output-number">04</span>
+                        <h3>Sistem Koordinat</h3>
+                        <p>
+                            Sistem koordinat disesuaikan dengan lokasi,
+                            data, dan tujuan penggunaan peta.
+                        </p>
+                    </article>
 
-        <p>
-            Peta kemiringan lereng mengelompokkan kondisi permukaan
-            wilayah berdasarkan tingkat kecuramannya. Setiap kelas
-            divisualisasikan secara jelas untuk membantu mengenali
-            area yang relatif datar, landai, curam, maupun berpotensi
-            memiliki keterbatasan dalam pemanfaatannya.
-        </p>
+                    <article class="output-card">
+                        <span class="output-number">05</span>
+                        <h3>Revisi</h3>
+                        <p>
+                            Jumlah dan ruang lingkup revisi ditentukan
+                            dalam kesepakatan awal pengerjaan.
+                        </p>
+                    </article>
 
-        <div class="result-list">
-            <span>✓ Klasifikasi tingkat kemiringan</span>
-            <span>✓ Identifikasi area datar hingga curam</span>
-            <span>✓ Visualisasi kondisi topografi</span>
-            <span>✓ Referensi perencanaan lahan</span>
-        </div>
+                    <article class="output-card">
+                        <span class="output-number">06</span>
+                        <h3>Keterangan Sumber</h3>
+                        <p>
+                            Sumber data dan informasi pengolahan dapat
+                            dicantumkan sesuai kebutuhan proyek.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <a
-            class="portfolio-link"
-            href="Peta-Kemiringan-Lereng.jpeg"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Lihat detail peta kemiringan lereng
-            <span>→</span>
-        </a>
-
-    </div>
-
-</article>
-        <!-- PROYEK PETA PENGGUNAAN LAHAN -->
-<article class="portfolio-card">
-
-    <div class="portfolio-image">
-
-        <a
-            href="Peta-Penggunaan-Lahan.jpeg"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Buka peta penggunaan lahan ukuran penuh"
-        >
-            <img
-                src="Peta-Penggunaan-Lahan.jpeg"
-                alt="Peta penggunaan lahan yang menampilkan klasifikasi fungsi dan pola pemanfaatan ruang"
-                loading="lazy"
-            >
-        </a>
-
-        <span class="portfolio-badge">
-            Analisis Penggunaan Lahan
-        </span>
-
-    </div>
-
-    <div class="portfolio-copy">
-
-        <p class="portfolio-category">
-            Peta Penggunaan Lahan
-        </p>
-
-        <h3>
-            Mengidentifikasi fungsi dan pola pemanfaatan ruang
-            sebagai dasar perencanaan kawasan yang lebih terarah.
-        </h3>
-
-        <p>
-            Peta penggunaan lahan mengelompokkan setiap bagian wilayah
-            berdasarkan fungsi dominannya. Visualisasi yang jelas
-            membantu mengenali persebaran permukiman, fasilitas,
-            ruang terbuka, jaringan jalan, dan penggunaan lainnya
-            sehingga struktur kawasan dapat dipahami secara menyeluruh.
-        </p>
-
-        <div class="result-list">
-            <span>✓ Klasifikasi fungsi penggunaan lahan</span>
-            <span>✓ Identifikasi pola pemanfaatan ruang</span>
-            <span>✓ Visualisasi struktur dan fungsi kawasan</span>
-            <span>✓ Referensi perencanaan wilayah</span>
-        </div>
-
-        <a
-            class="portfolio-link"
-            href="Peta-Penggunaan-Lahan.jpeg"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Lihat detail peta penggunaan lahan
-            <span>→</span>
-        </a>
-
-    </div>
-
-</article>
-    <!-- PROYEK PETA POLA RUANG EKSISTING -->
-<article class="portfolio-card">
-
-    <div class="portfolio-image">
-
-        <a
-            href="Peta-Pola-Ruang.jpeg"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Buka peta pola ruang eksisting ukuran penuh"
-        >
-            <img
-                src="Peta-Pola-Ruang.jpeg"
-                alt="Peta pola ruang eksisting yang menampilkan struktur dan fungsi pemanfaatan kawasan"
-                loading="lazy"
-            >
-        </a>
-
-        <span class="portfolio-badge">
-            Analisis Tata Ruang
-        </span>
-
-    </div>
-
-    <div class="portfolio-copy">
-
-        <p class="portfolio-category">
-            Peta Pola Ruang Eksisting
-        </p>
-
-        <h3>
-            Menggambarkan struktur ruang eksisting untuk memahami
-            pola pemanfaatan kawasan secara menyeluruh.
-        </h3>
-
-        <p>
-            Peta pola ruang eksisting menyajikan pembagian fungsi
-            ruang berdasarkan kondisi aktual kawasan. Setiap zona
-            divisualisasikan secara terstruktur untuk menunjukkan
-            persebaran permukiman, perdagangan dan jasa, fasilitas
-            umum, ruang terbuka hijau, badan air, jaringan jalan,
-            serta fungsi kawasan lainnya.
-        </p>
-
-        <p>
-            Visualisasi ini membantu memahami hubungan antaraktivitas,
-            tingkat dominasi setiap fungsi ruang, dan karakter
-            perkembangan wilayah. Informasi yang dihasilkan dapat
-            digunakan sebagai dasar evaluasi tata ruang, identifikasi
-            kebutuhan kawasan, serta penyusunan rencana pengembangan
-            yang lebih terarah.
-        </p>
-
-        <div class="result-list">
-            <span>✓ Klasifikasi zona lindung dan zona budidaya</span>
-            <span>✓ Identifikasi pola permukiman dan aktivitas perkotaan</span>
-            <span>✓ Visualisasi jaringan jalan, badan air, dan batas administrasi</span>
-            <span>✓ Referensi evaluasi tata ruang dan pengembangan kawasan</span>
-        </div>
-
-        <a
-            class="portfolio-link"
-            href="Peta-Pola-Ruang.jpeg"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Lihat detail peta pola ruang eksisting
-            <span>→</span>
-        </a>
-
-    </div>
-
-</article>
-        <!-- PROSES KERJA -->
-        <section
-            id="proses"
-            class="section process-section"
-        >
+        <!-- PROSES DAN ESTIMASI -->
+        <section id="proses" class="section process-section">
             <div class="process-contour process-contour-one"></div>
             <div class="process-contour process-contour-two"></div>
 
             <div class="shell">
-
                 <div class="section-heading wide-heading process-heading">
+                    <p class="section-label">05 / Cara Kerja</p>
 
-                    <p class="section-label">
-                        Alur Pengerjaan
-                    </p>
-
-                    <h2>
-                        Proses jelas dari data awal hingga hasil akhir.
-                    </h2>
+                    <h2>Proses jelas dari data awal hingga hasil akhir.</h2>
 
                     <p>
-                        Setiap proyek dikerjakan melalui tahapan
-                        terstruktur agar kebutuhan, metode, dan hasil
-                        akhir tetap selaras.
+                        Setiap proyek dikerjakan melalui tahapan terstruktur
+                        agar kebutuhan, metode, dan hasil tetap selaras.
                     </p>
-
                 </div>
 
                 <div class="process-grid">
-
                     <article class="process-card">
-
                         <div class="process-card-top">
                             <span class="process-kicker">Tahap</span>
                             <strong class="process-number">01</strong>
                         </div>
 
-                        <div class="process-route">
-                            <span></span>
-                        </div>
+                        <div class="process-route"><span></span></div>
 
-                        <h3>Konsultasi Kebutuhan</h3>
-
+                        <h3>Diskusi Kebutuhan</h3>
                         <p>
-                            Kami mempelajari tujuan proyek, lokasi,
-                            data yang tersedia, serta bentuk hasil yang
-                            dibutuhkan.
+                            Menentukan tujuan, lokasi, data yang tersedia,
+                            bentuk output, dan tenggat waktu.
                         </p>
-
-                        <span class="process-tag">
-                            Briefing proyek
-                        </span>
-
+                        <span class="process-tag">Brief proyek</span>
                     </article>
 
                     <article class="process-card">
-
                         <div class="process-card-top">
                             <span class="process-kicker">Tahap</span>
                             <strong class="process-number">02</strong>
                         </div>
 
-                        <div class="process-route">
-                            <span></span>
-                        </div>
+                        <div class="process-route"><span></span></div>
 
-                        <h3>Validasi Data</h3>
-
+                        <h3>Pemeriksaan Data</h3>
                         <p>
-                            Data koordinat, citra, dan referensi
-                            diperiksa untuk memastikan kelengkapan
-                            serta metode pengerjaan yang tepat.
+                            Data koordinat, citra, dan referensi diperiksa
+                            untuk menentukan metode pengerjaan.
                         </p>
-
-                        <span class="process-tag">
-                            Pemeriksaan data
-                        </span>
-
+                        <span class="process-tag">Validasi data</span>
                     </article>
 
                     <article class="process-card">
-
                         <div class="process-card-top">
                             <span class="process-kicker">Tahap</span>
                             <strong class="process-number">03</strong>
                         </div>
 
-                        <div class="process-route">
-                            <span></span>
-                        </div>
+                        <div class="process-route"><span></span></div>
 
-                        <h3>Analisis & Produksi</h3>
-
+                        <h3>Pengerjaan dan Revisi</h3>
                         <p>
-                            Data diolah dan divisualisasikan menjadi
-                            peta yang informatif, konsisten, dan mudah
-                            dipahami.
+                            Data diolah, divisualisasikan, kemudian diperiksa
+                            dan disempurnakan sesuai kesepakatan.
                         </p>
-
-                        <span class="process-tag">
-                            Pengolahan peta
-                        </span>
-
+                        <span class="process-tag">Produksi peta</span>
                     </article>
 
                     <article class="process-card">
-
                         <div class="process-card-top">
                             <span class="process-kicker">Tahap</span>
                             <strong class="process-number">04</strong>
                         </div>
 
-                        <div class="process-route">
-                            <span></span>
-                        </div>
+                        <div class="process-route"><span></span></div>
 
-                        <h3>Review & Penyerahan</h3>
-
+                        <h3>Penyerahan Hasil</h3>
                         <p>
-                            Hasil diperiksa bersama, disempurnakan
-                            melalui revisi, lalu dikirim dalam format
-                            yang telah disepakati.
+                            File akhir dikirim dalam format yang telah
+                            disepakati bersama klien.
                         </p>
-
-                        <span class="process-tag">
-                            Finalisasi hasil
-                        </span>
-
+                        <span class="process-tag">Finalisasi</span>
                     </article>
-
                 </div>
 
+                <aside class="pricing-panel" aria-labelledby="pricing-title">
+                    <div>
+                        <p class="section-label">Estimasi Biaya</p>
+
+                        <h3 id="pricing-title">
+                            Biaya ditentukan berdasarkan kebutuhan proyek.
+                        </h3>
+
+                        <p>
+                            Estimasi dipengaruhi oleh luas wilayah,
+                            kelengkapan data, tingkat kerumitan, jenis
+                            analisis, format hasil, dan tenggat waktu.
+                        </p>
+                    </div>
+
+                    <a
+                        class="button button-green"
+                        href="https://wa.me/6285947185576?text=Halo%20Lim%27s%20Mapping%2C%20saya%20ingin%20meminta%20estimasi%20proyek.%0A%0AJenis%20kebutuhan%3A%0ALokasi%20proyek%3A%0AData%20yang%20tersedia%3A%0AFormat%20hasil%3A%0ATenggat%20waktu%3A%0ACatatan%20tambahan%3A"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Minta Estimasi Proyek
+                    </a>
+                </aside>
+            </div>
+        </section>
+
+        <!-- TESTIMONI ASLI -->
+        <section id="testimoni" class="section testimonial-section">
+            <div class="shell">
+                <div
+                    class="testimonial-showcase testimonial-showcase-authentic"
+                >
+                    <div class="testimonial-copy">
+                        <p class="section-label">06 / Testimoni Klien</p>
+
+                        <h2>Tanggapan langsung setelah proyek selesai.</h2>
+
+                        <p>
+                            Testimoni berikut berasal dari percakapan asli
+                            dengan klien setelah hasil pemetaan diterima.
+                            Informasi pribadi disamarkan untuk menjaga privasi.
+                        </p>
+
+                        <div class="testimonial-facts">
+                            <span>Percakapan asli</span>
+                            <span>Identitas disamarkan</span>
+                            <span>Tanpa rating buatan</span>
+                        </div>
+
+                        <a
+                            class="portfolio-link"
+                            href="Terstimoni-Peta-Makassar.jpeg"
+                            data-lightbox
+                            data-title="Testimoni Klien Peta Makassar"
+                            data-caption="Screenshot percakapan asli setelah hasil pemetaan diterima. Informasi pribadi disamarkan."
+                        >
+                            Lihat gambar penuh
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                    <figure class="testimonial-proof">
+                        <a
+                            href="Terstimoni-Peta-Makassar.jpeg"
+                            data-lightbox
+                            data-title="Testimoni Klien Peta Makassar"
+                            data-caption="Screenshot percakapan asli setelah hasil pemetaan diterima. Informasi pribadi disamarkan."
+                            aria-label="Buka screenshot testimoni klien"
+                        >
+                            <img
+                                src="Terstimoni-Peta-Makassar.jpeg"
+                                alt="Screenshot testimoni WhatsApp klien peta Makassar"
+                                loading="lazy"
+                            >
+                        </a>
+
+                        <figcaption>
+                            Testimoni asli klien dengan informasi pribadi
+                            yang telah disamarkan.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section faq-section">
+            <div class="shell faq-layout">
+                <div class="section-heading">
+                    <p class="section-label">07 / Pertanyaan Umum</p>
+                    <h2>Informasi sebelum memulai proyek.</h2>
+                    <p>
+                        Beberapa jawaban singkat mengenai data, format hasil,
+                        waktu pengerjaan, revisi, dan kerahasiaan proyek.
+                    </p>
+                </div>
+
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>Data apa yang perlu dikirim?</summary>
+                        <div class="faq-answer">
+                            <p>
+                                Data dapat berupa koordinat, Excel, gambar
+                                peta, citra, KML, SHP, dokumen pendukung,
+                                atau informasi lokasi yang tersedia.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            Apakah proyek bisa dikerjakan secara daring?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Ya. Pengiriman data, diskusi, pemeriksaan
+                                hasil, dan penyerahan file dapat dilakukan
+                                secara daring.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Format hasil apa yang tersedia?</summary>
+                        <div class="faq-answer">
+                            <p>
+                                Hasil dapat berupa PDF, JPEG, KML, SHP,
+                                GeoJSON, atau format lain sesuai kebutuhan
+                                dan kesepakatan proyek.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Berapa lama waktu pengerjaan?</summary>
+                        <div class="faq-answer">
+                            <p>
+                                Durasi bergantung pada luas wilayah,
+                                kelengkapan data, jenis analisis, tingkat
+                                kerumitan, dan jumlah revisi.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Apakah hasil dapat direvisi?</summary>
+                        <div class="faq-answer">
+                            <p>
+                                Revisi tersedia sesuai jumlah dan ruang
+                                lingkup yang disepakati sebelum pengerjaan.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>
+                            Bagaimana kerahasiaan data klien dijaga?
+                        </summary>
+                        <div class="faq-answer">
+                            <p>
+                                Data digunakan untuk kebutuhan pengerjaan
+                                dan tidak dipublikasikan tanpa persetujuan
+                                klien.
+                            </p>
+                        </div>
+                    </details>
+                </div>
             </div>
         </section>
 
         <!-- KONTAK -->
-        <section
-            id="kontak"
-            class="contact-section"
-        >
+        <section id="kontak" class="contact-section">
             <div class="contact-contour"></div>
 
             <div class="shell contact-layout">
-
                 <div>
+                    <p class="section-label">Konsultasi Proyek</p>
 
-                    <p class="section-label">
-                        Konsultasi Proyek
-                    </p>
-
-                    <h2>
-                        Punya data lokasi yang perlu diubah menjadi peta?
-                    </h2>
+                    <h2>Punya data atau peta yang perlu diolah?</h2>
 
                     <p>
-                        Sampaikan kebutuhan, data yang tersedia, dan
-                        bentuk hasil yang Anda inginkan. Kami akan
-                        membantu menentukan pendekatan pemetaan yang
-                        paling sesuai.
+                        Kirimkan informasi awal proyek untuk mendapatkan
+                        arahan kebutuhan data, bentuk output, dan estimasi
+                        pengerjaan.
                     </p>
-
                 </div>
 
                 <div class="contact-action">
-
                     <a
                         class="contact-button"
-                        href="https://wa.me/6285947185576?text=Halo%20Lim%27s%20Mapping%2C%20saya%20ingin%20mendiskusikan%20kebutuhan%20pemetaan%20saya."
+                        href="https://wa.me/6285947185576?text=Halo%20Lim%27s%20Mapping%2C%20saya%20ingin%20meminta%20estimasi%20proyek.%0A%0AJenis%20kebutuhan%3A%0ALokasi%20proyek%3A%0AData%20yang%20tersedia%3A%0AFormat%20hasil%3A%0ATenggat%20waktu%3A%0ACatatan%20tambahan%3A"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span class="send-icon">➤</span>
-                        Mulai Konsultasi via WhatsApp
+                        <span class="send-icon" aria-hidden="true">➤</span>
+                        Konsultasi via WhatsApp
                     </a>
 
-                    <p>
-                        Konsultasi awal untuk memahami kebutuhan proyek
-                        Anda.
-                    </p>
+                    <a class="contact-secondary-link" href="#portofolio">
+                        Lihat kembali portofolio
+                    </a>
 
-                    <p>
-                        +62 859-4718-5576
-                    </p>
-
+                    <p>+62 859-4718-5576</p>
                 </div>
-
             </div>
         </section>
-
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="shell footer-layout">
-
-            <div>
-
-                <a
-                    href="#beranda"
-                    class="footer-brand"
-                >
+    <footer class="site-footer">
+        <div class="shell footer-layout footer-layout-expanded">
+            <div class="footer-intro">
+                <a href="#beranda" class="footer-brand">
                     Lim’s Mapping
                 </a>
 
                 <p>
-                    Jasa pemetaan dan visualisasi data yang jelas,
-                    informatif, dan sesuai kebutuhan.
+                    Layanan pemetaan, pengolahan data spasial, dan
+                    visualisasi peta untuk berbagai kebutuhan proyek.
                 </p>
-
             </div>
 
-            <p>
-                © 2024 Lim’s Mapping. Seluruh hak dilindungi.
-            </p>
+            <nav class="footer-navigation" aria-label="Navigasi footer">
+                <strong>Navigasi</strong>
+                <a href="#portofolio">Portofolio</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#proses">Proses</a>
+                <a href="#faq">FAQ</a>
+            </nav>
 
-        </div>
-    </footer>
-<!-- PORTFOLIO LIGHTBOX -->
-<div
-    class="portfolio-lightbox"
-    id="portfolio-lightbox"
-    aria-hidden="true"
->
-    <div
-        class="portfolio-lightbox-backdrop"
-        data-lightbox-close
-    ></div>
-
-    <section
-        class="portfolio-lightbox-dialog"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="portfolio-lightbox-title"
-    >
-        <header class="portfolio-lightbox-header">
-
-            <div class="portfolio-lightbox-heading">
-                <span class="portfolio-lightbox-kicker">
-                    Portofolio Lim’s Mapping
-                </span>
-
-                <h2
-                    class="portfolio-lightbox-title"
-                    id="portfolio-lightbox-title"
-                >
-                    Detail Peta
-                </h2>
-            </div>
-
-            <div class="portfolio-lightbox-actions">
-
-                <button
-                    class="portfolio-lightbox-action portfolio-lightbox-zoom"
-                    id="portfolio-lightbox-zoom"
-                    type="button"
-                    aria-label="Perbesar gambar"
-                >
-                    Perbesar
-                </button>
-
+            <div class="footer-contact">
+                <strong>Hubungi</strong>
                 <a
-                    class="portfolio-lightbox-action"
-                    id="portfolio-lightbox-original"
-                    href="#"
+                    href="https://wa.me/6285947185576"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Buka gambar resolusi penuh di tab baru"
                 >
-                    Resolusi Penuh ↗
+                    WhatsApp
                 </a>
-
-                <button
-                    class="portfolio-lightbox-close"
-                    id="portfolio-lightbox-close"
-                    type="button"
-                    aria-label="Tutup tampilan gambar"
-                >
-                    ×
-                </button>
-
+                <span>Proyek dapat dikerjakan secara daring</span>
+                <span>Indonesia</span>
             </div>
-
-        </header>
-
-        <div class="portfolio-lightbox-stage">
-
-            <button
-                class="portfolio-lightbox-nav portfolio-lightbox-prev"
-                id="portfolio-lightbox-prev"
-                type="button"
-                aria-label="Lihat gambar sebelumnya"
-            >
-                ‹
-            </button>
-
-            <div
-                class="portfolio-lightbox-image-wrap"
-                id="portfolio-lightbox-image-wrap"
-            >
-                <div
-                    class="portfolio-lightbox-loader"
-                    id="portfolio-lightbox-loader"
-                    aria-hidden="true"
-                ></div>
-
-                <img
-                    class="portfolio-lightbox-image"
-                    id="portfolio-lightbox-image"
-                    src=""
-                    alt=""
-                >
-            </div>
-
-            <button
-                class="portfolio-lightbox-nav portfolio-lightbox-next"
-                id="portfolio-lightbox-next"
-                type="button"
-                aria-label="Lihat gambar berikutnya"
-            >
-                ›
-            </button>
-
         </div>
 
-        <footer class="portfolio-lightbox-footer">
+        <div class="shell footer-bottom">
+            <p>
+                © 2024–<span data-current-year>2026</span> Lim’s Mapping.
+                Seluruh hak dilindungi.
+            </p>
 
-            <p
-                class="portfolio-lightbox-caption"
-                id="portfolio-lightbox-caption"
-            ></p>
+            <p>
+                Data dan karya klien tidak dipublikasikan tanpa izin.
+            </p>
+        </div>
+    </footer>
 
-            <span
-                class="portfolio-lightbox-counter"
-                id="portfolio-lightbox-counter"
-            >
-                01 / 01
-            </span>
+    <!-- PORTFOLIO LIGHTBOX -->
+    <div
+        class="portfolio-lightbox"
+        id="portfolio-lightbox"
+        aria-hidden="true"
+    >
+        <div
+            class="portfolio-lightbox-backdrop"
+            data-lightbox-close
+        ></div>
 
-        </footer>
+        <section
+            class="portfolio-lightbox-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="portfolio-lightbox-title"
+        >
+            <header class="portfolio-lightbox-header">
+                <div class="portfolio-lightbox-heading">
+                    <span class="portfolio-lightbox-kicker">
+                        Portofolio Lim’s Mapping
+                    </span>
 
-    </section>
-</div>
+                    <h2
+                        class="portfolio-lightbox-title"
+                        id="portfolio-lightbox-title"
+                    >
+                        Detail Peta
+                    </h2>
+                </div>
+
+                <div class="portfolio-lightbox-actions">
+                    <button
+                        class="portfolio-lightbox-action portfolio-lightbox-zoom"
+                        id="portfolio-lightbox-zoom"
+                        type="button"
+                        aria-label="Perbesar gambar"
+                    >
+                        Perbesar
+                    </button>
+
+                    <a
+                        class="portfolio-lightbox-action"
+                        id="portfolio-lightbox-original"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Buka gambar resolusi penuh di tab baru"
+                    >
+                        Resolusi Penuh ↗
+                    </a>
+
+                    <button
+                        class="portfolio-lightbox-close"
+                        id="portfolio-lightbox-close"
+                        type="button"
+                        aria-label="Tutup tampilan gambar"
+                    >
+                        ×
+                    </button>
+                </div>
+            </header>
+
+            <div class="portfolio-lightbox-stage">
+                <button
+                    class="portfolio-lightbox-nav portfolio-lightbox-prev"
+                    id="portfolio-lightbox-prev"
+                    type="button"
+                    aria-label="Lihat gambar sebelumnya"
+                >
+                    ‹
+                </button>
+
+                <div
+                    class="portfolio-lightbox-image-wrap"
+                    id="portfolio-lightbox-image-wrap"
+                >
+                    <div
+                        class="portfolio-lightbox-loader"
+                        id="portfolio-lightbox-loader"
+                        aria-hidden="true"
+                    ></div>
+
+                    <img
+                        class="portfolio-lightbox-image"
+                        id="portfolio-lightbox-image"
+                        src=""
+                        alt=""
+                    >
+                </div>
+
+                <button
+                    class="portfolio-lightbox-nav portfolio-lightbox-next"
+                    id="portfolio-lightbox-next"
+                    type="button"
+                    aria-label="Lihat gambar berikutnya"
+                >
+                    ›
+                </button>
+            </div>
+
+            <footer class="portfolio-lightbox-footer">
+                <p
+                    class="portfolio-lightbox-caption"
+                    id="portfolio-lightbox-caption"
+                ></p>
+
+                <span
+                    class="portfolio-lightbox-counter"
+                    id="portfolio-lightbox-counter"
+                >
+                    01 / 01
+                </span>
+            </footer>
+        </section>
+    </div>
+
     <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const lightbox = document.getElementById("portfolio-lightbox");
-    const lightboxImage = document.getElementById(
-        "portfolio-lightbox-image"
-    );
-    const imageWrap = document.getElementById(
-        "portfolio-lightbox-image-wrap"
-    );
-    const loader = document.getElementById(
-        "portfolio-lightbox-loader"
-    );
-    const titleElement = document.getElementById(
-        "portfolio-lightbox-title"
-    );
-    const captionElement = document.getElementById(
-        "portfolio-lightbox-caption"
-    );
-    const counterElement = document.getElementById(
-        "portfolio-lightbox-counter"
-    );
-    const originalLink = document.getElementById(
-        "portfolio-lightbox-original"
-    );
-    const closeButton = document.getElementById(
-        "portfolio-lightbox-close"
-    );
-    const previousButton = document.getElementById(
-        "portfolio-lightbox-prev"
-    );
-    const nextButton = document.getElementById(
-        "portfolio-lightbox-next"
-    );
-    const zoomButton = document.getElementById(
-        "portfolio-lightbox-zoom"
-    );
+        document.addEventListener("DOMContentLoaded", function () {
+            const yearElements = document.querySelectorAll(
+                "[data-current-year]"
+            );
+            const currentYear = new Date().getFullYear();
 
-    if (
-        !lightbox ||
-        !lightboxImage ||
-        !imageWrap ||
-        !titleElement
-    ) {
-        return;
-    }
-
-    const supportedExtensions =
-        /\.(jpe?g|png|webp|gif|avif)(\?.*)?$/i;
-
-    /*
-     * Ambil seluruh tautan gambar di bagian portofolio.
-     * Termasuk gambar Before/After dan tombol "Lihat detail".
-     */
-    const imageLinks = Array.from(
-        document.querySelectorAll("#portofolio a[href]")
-    ).filter(function (link) {
-        const href = link.getAttribute("href");
-
-        if (!href) {
-            return false;
-        }
-
-        return supportedExtensions.test(href);
-    });
-
-    const portfolioItems = [];
-    const itemIndexes = new Map();
-
-    function cleanText(element) {
-        return element
-            ? element.textContent.replace(/\s+/g, " ").trim()
-            : "";
-    }
-
-    function getItemInformation(link) {
-        const card = link.closest(".portfolio-card");
-        const stage = link.closest(".case-stage");
-        const image = link.querySelector("img");
-
-        let title = "";
-        let caption = "";
-        let altText = "";
-
-        if (card) {
-            title =
-                cleanText(
-                    card.querySelector(".portfolio-category")
-                ) ||
-                cleanText(card.querySelector("h3"));
-
-            const paragraphs = Array.from(
-                card.querySelectorAll(".portfolio-copy > p")
-            ).filter(function (paragraph) {
-                return !paragraph.classList.contains(
-                    "portfolio-category"
-                );
+            yearElements.forEach(function (element) {
+                element.textContent = String(currentYear);
             });
 
-            caption = paragraphs
-                .map(cleanText)
-                .filter(Boolean)
-                .join(" ");
-        }
+            const mobileMenu = document.querySelector(".mobile-menu");
 
-        if (stage) {
-            title =
-                cleanText(
-                    stage.querySelector(".case-stage-kicker")
-                ) ||
-                cleanText(stage.querySelector("h4"));
+            if (mobileMenu) {
+                mobileMenu
+                    .querySelectorAll("a")
+                    .forEach(function (link) {
+                        link.addEventListener("click", function () {
+                            mobileMenu.removeAttribute("open");
+                        });
+                    });
+            }
 
-            caption =
-                cleanText(
-                    stage.querySelector("figcaption > p:last-of-type")
-                ) ||
-                cleanText(stage.querySelector("h4"));
-        }
+            const lightbox = document.getElementById(
+                "portfolio-lightbox"
+            );
+            const lightboxImage = document.getElementById(
+                "portfolio-lightbox-image"
+            );
+            const imageWrap = document.getElementById(
+                "portfolio-lightbox-image-wrap"
+            );
+            const loader = document.getElementById(
+                "portfolio-lightbox-loader"
+            );
+            const titleElement = document.getElementById(
+                "portfolio-lightbox-title"
+            );
+            const captionElement = document.getElementById(
+                "portfolio-lightbox-caption"
+            );
+            const counterElement = document.getElementById(
+                "portfolio-lightbox-counter"
+            );
+            const originalLink = document.getElementById(
+                "portfolio-lightbox-original"
+            );
+            const closeButton = document.getElementById(
+                "portfolio-lightbox-close"
+            );
+            const previousButton = document.getElementById(
+                "portfolio-lightbox-prev"
+            );
+            const nextButton = document.getElementById(
+                "portfolio-lightbox-next"
+            );
+            const zoomButton = document.getElementById(
+                "portfolio-lightbox-zoom"
+            );
 
-        if (image) {
-            altText = image.getAttribute("alt") || "";
-        }
-
-        if (!title) {
-            title =
-                link.getAttribute("aria-label") ||
-                altText ||
-                "Portofolio Lim’s Mapping";
-        }
-
-        return {
-            title: title,
-            caption: caption || altText,
-            alt: altText || title
-        };
-    }
-
-    /*
-     * Hilangkan gambar ganda.
-     * Gambar dan tombol detail sering memakai href yang sama.
-     */
-    imageLinks.forEach(function (link) {
-        const absoluteUrl = new URL(
-            link.getAttribute("href"),
-            document.baseURI
-        ).href;
-
-        let itemIndex;
-
-        if (!itemIndexes.has(absoluteUrl)) {
-            const information = getItemInformation(link);
-
-            itemIndex = portfolioItems.length;
-
-            portfolioItems.push({
-                src: absoluteUrl,
-                title: information.title,
-                caption: information.caption,
-                alt: information.alt
-            });
-
-            itemIndexes.set(absoluteUrl, itemIndex);
-        } else {
-            itemIndex = itemIndexes.get(absoluteUrl);
-        }
-
-        link.dataset.lightboxIndex = itemIndex;
-
-        link.addEventListener("click", function (event) {
-            /*
-             * Cmd/Ctrl + klik tetap membuka tab baru seperti biasa.
-             */
             if (
-                event.metaKey ||
-                event.ctrlKey ||
-                event.shiftKey ||
-                event.altKey ||
-                event.button !== 0
+                !lightbox ||
+                !lightboxImage ||
+                !imageWrap ||
+                !loader ||
+                !titleElement ||
+                !captionElement ||
+                !counterElement ||
+                !originalLink ||
+                !closeButton ||
+                !previousButton ||
+                !nextButton ||
+                !zoomButton
             ) {
                 return;
             }
 
-            event.preventDefault();
+            const imageLinks = Array.from(
+                document.querySelectorAll("a[data-lightbox]")
+            );
+            const portfolioItems = [];
+            const itemIndexes = new Map();
 
-            openLightbox(
-                Number(link.dataset.lightboxIndex),
-                link
+            imageLinks.forEach(function (link) {
+                const href = link.getAttribute("href");
+
+                if (!href) {
+                    return;
+                }
+
+                const absoluteUrl = new URL(
+                    href,
+                    document.baseURI
+                ).href;
+                let itemIndex;
+
+                if (!itemIndexes.has(absoluteUrl)) {
+                    const image = link.querySelector("img");
+                    const title =
+                        link.dataset.title ||
+                        link.getAttribute("aria-label") ||
+                        (image ? image.getAttribute("alt") : "") ||
+                        "Portofolio Lim’s Mapping";
+                    const caption =
+                        link.dataset.caption ||
+                        (image ? image.getAttribute("alt") : "") ||
+                        title;
+                    const alt =
+                        (image ? image.getAttribute("alt") : "") ||
+                        title;
+
+                    itemIndex = portfolioItems.length;
+
+                    portfolioItems.push({
+                        src: absoluteUrl,
+                        title: title,
+                        caption: caption,
+                        alt: alt
+                    });
+
+                    itemIndexes.set(absoluteUrl, itemIndex);
+                } else {
+                    itemIndex = itemIndexes.get(absoluteUrl);
+                }
+
+                link.dataset.lightboxIndex = String(itemIndex);
+
+                link.addEventListener("click", function (event) {
+                    if (
+                        event.metaKey ||
+                        event.ctrlKey ||
+                        event.shiftKey ||
+                        event.altKey ||
+                        event.button !== 0
+                    ) {
+                        return;
+                    }
+
+                    event.preventDefault();
+                    openLightbox(
+                        Number(link.dataset.lightboxIndex),
+                        link
+                    );
+                });
+            });
+
+            let currentIndex = 0;
+            let lastFocusedElement = null;
+            let touchStartX = 0;
+
+            function resetZoom() {
+                imageWrap.classList.remove("is-zoomed");
+                zoomButton.textContent = "Perbesar";
+                zoomButton.setAttribute(
+                    "aria-label",
+                    "Perbesar gambar"
+                );
+                imageWrap.scrollTop = 0;
+                imageWrap.scrollLeft = 0;
+            }
+
+            function updateLightbox(index) {
+                if (!portfolioItems.length) {
+                    return;
+                }
+
+                currentIndex =
+                    (index + portfolioItems.length) %
+                    portfolioItems.length;
+
+                const item = portfolioItems[currentIndex];
+
+                resetZoom();
+                loader.classList.add("is-visible");
+                lightboxImage.classList.add("is-loading");
+                titleElement.textContent = item.title;
+                captionElement.textContent = item.caption;
+                counterElement.textContent =
+                    String(currentIndex + 1).padStart(2, "0") +
+                    " / " +
+                    String(portfolioItems.length).padStart(2, "0");
+                originalLink.href = item.src;
+                lightboxImage.alt = item.alt;
+                lightboxImage.src = item.src;
+
+                const showNavigation = portfolioItems.length > 1;
+                previousButton.hidden = !showNavigation;
+                nextButton.hidden = !showNavigation;
+            }
+
+            function openLightbox(index, triggerElement) {
+                lastFocusedElement = triggerElement;
+                updateLightbox(index);
+                lightbox.classList.add("is-open");
+                lightbox.setAttribute("aria-hidden", "false");
+                document.body.classList.add("lightbox-open");
+
+                window.requestAnimationFrame(function () {
+                    closeButton.focus();
+                });
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove("is-open");
+                lightbox.setAttribute("aria-hidden", "true");
+                document.body.classList.remove("lightbox-open");
+                resetZoom();
+
+                if (lastFocusedElement) {
+                    lastFocusedElement.focus();
+                }
+            }
+
+            function showPrevious() {
+                updateLightbox(currentIndex - 1);
+            }
+
+            function showNext() {
+                updateLightbox(currentIndex + 1);
+            }
+
+            function toggleZoom() {
+                const isZoomed = imageWrap.classList.toggle(
+                    "is-zoomed"
+                );
+
+                zoomButton.textContent = isZoomed
+                    ? "Kecilkan"
+                    : "Perbesar";
+                zoomButton.setAttribute(
+                    "aria-label",
+                    isZoomed
+                        ? "Kembalikan ukuran gambar"
+                        : "Perbesar gambar"
+                );
+
+                if (!isZoomed) {
+                    imageWrap.scrollTop = 0;
+                    imageWrap.scrollLeft = 0;
+                }
+            }
+
+            lightboxImage.addEventListener("load", function () {
+                loader.classList.remove("is-visible");
+                lightboxImage.classList.remove("is-loading");
+            });
+
+            lightboxImage.addEventListener("error", function () {
+                loader.classList.remove("is-visible");
+                lightboxImage.classList.remove("is-loading");
+                captionElement.textContent =
+                    "Gambar tidak dapat dimuat. Periksa kembali nama dan lokasi file di repository.";
+            });
+
+            closeButton.addEventListener("click", closeLightbox);
+            previousButton.addEventListener("click", showPrevious);
+            nextButton.addEventListener("click", showNext);
+            zoomButton.addEventListener("click", toggleZoom);
+
+            imageWrap.addEventListener("click", function (event) {
+                if (event.target === lightboxImage) {
+                    toggleZoom();
+                }
+            });
+
+            lightbox
+                .querySelectorAll("[data-lightbox-close]")
+                .forEach(function (element) {
+                    element.addEventListener("click", closeLightbox);
+                });
+
+            document.addEventListener("keydown", function (event) {
+                if (!lightbox.classList.contains("is-open")) {
+                    return;
+                }
+
+                if (event.key === "Escape") {
+                    closeLightbox();
+                } else if (event.key === "ArrowLeft") {
+                    showPrevious();
+                } else if (event.key === "ArrowRight") {
+                    showNext();
+                }
+            });
+
+            imageWrap.addEventListener(
+                "touchstart",
+                function (event) {
+                    touchStartX = event.changedTouches[0].clientX;
+                },
+                { passive: true }
+            );
+
+            imageWrap.addEventListener(
+                "touchend",
+                function (event) {
+                    if (imageWrap.classList.contains("is-zoomed")) {
+                        return;
+                    }
+
+                    const touchEndX =
+                        event.changedTouches[0].clientX;
+                    const distance = touchEndX - touchStartX;
+
+                    if (Math.abs(distance) < 55) {
+                        return;
+                    }
+
+                    if (distance > 0) {
+                        showPrevious();
+                    } else {
+                        showNext();
+                    }
+                },
+                { passive: true }
             );
         });
-    });
-
-    let currentIndex = 0;
-    let lastFocusedElement = null;
-    let touchStartX = 0;
-
-    function resetZoom() {
-        imageWrap.classList.remove("is-zoomed");
-        zoomButton.textContent = "Perbesar";
-        zoomButton.setAttribute(
-            "aria-label",
-            "Perbesar gambar"
-        );
-
-        imageWrap.scrollTop = 0;
-        imageWrap.scrollLeft = 0;
-    }
-
-    function updateLightbox(index) {
-        if (!portfolioItems.length) {
-            return;
-        }
-
-        currentIndex =
-            (index + portfolioItems.length) %
-            portfolioItems.length;
-
-        const item = portfolioItems[currentIndex];
-
-        resetZoom();
-
-        loader.classList.add("is-visible");
-        lightboxImage.classList.add("is-loading");
-
-        titleElement.textContent = item.title;
-        captionElement.textContent = item.caption;
-        counterElement.textContent =
-            String(currentIndex + 1).padStart(2, "0") +
-            " / " +
-            String(portfolioItems.length).padStart(2, "0");
-
-        originalLink.href = item.src;
-
-        lightboxImage.alt = item.alt;
-        lightboxImage.src = item.src;
-
-        const showNavigation = portfolioItems.length > 1;
-
-        previousButton.hidden = !showNavigation;
-        nextButton.hidden = !showNavigation;
-    }
-
-    function openLightbox(index, triggerElement) {
-        lastFocusedElement = triggerElement;
-
-        updateLightbox(index);
-
-        lightbox.classList.add("is-open");
-        lightbox.setAttribute("aria-hidden", "false");
-        document.body.classList.add("lightbox-open");
-
-        window.requestAnimationFrame(function () {
-            closeButton.focus();
-        });
-    }
-
-    function closeLightbox() {
-        lightbox.classList.remove("is-open");
-        lightbox.setAttribute("aria-hidden", "true");
-        document.body.classList.remove("lightbox-open");
-
-        resetZoom();
-
-        if (lastFocusedElement) {
-            lastFocusedElement.focus();
-        }
-    }
-
-    function showPrevious() {
-        updateLightbox(currentIndex - 1);
-    }
-
-    function showNext() {
-        updateLightbox(currentIndex + 1);
-    }
-
-    function toggleZoom() {
-        const isZoomed =
-            imageWrap.classList.toggle("is-zoomed");
-
-        zoomButton.textContent = isZoomed
-            ? "Kecilkan"
-            : "Perbesar";
-
-        zoomButton.setAttribute(
-            "aria-label",
-            isZoomed
-                ? "Kembalikan ukuran gambar"
-                : "Perbesar gambar"
-        );
-
-        if (!isZoomed) {
-            imageWrap.scrollTop = 0;
-            imageWrap.scrollLeft = 0;
-        }
-    }
-
-    lightboxImage.addEventListener("load", function () {
-        loader.classList.remove("is-visible");
-        lightboxImage.classList.remove("is-loading");
-    });
-
-    lightboxImage.addEventListener("error", function () {
-        loader.classList.remove("is-visible");
-        lightboxImage.classList.remove("is-loading");
-
-        captionElement.textContent =
-            "Gambar tidak dapat dimuat. Periksa kembali nama dan lokasi file di repository.";
-    });
-
-    closeButton.addEventListener("click", closeLightbox);
-    previousButton.addEventListener("click", showPrevious);
-    nextButton.addEventListener("click", showNext);
-    zoomButton.addEventListener("click", toggleZoom);
-
-    imageWrap.addEventListener("click", function (event) {
-        if (event.target === lightboxImage) {
-            toggleZoom();
-        }
-    });
-
-    lightbox.querySelectorAll("[data-lightbox-close]")
-        .forEach(function (element) {
-            element.addEventListener(
-                "click",
-                closeLightbox
-            );
-        });
-
-    document.addEventListener("keydown", function (event) {
-        if (!lightbox.classList.contains("is-open")) {
-            return;
-        }
-
-        if (event.key === "Escape") {
-            closeLightbox();
-        }
-
-        if (event.key === "ArrowLeft") {
-            showPrevious();
-        }
-
-        if (event.key === "ArrowRight") {
-            showNext();
-        }
-    });
-
-    /*
-     * Swipe pada HP.
-     */
-    imageWrap.addEventListener(
-        "touchstart",
-        function (event) {
-            touchStartX =
-                event.changedTouches[0].clientX;
-        },
-        { passive: true }
-    );
-
-    imageWrap.addEventListener(
-        "touchend",
-        function (event) {
-            if (imageWrap.classList.contains("is-zoomed")) {
-                return;
-            }
-
-            const touchEndX =
-                event.changedTouches[0].clientX;
-
-            const distance = touchEndX - touchStartX;
-
-            if (Math.abs(distance) < 55) {
-                return;
-            }
-
-            if (distance > 0) {
-                showPrevious();
-            } else {
-                showNext();
-            }
-        },
-        { passive: true }
-    );
-});
-</script>
+    </script>
 </body>
 </html>
