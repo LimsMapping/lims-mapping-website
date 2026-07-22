@@ -75,6 +75,10 @@
     >
 
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
 </head>
 
 <body>
@@ -149,6 +153,13 @@
                     <a href="#kontak">Kontak</a>
                 </div>
             </details>
+        </div>
+
+        <div
+            class="site-scroll-progress"
+            aria-hidden="true"
+        >
+            <span id="site-scroll-progress-bar"></span>
         </div>
     </header>
 
@@ -1224,78 +1235,297 @@
                 <div class="section-heading wide-heading process-heading">
                     <p class="section-label">05 / Cara Kerja</p>
 
-                    <h2>Proses jelas dari data awal hingga hasil akhir.</h2>
+                    <h2>Ikuti setiap tahap dari data awal hingga hasil akhir.</h2>
 
                     <p>
-                        Setiap proyek dikerjakan melalui tahapan terstruktur
-                        agar kebutuhan, metode, dan hasil tetap selaras.
+                        Timeline akan aktif mengikuti posisi scroll agar
+                        proses, kebutuhan data, dan hasil setiap tahap dapat
+                        dipahami secara bertahap.
                     </p>
                 </div>
 
-                <div class="process-grid">
-                    <article class="process-card">
-                        <div class="process-card-top">
-                            <span class="process-kicker">Tahap</span>
-                            <strong class="process-number">01</strong>
+                <div class="process-experience">
+                    <nav
+                        class="process-timeline"
+                        aria-label="Tahapan pengerjaan proyek"
+                    >
+                        <div class="process-timeline-inner">
+                            <div
+                                class="process-timeline-track"
+                                aria-hidden="true"
+                            >
+                                <span id="process-timeline-progress"></span>
+                            </div>
+
+                            <div class="process-timeline-nodes">
+                                <button
+                                    class="process-timeline-node is-active"
+                                    type="button"
+                                    data-process-target="process-step-1"
+                                    aria-label="Buka tahap 1, Diskusi Kebutuhan"
+                                    aria-current="step"
+                                >
+                                    <span class="process-node-circle">01</span>
+                                    <strong>Diskusi</strong>
+                                </button>
+
+                                <button
+                                    class="process-timeline-node"
+                                    type="button"
+                                    data-process-target="process-step-2"
+                                    aria-label="Buka tahap 2, Pemeriksaan Data"
+                                >
+                                    <span class="process-node-circle">02</span>
+                                    <strong>Validasi</strong>
+                                </button>
+
+                                <button
+                                    class="process-timeline-node"
+                                    type="button"
+                                    data-process-target="process-step-3"
+                                    aria-label="Buka tahap 3, Pengerjaan dan Revisi"
+                                >
+                                    <span class="process-node-circle">03</span>
+                                    <strong>Produksi</strong>
+                                </button>
+
+                                <button
+                                    class="process-timeline-node"
+                                    type="button"
+                                    data-process-target="process-step-4"
+                                    aria-label="Buka tahap 4, Penyerahan Hasil"
+                                >
+                                    <span class="process-node-circle">04</span>
+                                    <strong>Penyerahan</strong>
+                                </button>
+                            </div>
                         </div>
+                    </nav>
 
-                        <div class="process-route"><span></span></div>
+                    <div class="process-grid process-grid-interactive">
+                        <article
+                            class="process-card process-card-interactive is-active"
+                            id="process-step-1"
+                            data-process-step="1"
+                        >
+                            <div class="process-card-content">
+                                <div class="process-card-top">
+                                    <div
+                                        class="process-icon"
+                                        aria-hidden="true"
+                                    >
+                                        <svg viewBox="0 0 48 48">
+                                            <circle cx="24" cy="24" r="15"></circle>
+                                            <circle cx="24" cy="24" r="6"></circle>
+                                            <path d="M24 4V12"></path>
+                                            <path d="M24 36V44"></path>
+                                            <path d="M4 24H12"></path>
+                                            <path d="M36 24H44"></path>
+                                        </svg>
+                                    </div>
 
-                        <h3>Diskusi Kebutuhan</h3>
-                        <p>
-                            Menentukan tujuan, lokasi, data yang tersedia,
-                            bentuk output, dan tenggat waktu.
-                        </p>
-                        <span class="process-tag">Brief proyek</span>
-                    </article>
+                                    <div>
+                                        <span class="process-kicker">Tahap</span>
+                                        <strong class="process-number">01</strong>
+                                    </div>
+                                </div>
 
-                    <article class="process-card">
-                        <div class="process-card-top">
-                            <span class="process-kicker">Tahap</span>
-                            <strong class="process-number">02</strong>
-                        </div>
+                                <div class="process-route"><span></span></div>
 
-                        <div class="process-route"><span></span></div>
+                                <h3>Diskusi Kebutuhan</h3>
+                                <p>
+                                    Tim memahami tujuan peta, lokasi proyek,
+                                    konteks penggunaan, format keluaran, dan
+                                    tenggat yang diharapkan.
+                                </p>
+                                <span class="process-tag">Brief proyek</span>
+                            </div>
 
-                        <h3>Pemeriksaan Data</h3>
-                        <p>
-                            Data koordinat, citra, dan referensi diperiksa
-                            untuk menentukan metode pengerjaan.
-                        </p>
-                        <span class="process-tag">Validasi data</span>
-                    </article>
+                            <div class="process-detail-grid">
+                                <div class="process-detail-item">
+                                    <span>Yang dibutuhkan</span>
+                                    <strong>
+                                        Tujuan, lokasi, contoh referensi,
+                                        format hasil, dan tenggat waktu.
+                                    </strong>
+                                </div>
 
-                    <article class="process-card">
-                        <div class="process-card-top">
-                            <span class="process-kicker">Tahap</span>
-                            <strong class="process-number">03</strong>
-                        </div>
+                                <div class="process-detail-item">
+                                    <span>Hasil tahap</span>
+                                    <strong>
+                                        Ruang lingkup, kebutuhan data, metode,
+                                        serta estimasi pengerjaan awal.
+                                    </strong>
+                                </div>
+                            </div>
+                        </article>
 
-                        <div class="process-route"><span></span></div>
+                        <article
+                            class="process-card process-card-interactive"
+                            id="process-step-2"
+                            data-process-step="2"
+                        >
+                            <div class="process-card-content">
+                                <div class="process-card-top">
+                                    <div
+                                        class="process-icon"
+                                        aria-hidden="true"
+                                    >
+                                        <svg viewBox="0 0 48 48">
+                                            <path d="M8 13L24 6L40 13L24 20L8 13Z"></path>
+                                            <path d="M8 21L24 28L40 21"></path>
+                                            <path d="M8 29L24 36L32 32"></path>
+                                            <circle cx="37" cy="35" r="7"></circle>
+                                            <path d="M33.5 35L36 37.5L41 32.5"></path>
+                                        </svg>
+                                    </div>
 
-                        <h3>Pengerjaan dan Revisi</h3>
-                        <p>
-                            Data diolah, divisualisasikan, kemudian diperiksa
-                            dan disempurnakan sesuai kesepakatan.
-                        </p>
-                        <span class="process-tag">Produksi peta</span>
-                    </article>
+                                    <div>
+                                        <span class="process-kicker">Tahap</span>
+                                        <strong class="process-number">02</strong>
+                                    </div>
+                                </div>
 
-                    <article class="process-card">
-                        <div class="process-card-top">
-                            <span class="process-kicker">Tahap</span>
-                            <strong class="process-number">04</strong>
-                        </div>
+                                <div class="process-route"><span></span></div>
 
-                        <div class="process-route"><span></span></div>
+                                <h3>Pemeriksaan Data</h3>
+                                <p>
+                                    Koordinat, tabel, citra, peta lama, dan
+                                    referensi lain diperiksa untuk memastikan
+                                    data cukup dan metode pengerjaan tepat.
+                                </p>
+                                <span class="process-tag">Validasi data</span>
+                            </div>
 
-                        <h3>Penyerahan Hasil</h3>
-                        <p>
-                            File akhir dikirim dalam format yang telah
-                            disepakati bersama klien.
-                        </p>
-                        <span class="process-tag">Finalisasi</span>
-                    </article>
+                            <div class="process-detail-grid">
+                                <div class="process-detail-item">
+                                    <span>Yang dibutuhkan</span>
+                                    <strong>
+                                        Excel koordinat, KML, SHP, GeoJSON,
+                                        citra, gambar peta, atau dokumen pendukung.
+                                    </strong>
+                                </div>
+
+                                <div class="process-detail-item">
+                                    <span>Hasil tahap</span>
+                                    <strong>
+                                        Status kelengkapan data, sistem
+                                        koordinat, dan rencana pengolahan.
+                                    </strong>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article
+                            class="process-card process-card-interactive"
+                            id="process-step-3"
+                            data-process-step="3"
+                        >
+                            <div class="process-card-content">
+                                <div class="process-card-top">
+                                    <div
+                                        class="process-icon"
+                                        aria-hidden="true"
+                                    >
+                                        <svg viewBox="0 0 48 48">
+                                            <path d="M10 36L14 26L32 8L40 16L22 34L10 36Z"></path>
+                                            <path d="M29 11L37 19"></path>
+                                            <path d="M14 26L22 34"></path>
+                                            <path d="M8 41H40"></path>
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <span class="process-kicker">Tahap</span>
+                                        <strong class="process-number">03</strong>
+                                    </div>
+                                </div>
+
+                                <div class="process-route"><span></span></div>
+
+                                <h3>Pengerjaan dan Revisi</h3>
+                                <p>
+                                    Data diolah, dianalisis, dan disusun menjadi
+                                    draft peta. Hasil kemudian diperiksa dan
+                                    disempurnakan sesuai kesepakatan revisi.
+                                </p>
+                                <span class="process-tag">Produksi peta</span>
+                            </div>
+
+                            <div class="process-detail-grid">
+                                <div class="process-detail-item">
+                                    <span>Yang dibutuhkan</span>
+                                    <strong>
+                                        Data yang telah tervalidasi dan catatan
+                                        prioritas visual atau analisis.
+                                    </strong>
+                                </div>
+
+                                <div class="process-detail-item">
+                                    <span>Hasil tahap</span>
+                                    <strong>
+                                        Draft peta, preview layout, dan versi
+                                        revisi sesuai ruang lingkup pekerjaan.
+                                    </strong>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article
+                            class="process-card process-card-interactive"
+                            id="process-step-4"
+                            data-process-step="4"
+                        >
+                            <div class="process-card-content">
+                                <div class="process-card-top">
+                                    <div
+                                        class="process-icon"
+                                        aria-hidden="true"
+                                    >
+                                        <svg viewBox="0 0 48 48">
+                                            <path d="M12 6H29L38 15V42H12V6Z"></path>
+                                            <path d="M29 6V15H38"></path>
+                                            <path d="M24 20V34"></path>
+                                            <path d="M18 28L24 34L30 28"></path>
+                                        </svg>
+                                    </div>
+
+                                    <div>
+                                        <span class="process-kicker">Tahap</span>
+                                        <strong class="process-number">04</strong>
+                                    </div>
+                                </div>
+
+                                <div class="process-route"><span></span></div>
+
+                                <h3>Penyerahan Hasil</h3>
+                                <p>
+                                    File akhir diperiksa, dirapikan, lalu
+                                    dikirim dalam format yang disepakati dan
+                                    siap digunakan oleh klien.
+                                </p>
+                                <span class="process-tag">Finalisasi</span>
+                            </div>
+
+                            <div class="process-detail-grid">
+                                <div class="process-detail-item">
+                                    <span>Yang dibutuhkan</span>
+                                    <strong>
+                                        Persetujuan draft akhir dan konfirmasi
+                                        format file yang akan diserahkan.
+                                    </strong>
+                                </div>
+
+                                <div class="process-detail-item">
+                                    <span>Hasil tahap</span>
+                                    <strong>
+                                        PDF/JPEG siap pakai serta file spasial
+                                        sesuai ruang lingkup proyek.
+                                    </strong>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
 
                 <aside class="pricing-panel" aria-labelledby="pricing-title">
@@ -1555,6 +1785,21 @@
             </p>
         </div>
     </footer>
+
+    <button
+        class="back-to-top"
+        id="back-to-top"
+        type="button"
+        aria-label="Kembali ke bagian atas halaman"
+        aria-hidden="true"
+        tabindex="-1"
+    >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 19V5"></path>
+            <path d="M6 11L12 5L18 11"></path>
+        </svg>
+        <span>Atas</span>
+    </button>
 
     <!-- PORTFOLIO LIGHTBOX -->
     <div
@@ -1989,6 +2234,422 @@
                 },
                 { passive: true }
             );
+
+
+            /* =====================================================
+               SCROLL REVEAL, NAVIGATION PROGRESS, DAN TIMELINE
+               ===================================================== */
+            const reducedMotionQuery = window.matchMedia(
+                "(prefers-reduced-motion: reduce)"
+            );
+            const prefersReducedMotion = reducedMotionQuery.matches;
+
+            const revealSelectors = [
+                ".section-heading",
+                ".credibility-item",
+                ".portfolio-card",
+                ".portfolio-subheading",
+                ".about-profile",
+                ".team-credential",
+                ".service-card",
+                ".case-study",
+                ".output-card",
+                ".process-card",
+                ".pricing-panel",
+                ".testimonial-showcase",
+                ".faq-item",
+                ".contact-layout",
+                ".footer-layout"
+            ];
+
+            const revealElements = Array.from(
+                document.querySelectorAll(revealSelectors.join(","))
+            );
+
+            revealElements.forEach(function (element, index) {
+                element.classList.add("reveal-item");
+
+                if (
+                    element.matches(
+                        ".section-heading, .portfolio-subheading, .about-profile"
+                    )
+                ) {
+                    element.classList.add("reveal-title");
+                } else {
+                    element.classList.add("reveal-card");
+                }
+
+                const localIndex = index % 5;
+                element.style.setProperty(
+                    "--reveal-delay",
+                    Math.min(localIndex * 65, 260) + "ms"
+                );
+            });
+
+            const numberElements = document.querySelectorAll(
+                ".section-label, .service-number, .output-number, .process-number"
+            );
+
+            numberElements.forEach(function (element) {
+                element.classList.add("reveal-number");
+            });
+
+            const mediaElements = document.querySelectorAll(
+                ".showcase-frame, .portfolio-image, .case-stage-media, .testimonial-proof"
+            );
+
+            mediaElements.forEach(function (element) {
+                element.classList.add("reveal-media");
+            });
+
+            if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+                revealElements.forEach(function (element) {
+                    element.classList.add("is-visible");
+                });
+
+                numberElements.forEach(function (element) {
+                    element.classList.add("is-visible");
+                });
+
+                mediaElements.forEach(function (element) {
+                    element.classList.add("is-visible");
+                });
+            } else {
+                const revealObserver = new IntersectionObserver(
+                    function (entries, observer) {
+                        entries.forEach(function (entry) {
+                            if (!entry.isIntersecting) {
+                                return;
+                            }
+
+                            entry.target.classList.add("is-visible");
+                            observer.unobserve(entry.target);
+                        });
+                    },
+                    {
+                        threshold: 0.12,
+                        rootMargin: "0px 0px -8% 0px"
+                    }
+                );
+
+                revealElements.forEach(function (element) {
+                    revealObserver.observe(element);
+                });
+
+                numberElements.forEach(function (element) {
+                    revealObserver.observe(element);
+                });
+
+                mediaElements.forEach(function (element) {
+                    revealObserver.observe(element);
+                });
+            }
+
+            window.requestAnimationFrame(function () {
+                document.body.classList.add("page-ready");
+            });
+
+            const progressBar = document.getElementById(
+                "site-scroll-progress-bar"
+            );
+            const backToTopButton = document.getElementById(
+                "back-to-top"
+            );
+            const siteHeader = document.querySelector(".site-header");
+            const trackedSectionIds = [
+                "portofolio",
+                "tentang",
+                "layanan",
+                "proses",
+                "faq"
+            ];
+            const trackedSections = trackedSectionIds
+                .map(function (id) {
+                    return document.getElementById(id);
+                })
+                .filter(Boolean);
+            const trackedNavigationLinks = document.querySelectorAll(
+                '.desktop-nav a[href^="#"], ' +
+                '.mobile-menu-content a[href^="#"], ' +
+                '.footer-navigation a[href^="#"]'
+            );
+
+            let currentActiveSection = "";
+            let scrollTicking = false;
+
+            function updatePageProgress() {
+                if (!progressBar) {
+                    return;
+                }
+
+                const scrollableHeight =
+                    document.documentElement.scrollHeight -
+                    window.innerHeight;
+                const progress = scrollableHeight > 0
+                    ? window.scrollY / scrollableHeight
+                    : 0;
+
+                progressBar.style.transform =
+                    "scaleX(" + Math.min(Math.max(progress, 0), 1) + ")";
+            }
+
+            function getActiveSectionId() {
+                const headerHeight = siteHeader
+                    ? siteHeader.offsetHeight
+                    : 0;
+                const marker = headerHeight + window.innerHeight * 0.34;
+                let activeId = "";
+
+                trackedSections.forEach(function (section) {
+                    if (section.getBoundingClientRect().top <= marker) {
+                        activeId = section.id;
+                    }
+                });
+
+                return activeId;
+            }
+
+            function setActiveNavigation(activeId) {
+                if (!activeId || activeId === currentActiveSection) {
+                    return;
+                }
+
+                currentActiveSection = activeId;
+
+                trackedNavigationLinks.forEach(function (link) {
+                    const isActive =
+                        link.getAttribute("href") === "#" + activeId;
+
+                    link.classList.toggle("is-active", isActive);
+
+                    if (isActive) {
+                        link.setAttribute("aria-current", "location");
+                    } else {
+                        link.removeAttribute("aria-current");
+                    }
+                });
+
+                if (
+                    window.history &&
+                    typeof window.history.replaceState === "function" &&
+                    window.location.hash !== "#" + activeId
+                ) {
+                    window.history.replaceState(
+                        null,
+                        "",
+                        window.location.pathname +
+                            window.location.search +
+                            "#" + activeId
+                    );
+                }
+            }
+
+            function updateBackToTop() {
+                if (!backToTopButton) {
+                    return;
+                }
+
+                const shouldShow = window.scrollY > 720;
+                backToTopButton.classList.toggle(
+                    "is-visible",
+                    shouldShow
+                );
+                backToTopButton.setAttribute(
+                    "aria-hidden",
+                    shouldShow ? "false" : "true"
+                );
+                backToTopButton.tabIndex = shouldShow ? 0 : -1;
+            }
+
+            const processSection = document.getElementById("proses");
+            const processCards = Array.from(
+                document.querySelectorAll("[data-process-step]")
+            );
+            const processNodes = Array.from(
+                document.querySelectorAll("[data-process-target]")
+            );
+            const processTimelineProgress = document.getElementById(
+                "process-timeline-progress"
+            );
+            let activeProcessIndex = -1;
+
+            function setActiveProcess(index) {
+                if (
+                    index < 0 ||
+                    index >= processCards.length ||
+                    index === activeProcessIndex
+                ) {
+                    return;
+                }
+
+                activeProcessIndex = index;
+
+                processCards.forEach(function (card, cardIndex) {
+                    card.classList.toggle(
+                        "is-active",
+                        cardIndex === index
+                    );
+                    card.classList.toggle(
+                        "is-complete",
+                        cardIndex < index
+                    );
+                });
+
+                processNodes.forEach(function (node, nodeIndex) {
+                    node.classList.toggle(
+                        "is-active",
+                        nodeIndex === index
+                    );
+                    node.classList.toggle(
+                        "is-complete",
+                        nodeIndex < index
+                    );
+
+                    if (nodeIndex === index) {
+                        node.setAttribute("aria-current", "step");
+                    } else {
+                        node.removeAttribute("aria-current");
+                    }
+                });
+
+                if (processTimelineProgress) {
+                    const denominator = Math.max(
+                        processCards.length - 1,
+                        1
+                    );
+                    const percentage = index / denominator * 100;
+                    processTimelineProgress.style.width =
+                        percentage + "%";
+                }
+
+                const processTimeline = document.querySelector(
+                    ".process-timeline"
+                );
+                const activeNode = processNodes[index];
+
+                if (
+                    processTimeline &&
+                    activeNode &&
+                    window.innerWidth <= 650
+                ) {
+                    const targetLeft =
+                        activeNode.offsetLeft -
+                        processTimeline.clientWidth / 2 +
+                        activeNode.offsetWidth / 2;
+
+                    processTimeline.scrollTo({
+                        left: Math.max(targetLeft, 0),
+                        behavior: prefersReducedMotion
+                            ? "auto"
+                            : "smooth"
+                    });
+                }
+            }
+
+            function updateProcessTimeline() {
+                if (!processSection || !processCards.length) {
+                    return;
+                }
+
+                const sectionRect = processSection.getBoundingClientRect();
+
+                if (
+                    sectionRect.bottom < 0 ||
+                    sectionRect.top > window.innerHeight
+                ) {
+                    return;
+                }
+
+                const viewportCenter = window.innerHeight * 0.52;
+                let closestIndex = 0;
+                let closestDistance = Number.POSITIVE_INFINITY;
+
+                processCards.forEach(function (card, index) {
+                    const rect = card.getBoundingClientRect();
+                    const cardCenter = rect.top + rect.height / 2;
+                    const distance = Math.abs(
+                        cardCenter - viewportCenter
+                    );
+
+                    if (distance < closestDistance) {
+                        closestDistance = distance;
+                        closestIndex = index;
+                    }
+                });
+
+                setActiveProcess(closestIndex);
+            }
+
+            processNodes.forEach(function (node) {
+                node.addEventListener("click", function () {
+                    const target = document.getElementById(
+                        node.dataset.processTarget
+                    );
+
+                    if (!target) {
+                        return;
+                    }
+
+                    target.scrollIntoView({
+                        behavior: prefersReducedMotion
+                            ? "auto"
+                            : "smooth",
+                        block: "center"
+                    });
+                });
+            });
+
+            if (backToTopButton) {
+                backToTopButton.addEventListener("click", function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: prefersReducedMotion
+                            ? "auto"
+                            : "smooth"
+                    });
+
+                    if (
+                        window.history &&
+                        typeof window.history.replaceState === "function"
+                    ) {
+                        window.history.replaceState(
+                            null,
+                            "",
+                            window.location.pathname +
+                                window.location.search
+                        );
+                    }
+                });
+            }
+
+            function updateScrollInteractions() {
+                updatePageProgress();
+                setActiveNavigation(getActiveSectionId());
+                updateBackToTop();
+                updateProcessTimeline();
+            }
+
+            function requestScrollUpdate() {
+                if (scrollTicking) {
+                    return;
+                }
+
+                scrollTicking = true;
+
+                window.requestAnimationFrame(function () {
+                    updateScrollInteractions();
+                    scrollTicking = false;
+                });
+            }
+
+            window.addEventListener("scroll", requestScrollUpdate, {
+                passive: true
+            });
+            window.addEventListener("resize", requestScrollUpdate);
+
+            setActiveProcess(0);
+            updateScrollInteractions();
+
         });
     </script>
 </body>
