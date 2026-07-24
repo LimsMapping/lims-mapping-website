@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta
@@ -5,11 +7,11 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Lim’s Mapping | Jasa Pemetaan dan Visualisasi Data</title>
+    <title>Lim's Mapping | Jasa Pemetaan dan Visualisasi Data Spasial</title>
 
     <meta
         name="description"
-        content="Lim’s Mapping membantu mengolah koordinat, citra, dan data spasial menjadi peta yang jelas, terstruktur, dan siap digunakan."
+        content="Lim's Mapping menyediakan layanan pemetaan, pengolahan data spasial, pembaruan peta, dan visualisasi informasi wilayah sesuai kebutuhan proyek."
     >
     <meta name="theme-color" content="#0d345d">
 
@@ -18,16 +20,15 @@
         href="https://limsmapping.github.io/lims-mapping-website/"
     >
 
-    <!-- SOCIAL MEDIA PREVIEW -->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Lim’s Mapping">
+    <meta property="og:site_name" content="Lim's Mapping">
     <meta
         property="og:title"
-        content="Lim’s Mapping | Jasa Pemetaan dan Visualisasi Data"
+        content="Lim's Mapping | Jasa Pemetaan dan Visualisasi Data Spasial"
     >
     <meta
         property="og:description"
-        content="Ubah koordinat, citra, dan data lapangan menjadi peta yang jelas, terstruktur, dan siap digunakan."
+        content="Layanan pemetaan, pengolahan data spasial, pembaruan peta, dan visualisasi informasi wilayah sesuai kebutuhan proyek."
     >
     <meta
         property="og:url"
@@ -38,25 +39,18 @@
         content="https://limsmapping.github.io/lims-mapping-website/social-preview.jpg"
     >
     <meta
-        property="og:image:secure_url"
-        content="https://limsmapping.github.io/lims-mapping-website/social-preview.jpg"
-    >
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta
         property="og:image:alt"
-        content="Lim’s Mapping — Jasa Pemetaan dan Visualisasi Data"
+        content="Lim's Mapping - Jasa Pemetaan dan Visualisasi Data Spasial"
     >
 
     <meta name="twitter:card" content="summary_large_image">
     <meta
         name="twitter:title"
-        content="Lim’s Mapping | Jasa Pemetaan dan Visualisasi Data"
+        content="Lim's Mapping | Jasa Pemetaan dan Visualisasi Data Spasial"
     >
     <meta
         name="twitter:description"
-        content="Ubah koordinat, citra, dan data lapangan menjadi peta yang jelas, terstruktur, dan siap digunakan."
+        content="Layanan pemetaan, pengolahan data spasial, pembaruan peta, dan visualisasi informasi wilayah sesuai kebutuhan proyek."
     >
     <meta
         name="twitter:image"
@@ -82,44 +76,50 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header class="site-header">
+    <a class="skip-link" href="#main-content">
+        Lewati ke isi utama
+    </a>
+
+    <header class="site-header" id="site-header">
         <div class="shell navigation">
             <a
-                href="#beranda"
                 class="brand"
-                aria-label="Kembali ke halaman utama Lim’s Mapping"
+                href="#beranda"
+                aria-label="Kembali ke beranda Lim's Mapping"
             >
                 <svg
                     class="brand-mark"
-                    viewBox="0 0 120 88"
+                    viewBox="0 0 92 66"
                     aria-hidden="true"
                 >
                     <path
-                        class="contour contour-one"
-                        d="M21 64C5 50 13 23 35 19C55 7 73 18 76 32C93 35 101 50 91 63C82 77 62 77 49 68C39 74 29 72 21 64Z"
-                    />
+                        class="brand-contour brand-contour-one"
+                        d="M10 45C3 35 7 18 23 12C38 5 52 10 57 22C69 22 80 31 77 43C74 55 58 60 45 53C31 60 18 56 10 45Z"
+                    ></path>
                     <path
-                        class="contour contour-two"
-                        d="M29 58C18 48 24 31 39 28C53 19 66 27 68 39C81 40 87 49 80 59C73 68 59 67 49 61C41 66 34 64 29 58Z"
-                    />
+                        class="brand-contour brand-contour-two"
+                        d="M17 42C11 34 15 23 27 18C38 14 48 19 51 28C60 27 67 34 65 42C61 50 50 52 41 47C31 52 22 49 17 42Z"
+                    ></path>
                     <path
-                        class="contour contour-three"
-                        d="M38 52C31 46 35 37 44 35C53 30 61 35 62 42C70 43 73 48 69 53C65 59 56 58 50 54C45 57 41 56 38 52Z"
-                    />
-                    <polyline
-                        class="route"
-                        points="8,68 28,60 48,62 69,47 106,30"
-                    />
-                    <circle class="route-point" cx="8" cy="68" r="4"/>
-                    <circle class="route-point" cx="28" cy="60" r="4"/>
-                    <circle class="route-point" cx="48" cy="62" r="4"/>
-                    <circle class="route-point" cx="69" cy="47" r="4"/>
-                    <circle class="route-point" cx="106" cy="30" r="5"/>
+                        class="brand-contour brand-contour-three"
+                        d="M24 39C20 33 23 26 31 23C39 20 46 24 47 31C53 30 58 35 56 40C54 45 47 46 41 43C35 46 28 44 24 39Z"
+                    ></path>
+                    <path
+                        class="brand-route"
+                        d="M15 50C25 42 31 31 43 31C55 31 60 20 75 17"
+                    ></path>
+                    <circle class="brand-point" cx="15" cy="50" r="3.4"></circle>
+                    <circle class="brand-point" cx="43" cy="31" r="3.4"></circle>
+                    <circle
+                        class="brand-point brand-point-accent"
+                        cx="75"
+                        cy="17"
+                        r="4"
+                    ></circle>
                 </svg>
 
                 <span class="brand-copy">
-                    <strong>Lim’s Mapping</strong>
+                    <strong>Lim&rsquo;s Mapping</strong>
                     <small>Spatial Data Visualization</small>
                 </span>
             </a>
@@ -141,40 +141,70 @@
                 Minta Estimasi
             </a>
 
-            <details class="mobile-menu">
-                <summary>Menu</summary>
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="mobile-navigation"
+                aria-label="Buka menu navigasi"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 7H20"></path>
+                    <path d="M4 12H20"></path>
+                    <path d="M4 17H20"></path>
+                </svg>
+            </button>
 
-                <div class="mobile-menu-content">
-                    <a href="#portofolio">Portofolio</a>
-                    <a href="#layanan">Layanan</a>
-                    <a href="#tentang">Tentang</a>
-                    <a href="#proses">Proses</a>
-                    <a href="#faq">FAQ</a>
-                    <a href="#kontak">Kontak</a>
-                </div>
-            </details>
+            <nav
+                class="mobile-navigation"
+                id="mobile-navigation"
+                aria-label="Navigasi seluler"
+            >
+                <a href="#portofolio">Portofolio</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#proses">Proses</a>
+                <a href="#faq">FAQ</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
         </div>
 
-        <div
-            class="site-scroll-progress"
-            aria-hidden="true"
-        >
+        <div class="site-scroll-progress" aria-hidden="true">
             <span id="site-scroll-progress-bar"></span>
         </div>
     </header>
 
-    <main>
-        <!-- HERO -->
+    <main id="main-content">
         <section class="hero" id="beranda">
-            <div class="hero-contour hero-contour-one"></div>
-            <div class="hero-contour hero-contour-two"></div>
-            <div class="dot-pattern hero-dots"></div>
+            <div
+                class="hero-contour hero-contour-one"
+                aria-hidden="true"
+            ></div>
+            <div
+                class="hero-contour hero-contour-two"
+                aria-hidden="true"
+            ></div>
+            <div
+                class="dot-pattern hero-dots"
+                aria-hidden="true"
+            ></div>
 
             <div class="shell hero-layout">
                 <div class="hero-copy">
                     <div class="hero-label">
-                        <span>LM</span>
-                        Pemetaan dan Visualisasi Data Spasial
+                        <span class="hero-monogram" aria-hidden="true">
+                            <strong>LM</strong>
+                            <svg viewBox="0 0 34 9">
+                                <path d="M2 5H12L17 2L23 6L32 3"></path>
+                                <circle cx="12" cy="5" r="1.7"></circle>
+                                <circle cx="23" cy="6" r="1.7"></circle>
+                            </svg>
+                        </span>
+
+                        <span>
+                            Pemetaan dan Visualisasi Data Spasial
+                        </span>
                     </div>
 
                     <h1>
@@ -183,21 +213,21 @@
                     </h1>
 
                     <p class="hero-description">
-                        Lim’s Mapping membantu mengolah koordinat,
+                        Lim&rsquo;s Mapping membantu mengolah koordinat,
                         citra, dan data lapangan menjadi peta yang
                         terstruktur, mudah dipahami, dan siap digunakan.
                     </p>
 
                     <div class="hero-actions">
                         <a
-                            class="button button-green"
+                            class="button button-primary"
                             href="#portofolio"
                         >
                             Lihat Portofolio
                         </a>
 
                         <a
-                            class="button button-outline"
+                            class="button button-secondary"
                             href="https://wa.me/6285947185576?text=Halo%20Lim%27s%20Mapping%2C%20saya%20ingin%20meminta%20estimasi%20proyek%20pemetaan.%0A%0AJenis%20kebutuhan%3A%0ALokasi%20proyek%3A%0AData%20yang%20tersedia%3A%0AFormat%20hasil%3A%0ATenggat%20waktu%3A"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -206,40 +236,66 @@
                         </a>
                     </div>
 
-                    <div class="hero-points">
-                        <span>Tim kecil GIS</span>
-                        <span>Komunikasi langsung</span>
-                        <span>Output fleksibel</span>
+                    <div
+                        class="hero-points"
+                        aria-label="Keunggulan layanan"
+                    >
+                        <span>
+                            <svg viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M4 10.5L8 14L16 5.5"></path>
+                            </svg>
+                            Pendampingan langsung
+                        </span>
+
+                        <span>
+                            <svg viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M4 10.5L8 14L16 5.5"></path>
+                            </svg>
+                            Keahlian pemetaan
+                        </span>
+
+                        <span>
+                            <svg viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M4 10.5L8 14L16 5.5"></path>
+                            </svg>
+                            Output sesuai kebutuhan
+                        </span>
                     </div>
                 </div>
 
                 <div class="hero-showcase">
-                    <div class="showcase-pill">
+                    <span class="showcase-pill">
                         Contoh Hasil Pemetaan
-                    </div>
+                    </span>
 
                     <div class="showcase-frame">
                         <a
                             href="Peta%20Lahan%20Pertanian.jpeg"
                             data-lightbox
                             data-title="Pemetaan Lahan Pertanian"
-                            data-caption="Contoh hasil pemetaan batas dan luas lahan berbasis koordinat."
+                            data-caption="Contoh hasil pemetaan batas, posisi, dan luas lahan berbasis koordinat."
                             aria-label="Buka contoh peta lahan pertanian"
                         >
                             <img
                                 src="Peta%20Lahan%20Pertanian.jpeg"
-                                alt="Contoh hasil pemetaan luas dan batas lahan pertanian"
+                                alt="Contoh hasil pemetaan batas dan luas lahan pertanian"
+                                width="1000"
+                                height="760"
                             >
                         </a>
                     </div>
 
                     <div class="showcase-result">
-                        <span class="check-icon" aria-hidden="true">✓</span>
+                        <span class="result-check" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M5 12.5L9.5 17L19 7"></path>
+                            </svg>
+                        </span>
 
                         <div>
                             <small>Hasil pemetaan</small>
                             <strong>
-                                Terstruktur • Informatif • Siap Digunakan
+                                Terstruktur, informatif, dan siap digunakan
                             </strong>
                         </div>
                     </div>
@@ -247,224 +303,226 @@
             </div>
         </section>
 
-        <!-- RINGKASAN KREDIBILITAS -->
         <section
-            class="feature-section credibility-section"
-            aria-label="Ringkasan Lim’s Mapping"
+            class="credibility-section"
+            aria-label="Nilai layanan Lim's Mapping"
         >
-            <div class="shell feature-panel credibility-panel">
-                <article class="feature-item">
-                    <div class="feature-symbol" aria-hidden="true">
-                        <svg
-                            viewBox="0 0 48 48"
-                            width="38"
-                            height="38"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <circle cx="18" cy="17" r="6"/>
-                            <circle cx="32" cy="19" r="5"/>
-                            <path d="M7 39C8 30 13 26 19 26C25 26 30 30 31 39"/>
-                            <path d="M29 28C35 27 40 31 41 38"/>
+            <div class="shell credibility-panel">
+                <article class="credibility-item">
+                    <span class="line-icon" aria-hidden="true">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="18" cy="17" r="6"></circle>
+                            <circle cx="32" cy="19" r="5"></circle>
+                            <path d="M7 39C8 30 13 26 19 26C25 26 30 30 31 39"></path>
+                            <path d="M29 28C35 27 40 31 41 38"></path>
                         </svg>
-                    </div>
+                    </span>
 
                     <div>
-                        <strong>Tim Kecil GIS</strong>
-                        <span>
-                            Proyek ditangani secara lebih personal,
-                            terarah, dan komunikatif.
-                        </span>
+                        <strong>Pendampingan Proyek yang Personal</strong>
+                        <p>
+                            Setiap proyek ditangani secara langsung dengan
+                            komunikasi yang jelas, responsif, dan terarah.
+                        </p>
                     </div>
                 </article>
 
-                <article class="feature-item">
-                    <div class="feature-symbol" aria-hidden="true">
-                        <svg
-                            viewBox="0 0 48 48"
-                            width="38"
-                            height="38"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path d="M7 11L18 7L30 11L41 7V37L30 41L18 37L7 41Z"/>
-                            <path d="M18 7V37"/>
-                            <path d="M30 11V41"/>
-                            <circle cx="24" cy="24" r="4"/>
+                <article class="credibility-item">
+                    <span class="line-icon" aria-hidden="true">
+                        <svg viewBox="0 0 48 48">
+                            <path d="M8 35L12 25L30 8L40 18L22 35Z"></path>
+                            <path d="M27 11L37 21"></path>
+                            <path d="M12 25L22 35"></path>
+                            <path d="M8 41H40"></path>
                         </svg>
-                    </div>
+                    </span>
 
                     <div>
-                        <strong>Pengalaman Proyek GIS</strong>
-                        <span>
-                            Berpengalaman menangani pemetaan, digitasi,
-                            dan visualisasi data spasial.
-                        </span>
+                        <strong>Keahlian Pemetaan dan Analisis Spasial</strong>
+                        <p>
+                            Berpengalaman dalam pemetaan, digitasi,
+                            pengolahan data, dan visualisasi geospasial.
+                        </p>
                     </div>
                 </article>
 
-                <article class="feature-item">
-                    <div class="feature-symbol" aria-hidden="true">
-                        <svg
-                            viewBox="0 0 48 48"
-                            width="38"
-                            height="38"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path d="M10 7H31L39 15V41H10Z"/>
-                            <path d="M31 7V15H39"/>
-                            <path d="M16 24H33"/>
-                            <path d="M16 30H33"/>
-                            <path d="M16 36H27"/>
+                <article class="credibility-item">
+                    <span class="line-icon" aria-hidden="true">
+                        <svg viewBox="0 0 48 48">
+                            <path d="M12 6H29L38 15V42H12Z"></path>
+                            <path d="M29 6V15H38"></path>
+                            <path d="M17 24H33"></path>
+                            <path d="M17 30H33"></path>
+                            <path d="M17 36H27"></path>
                         </svg>
-                    </div>
+                    </span>
 
                     <div>
-                        <strong>Output Fleksibel</strong>
-                        <span>
-                            Format hasil disesuaikan dengan ruang lingkup
-                            dan kebutuhan penggunaan.
-                        </span>
+                        <strong>Output Sesuai Kebutuhan</strong>
+                        <p>
+                            Hasil disiapkan dalam format dan tingkat detail
+                            yang menyesuaikan tujuan penggunaan proyek.
+                        </p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <!-- PORTOFOLIO TERPILIH -->
-        <section id="portofolio" class="section portfolio-section">
-            <div class="dot-pattern portfolio-dots"></div>
+        <section
+            id="portofolio"
+            class="section portfolio-section"
+        >
+            <div
+                class="dot-pattern portfolio-dots"
+                aria-hidden="true"
+            ></div>
 
             <div class="shell">
                 <div class="section-heading wide-heading">
-                    <p class="section-label">01 / Portofolio Terpilih</p>
+                    <p class="section-label">
+                        01 / Portofolio Terpilih
+                    </p>
 
-                    <h2>Bukti pekerjaan, bukan sekadar klaim.</h2>
+                    <h2>
+                        Perbandingan hasil pemetaan sebelum dan sesudah pembaruan.
+                    </h2>
 
                     <p>
-                        Lihat contoh hasil pemetaan, pembaruan visual,
-                        analisis spasial, dan layout peta yang telah
-                        dikerjakan untuk berbagai kebutuhan.
+                        Dua studi kasus utama yang menunjukkan peningkatan
+                        kualitas data, ketajaman visual, kelengkapan objek,
+                        dan keterbacaan informasi melalui proses pembaruan
+                        serta penyempurnaan peta.
                     </p>
                 </div>
 
-                <div class="portfolio-list portfolio-list-compact">
-                    <!-- SAUSAPOR -->
-                    <article class="portfolio-card portfolio-card-featured">
-                        <div class="portfolio-image">
-                            <a
-                                href="peta-hasil-sausapor.png"
-                                data-lightbox
-                                data-title="Pembaruan Peta Sausapor"
-                                data-caption="Peta kerja diperbarui menggunakan referensi terbaru agar jalan, bangunan, batas wilayah, dan objek penting lebih mudah dibaca."
-                                aria-label="Buka hasil pembaruan peta Sausapor"
+                <div class="featured-case-grid">
+                    <article class="featured-case-card">
+                        <div class="featured-case-visual">
+                            <div
+                                class="mini-comparison"
+                                aria-label="Pratinjau perbandingan peta Sausapor"
                             >
+                                <img
+                                    src="peta-awal-sausapor.jpg"
+                                    alt="Peta Sausapor sebelum pembaruan"
+                                    loading="lazy"
+                                >
                                 <img
                                     src="peta-hasil-sausapor.png"
-                                    alt="Peta hasil pembaruan wilayah Sausapor"
+                                    alt="Peta Sausapor setelah pembaruan"
                                     loading="lazy"
                                 >
-                            </a>
+                            </div>
 
                             <span class="portfolio-badge">
-                                Studi Kasus Utama
+                                Studi Kasus Utama 01
                             </span>
                         </div>
 
-                        <div class="portfolio-copy">
+                        <div class="featured-case-copy">
                             <p class="portfolio-category">
-                                Pembaruan Peta Kerja
+                                Pembaruan Data Spasial
                             </p>
 
                             <h3>
-                                Pembaruan data dan visual peta Sausapor.
+                                Pembaruan Peta Sausapor dengan Data yang
+                                Lebih Mutakhir
                             </h3>
 
                             <p>
-                                Peta lama disusun ulang menggunakan
-                                referensi terbaru agar lebih jelas dan
-                                relevan untuk kegiatan lapangan.
+                                Perbandingan menunjukkan lebih banyak
+                                bangunan dan objek wilayah yang berhasil
+                                diidentifikasi menggunakan referensi yang
+                                lebih mutakhir.
                             </p>
 
-                            <div class="result-list result-list-compact">
-                                <span>Data terbaru</span>
-                                <span>Before dan after</span>
-                                <span>Siap digunakan</span>
+                            <div class="result-list">
+                                <span>Referensi lebih mutakhir</span>
+                                <span>Objek lebih lengkap</span>
+                                <span>Visual lebih tajam</span>
                             </div>
 
                             <a
-                                class="portfolio-link"
+                                class="text-link"
                                 href="#studi-kasus-sausapor"
                             >
-                                Lihat studi kasus
-                                <span aria-hidden="true">→</span>
+                                Lihat perbandingan lengkap
+                                <svg viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M4 10H16"></path>
+                                    <path d="M11 5L16 10L11 15"></path>
+                                </svg>
                             </a>
                         </div>
                     </article>
 
-                    <!-- MAKASSAR -->
-                    <article class="portfolio-card portfolio-card-featured">
-                        <div class="portfolio-image">
-                            <a
-                                href="Peta-After-Makassar.jpeg"
-                                data-lightbox
-                                data-title="Penyempurnaan Peta Makassar"
-                                data-caption="Peta awal disempurnakan menjadi visual yang lebih jelas, rapi, dan mudah dipahami."
-                                aria-label="Buka hasil penyempurnaan peta Makassar"
+                    <article class="featured-case-card">
+                        <div class="featured-case-visual">
+                            <div
+                                class="mini-comparison"
+                                aria-label="Pratinjau perbandingan peta wilayah sensus"
                             >
                                 <img
-                                    src="Peta-After-Makassar.jpeg"
-                                    alt="Peta Makassar setelah penyempurnaan visual"
+                                    src="Peta-before-Makassar.jpeg"
+                                    alt="Peta wilayah sensus sebelum penyempurnaan"
                                     loading="lazy"
                                 >
-                            </a>
+                                <img
+                                    src="Peta-After-Makassar.jpeg"
+                                    alt="Peta wilayah sensus setelah penyempurnaan"
+                                    loading="lazy"
+                                >
+                            </div>
 
                             <span class="portfolio-badge">
-                                Before dan After
+                                Studi Kasus Utama 02
                             </span>
                         </div>
 
-                        <div class="portfolio-copy">
+                        <div class="featured-case-copy">
                             <p class="portfolio-category">
-                                Penyempurnaan Visual Peta
+                                Penyempurnaan Peta Wilayah Sensus
                             </p>
 
                             <h3>
-                                Peta Makassar yang lebih jelas dan terstruktur.
+                                Penyajian Peta Wilayah Sensus yang Lebih
+                                Tajam dan Terstruktur
                             </h3>
 
                             <p>
-                                Elemen visual ditata ulang agar informasi
-                                utama lebih mudah dikenali dan dipresentasikan.
+                                Peta kerja salah satu wilayah Sensus Ekonomi
+                                2026 di Kota Makassar disempurnakan agar
+                                detail, batas, simbol, dan label lebih jelas.
                             </p>
 
-                            <div class="result-list result-list-compact">
-                                <span>Lebih jelas</span>
-                                <span>Lebih rapi</span>
-                                <span>Testimoni asli</span>
+                            <div class="result-list">
+                                <span>Detail lebih tajam</span>
+                                <span>Batas lebih tegas</span>
+                                <span>Komposisi lebih seimbang</span>
                             </div>
 
                             <a
-                                class="portfolio-link"
+                                class="text-link"
                                 href="#studi-kasus-makassar"
                             >
-                                Lihat perbandingan
-                                <span aria-hidden="true">→</span>
+                                Lihat perbandingan lengkap
+                                <svg viewBox="0 0 20 20" aria-hidden="true">
+                                    <path d="M4 10H16"></path>
+                                    <path d="M11 5L16 10L11 15"></path>
+                                </svg>
                             </a>
                         </div>
                     </article>
+                </div>
 
-                    <!-- LAHAN PERTANIAN -->
-                    <article class="portfolio-card portfolio-card-compact">
+                <div class="portfolio-subheading">
+                    <p class="section-label">Portofolio Lainnya</p>
+                    <h3>
+                        Contoh hasil pemetaan dan visualisasi spasial lainnya.
+                    </h3>
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="portfolio-card">
                         <div class="portfolio-image">
                             <a
                                 href="Peta%20Lahan%20Pertanian.jpeg"
@@ -477,70 +535,82 @@
                                     src="Peta%20Lahan%20Pertanian.jpeg"
                                     alt="Pemetaan batas dan luas lahan pertanian berbasis koordinat"
                                     loading="lazy"
+                                    width="1000"
+                                    height="760"
                                 >
                             </a>
 
-                            <span class="portfolio-badge">Pemetaan Lahan</span>
+                            <span class="portfolio-badge">
+                                Pemetaan Lahan
+                            </span>
                         </div>
 
                         <div class="portfolio-copy">
                             <p class="portfolio-category">
-                                Pemetaan Lahan Pertanian
+                                Koordinat dan Batas
                             </p>
-                            <h3>Batas dan luas lahan berbasis koordinat.</h3>
+                            <h3>
+                                Batas dan luas lahan berbasis koordinat.
+                            </h3>
                             <p>
-                                Menampilkan bentuk bidang, titik patok,
+                                Menampilkan bentuk bidang, posisi patok,
                                 koordinat, dan luas area secara terstruktur.
                             </p>
                         </div>
                     </article>
 
-                    <!-- PERSEBARAN INDUSTRI -->
-                    <article class="portfolio-card portfolio-card-compact">
+                    <article class="portfolio-card">
                         <div class="portfolio-image">
                             <a
                                 href="Visual%20Sebaran%20Sarana%20Industri%20.png"
                                 data-lightbox
-                                data-title="Pemetaan Persebaran Industri"
-                                data-caption="Visualisasi lokasi industri, jaringan jalan, batas administrasi, dan klasifikasi skala industri."
-                                aria-label="Buka peta persebaran sarana industri"
+                                data-title="Sebaran Sarana Industri"
+                                data-caption="Visualisasi persebaran sarana industri untuk membantu pembacaan pola spasial."
+                                aria-label="Buka visual sebaran sarana industri"
                             >
                                 <img
                                     src="Visual%20Sebaran%20Sarana%20Industri%20.png"
-                                    alt="Peta persebaran sarana industri"
+                                    alt="Visual sebaran sarana industri"
                                     loading="lazy"
+                                    width="1000"
+                                    height="760"
                                 >
                             </a>
 
-                            <span class="portfolio-badge">Peta Tematik</span>
+                            <span class="portfolio-badge">
+                                Analisis Sebaran
+                            </span>
                         </div>
 
                         <div class="portfolio-copy">
                             <p class="portfolio-category">
-                                Persebaran Sarana Industri
+                                Visualisasi Spasial
                             </p>
-                            <h3>Lokasi dan klasifikasi industri dalam satu peta.</h3>
+                            <h3>
+                                Pola persebaran fasilitas lebih mudah dibaca.
+                            </h3>
                             <p>
-                                Informasi persebaran disajikan bersama
-                                jaringan jalan dan batas wilayah.
+                                Titik lokasi disusun menjadi visual yang
+                                membantu pembacaan konsentrasi dan jangkauan.
                             </p>
                         </div>
                     </article>
 
-                    <!-- KEMIRINGAN LERENG -->
-                    <article class="portfolio-card portfolio-card-compact">
+                    <article class="portfolio-card">
                         <div class="portfolio-image">
                             <a
                                 href="Peta-Kemiringan-Lereng.jpeg"
                                 data-lightbox
                                 data-title="Peta Kemiringan Lereng"
-                                data-caption="Klasifikasi tingkat kecuraman wilayah untuk membantu analisis kondisi topografi dan perencanaan lahan."
+                                data-caption="Klasifikasi kondisi topografi dari area datar hingga curam."
                                 aria-label="Buka peta kemiringan lereng"
                             >
                                 <img
                                     src="Peta-Kemiringan-Lereng.jpeg"
                                     alt="Peta klasifikasi kemiringan lereng"
                                     loading="lazy"
+                                    width="1000"
+                                    height="760"
                                 >
                             </a>
 
@@ -551,9 +621,11 @@
 
                         <div class="portfolio-copy">
                             <p class="portfolio-category">
-                                Peta Kemiringan Lereng
+                                Kemiringan Lereng
                             </p>
-                            <h3>Klasifikasi area datar hingga curam.</h3>
+                            <h3>
+                                Klasifikasi area datar hingga curam.
+                            </h3>
                             <p>
                                 Kondisi topografi divisualisasikan untuk
                                 membantu evaluasi dan perencanaan lahan.
@@ -561,20 +633,21 @@
                         </div>
                     </article>
 
-                    <!-- PENGGUNAAN LAHAN -->
-                    <article class="portfolio-card portfolio-card-compact">
+                    <article class="portfolio-card">
                         <div class="portfolio-image">
                             <a
                                 href="Peta-Penggunaan-Lahan.jpeg"
                                 data-lightbox
                                 data-title="Peta Penggunaan Lahan"
-                                data-caption="Visualisasi fungsi dominan dan pola pemanfaatan ruang pada suatu kawasan."
+                                data-caption="Visualisasi fungsi dominan dan pola pemanfaatan ruang."
                                 aria-label="Buka peta penggunaan lahan"
                             >
                                 <img
                                     src="Peta-Penggunaan-Lahan.jpeg"
                                     alt="Peta penggunaan lahan"
                                     loading="lazy"
+                                    width="1000"
+                                    height="760"
                                 >
                             </a>
 
@@ -585,18 +658,19 @@
 
                         <div class="portfolio-copy">
                             <p class="portfolio-category">
-                                Peta Penggunaan Lahan
+                                Pemanfaatan Ruang
                             </p>
-                            <h3>Fungsi dan pola pemanfaatan ruang.</h3>
+                            <h3>
+                                Fungsi dan pola penggunaan ruang.
+                            </h3>
                             <p>
-                                Membantu memahami persebaran permukiman,
-                                fasilitas, jalan, dan fungsi kawasan lainnya.
+                                Persebaran permukiman, fasilitas, jalan,
+                                dan fungsi kawasan ditampilkan secara terstruktur.
                             </p>
                         </div>
                     </article>
 
-                    <!-- POLA RUANG -->
-                    <article class="portfolio-card portfolio-card-compact">
+                    <article class="portfolio-card">
                         <div class="portfolio-image">
                             <a
                                 href="Peta-Pola-Ruang.jpeg"
@@ -609,6 +683,8 @@
                                     src="Peta-Pola-Ruang.jpeg"
                                     alt="Peta pola ruang eksisting"
                                     loading="lazy"
+                                    width="1000"
+                                    height="760"
                                 >
                             </a>
 
@@ -619,11 +695,13 @@
 
                         <div class="portfolio-copy">
                             <p class="portfolio-category">
-                                Peta Pola Ruang Eksisting
+                                Pola Ruang Eksisting
                             </p>
-                            <h3>Struktur ruang aktual dalam satu visual.</h3>
+                            <h3>
+                                Struktur ruang aktual dalam satu visual.
+                            </h3>
                             <p>
-                                Menampilkan hubungan antarfungsi kawasan
+                                Hubungan antarfungsi kawasan ditampilkan
                                 sebagai referensi evaluasi tata ruang.
                             </p>
                         </div>
@@ -632,79 +710,84 @@
             </div>
         </section>
 
-        <!-- TENTANG -->
-        <section id="tentang" class="section about-section">
+        <section
+            id="tentang"
+            class="section about-section"
+        >
             <div class="shell about-layout">
                 <div class="section-heading">
-                    <p class="section-label">02 / Tentang Lim’s Mapping</p>
+                    <p class="section-label">
+                        02 / Tentang Lim&rsquo;s Mapping
+                    </p>
 
-                    <h2>Tim kecil dengan pendekatan yang terarah.</h2>
+                    <h2>
+                        Layanan pemetaan dengan proses kerja yang terstruktur.
+                    </h2>
                 </div>
 
                 <div class="about-copy">
                     <p>
-                        Lim’s Mapping merupakan layanan pemetaan yang
-                        dikerjakan oleh tim kecil dengan pengalaman dalam
-                        berbagai kebutuhan proyek GIS.
+                        Lim&rsquo;s Mapping menyediakan layanan pemetaan dan
+                        pengolahan data spasial untuk kebutuhan analisis,
+                        dokumentasi, perencanaan, dan penyajian informasi wilayah.
                     </p>
 
                     <p>
-                        Setiap proyek ditangani melalui komunikasi langsung,
-                        pemeriksaan data, pengolahan spasial, dan penyusunan
-                        visual sesuai tujuan penggunaan.
+                        Setiap proyek dikerjakan melalui pemeriksaan data,
+                        pengolahan spasial, penyusunan visual, serta peninjauan
+                        hasil agar output yang dihasilkan sesuai dengan tujuan
+                        penggunaannya.
                     </p>
 
-                    <div class="about-stat about-credentials">
-                        <strong>Fokus Keahlian</strong>
-
-                        <span>
-                            GIS Mapping • Spatial Data • Map Visualization
+                    <div class="about-focus">
+                        <span class="about-focus-label">
+                            Fokus Layanan
                         </span>
+
+                        <div class="about-focus-list">
+                            <span>Pemetaan GIS</span>
+                            <span>Pengolahan Data Spasial</span>
+                            <span>Visualisasi Peta</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- LAYANAN -->
-        <section id="layanan" class="section services-section">
+        <section
+            id="layanan"
+            class="section services-section"
+        >
             <div class="shell">
                 <div class="section-heading wide-heading">
-                    <p class="section-label">03 / Layanan</p>
+                    <p class="section-label">
+                        03 / Layanan
+                    </p>
 
                     <h2>
-                        Layanan pemetaan yang disesuaikan dengan kebutuhan data.
+                        Layanan pemetaan sesuai kebutuhan data.
                     </h2>
 
                     <p>
-                        Empat kelompok layanan utama untuk membantu mengubah
-                        data lokasi menjadi informasi visual yang lebih jelas.
+                        Empat kelompok layanan utama untuk mengubah data
+                        lokasi menjadi informasi visual yang lebih jelas.
                     </p>
                 </div>
 
-                <div class="service-grid service-grid-four">
+                <div class="service-grid">
                     <article class="service-card">
                         <span class="service-number">01</span>
 
-                        <div class="service-icon" aria-hidden="true">
-                            <svg
-                                viewBox="0 0 48 48"
-                                width="34"
-                                height="34"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M11 13L29 8L39 18L35 36L17 40L8 28Z"/>
-                                <circle cx="11" cy="13" r="2.5"/>
-                                <circle cx="29" cy="8" r="2.5"/>
-                                <circle cx="39" cy="18" r="2.5"/>
-                                <circle cx="35" cy="36" r="2.5"/>
-                                <circle cx="17" cy="40" r="2.5"/>
-                                <circle cx="8" cy="28" r="2.5"/>
+                        <span class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48">
+                                <path d="M11 13L29 8L39 18L35 36L17 40L8 28Z"></path>
+                                <circle cx="11" cy="13" r="2.5"></circle>
+                                <circle cx="39" cy="18" r="2.5"></circle>
+                                <circle cx="35" cy="36" r="2.5"></circle>
+                                <circle cx="17" cy="40" r="2.5"></circle>
+                                <circle cx="8" cy="28" r="2.5"></circle>
                             </svg>
-                        </div>
+                        </span>
 
                         <h3>Pemetaan Lahan dan Batas</h3>
 
@@ -713,35 +796,24 @@
                             penyajian batas wilayah atau bidang lahan.
                         </p>
 
-                        <div class="service-tags" aria-label="Cakupan layanan">
+                        <div class="service-tags">
                             <span>Koordinat</span>
                             <span>Batas</span>
-                            <span>Luas area</span>
+                            <span>Luas Area</span>
                         </div>
                     </article>
 
                     <article class="service-card">
                         <span class="service-number">02</span>
 
-                        <div class="service-icon" aria-hidden="true">
-                            <svg
-                                viewBox="0 0 48 48"
-                                width="34"
-                                height="34"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M11 35L15 25L32 8L40 16L23 33L11 35Z"/>
-                                <path d="M29 11L37 19"/>
-                                <path d="M15 25L23 33"/>
-                                <circle cx="10" cy="39" r="2.5"/>
-                                <circle cx="24" cy="39" r="2.5"/>
-                                <circle cx="38" cy="35" r="2.5"/>
+                        <span class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48">
+                                <path d="M11 35L15 25L32 8L40 16L23 33Z"></path>
+                                <path d="M29 11L37 19"></path>
+                                <path d="M15 25L23 33"></path>
+                                <path d="M9 40H39"></path>
                             </svg>
-                        </div>
+                        </span>
 
                         <h3>Digitasi dan Pembaruan Peta</h3>
 
@@ -750,73 +822,64 @@
                             data spasial yang lebih rapi dan relevan.
                         </p>
 
-                        <div class="service-tags" aria-label="Cakupan layanan">
+                        <div class="service-tags">
                             <span>Digitasi</span>
                             <span>Redrawing</span>
-                            <span>Update data</span>
+                            <span>Update Data</span>
                         </div>
                     </article>
 
                     <article class="service-card">
                         <span class="service-number">03</span>
 
-                        <div class="service-icon" aria-hidden="true">
-                            <svg
-                                viewBox="0 0 48 48"
-                                width="34"
-                                height="34"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <circle cx="15" cy="15" r="3"/>
-                                <circle cx="33" cy="12" r="2.5"/>
-                                <circle cx="36" cy="31" r="4"/>
-                                <circle cx="18" cy="35" r="2.5"/>
-                                <circle cx="25" cy="24" r="5"/>
-                                <circle cx="25" cy="24" r="10" opacity="0.45"/>
+                        <span class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48">
+                                <circle cx="13" cy="14" r="4"></circle>
+                                <circle cx="34" cy="11" r="4"></circle>
+                                <circle cx="37" cy="34" r="4"></circle>
+                                <circle cx="14" cy="36" r="4"></circle>
+                                <path d="M17 14L30 11"></path>
+                                <path d="M36 15L37 30"></path>
+                                <path d="M33 35L18 36"></path>
+                                <path d="M13 18L14 32"></path>
+                                <path d="M17 17L33 31"></path>
                             </svg>
-                        </div>
+                        </span>
 
-                        <h3>Analisis Spasial dan Tematik</h3>
+                        <h3>Analisis dan Visualisasi Spasial</h3>
 
                         <p>
-                            Penyajian pola persebaran, potensi wilayah,
-                            topografi, dan informasi tematik lainnya.
+                            Penyajian pola sebaran, penggunaan lahan,
+                            topografi, dan informasi spasial lainnya.
                         </p>
 
-                        <div class="service-tags" aria-label="Cakupan layanan">
-                            <span>Tematik</span>
-                            <span>Persebaran</span>
+                        <div class="service-tags">
+                            <span>Sebaran</span>
                             <span>Topografi</span>
+                            <span>Tata Ruang</span>
                         </div>
                     </article>
 
                     <article class="service-card">
                         <span class="service-number">04</span>
 
-                        <div class="service-icon" aria-hidden="true">
-                            <svg
-                                viewBox="0 0 48 48"
-                                width="34"
-                                height="34"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <rect x="7" y="8" width="34" height="32" rx="3"/>
-                                <path d="M7 18H41"/>
-                                <path d="M25 18V40"/>
-                                <path d="M12 34V27"/>
-                                <path d="M17 34V23"/>
-                                <path d="M22 34V29"/>
-                                <path d="M30 31L34 26L38 28"/>
+                        <span class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 48 48">
+                                <rect
+                                    x="7"
+                                    y="8"
+                                    width="34"
+                                    height="32"
+                                    rx="3"
+                                ></rect>
+                                <path d="M7 18H41"></path>
+                                <path d="M25 18V40"></path>
+                                <path d="M12 34V27"></path>
+                                <path d="M17 34V23"></path>
+                                <path d="M22 34V29"></path>
+                                <path d="M30 31L34 26L38 28"></path>
                             </svg>
-                        </div>
+                        </span>
 
                         <h3>Layout dan Visualisasi Peta</h3>
 
@@ -825,39 +888,46 @@
                             dokumentasi, publikasi, dan kebutuhan cetak.
                         </p>
 
-                        <div class="service-tags" aria-label="Cakupan layanan">
+                        <div class="service-tags">
                             <span>Layout</span>
                             <span>Presentasi</span>
-                            <span>Siap cetak</span>
+                            <span>Siap Cetak</span>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- STUDI KASUS UTAMA -->
-        <section id="studi-kasus" class="section case-studies-section">
+        <section
+            id="studi-kasus"
+            class="section case-studies-section"
+        >
             <div class="shell">
                 <div class="section-heading wide-heading">
-                    <p class="section-label">Studi Kasus</p>
-                    <h2>Melihat proses perubahan secara lebih dekat.</h2>
+                    <p class="section-label">
+                        Studi Kasus Utama
+                    </p>
+
+                    <h2>
+                        Perubahan data dan kualitas visual dapat dilihat secara langsung.
+                    </h2>
+
                     <p>
-                        Dua contoh proyek yang menunjukkan bagaimana data
-                        dan peta awal disempurnakan menjadi hasil yang lebih jelas.
+                        Geser pembatas pada setiap perbandingan untuk melihat
+                        perbedaan antara peta sebelum dan sesudah pembaruan.
                     </p>
                 </div>
 
-                <!-- SAUSAPOR -->
                 <article
                     id="studi-kasus-sausapor"
-                    class="case-study case-study-featured"
+                    class="case-study"
                     aria-labelledby="sausapor-title"
                 >
                     <header class="case-study-header">
                         <div class="case-study-meta">
-                            <span>Studi Kasus Utama</span>
+                            <span>Studi Kasus Utama 01</span>
                             <span>Sausapor</span>
-                            <span>Pembaruan Peta Kerja</span>
+                            <span>Pembaruan Data Spasial</span>
                         </div>
 
                         <div class="case-study-heading">
@@ -867,684 +937,719 @@
                                 </p>
 
                                 <h3 id="sausapor-title">
-                                    Peta kerja yang lebih sesuai dengan kondisi lapangan.
+                                    Pembaruan Peta Sausapor dengan Data yang
+                                    Lebih Mutakhir
                                 </h3>
                             </div>
 
                             <p class="case-study-intro">
-                                Peta wilayah Sausapor diperbarui menggunakan
-                                citra dan data terbaru agar jalan, bangunan,
-                                batas wilayah, dan objek penting lebih mudah dibaca.
+                                Perbandingan peta sebelum dan sesudah pembaruan
+                                menunjukkan lebih banyak bangunan dan objek
+                                wilayah yang berhasil diidentifikasi. Referensi
+                                yang lebih mutakhir menghasilkan peta yang lebih
+                                lengkap, tajam, dan relevan untuk mendukung
+                                kebutuhan lapangan.
                             </p>
                         </div>
                     </header>
 
                     <div
-                        class="case-study-flow case-study-flow-two"
+                        class="comparison-slider"
+                        data-comparison
+                        data-start="50"
                         aria-label="Perbandingan peta Sausapor sebelum dan sesudah pembaruan"
                     >
-                        <figure class="case-stage case-stage-before">
-                            <div class="case-stage-media">
-                                <a
-                                    href="peta-awal-sausapor.jpg"
-                                    data-lightbox
-                                    data-title="Peta Awal Sausapor"
-                                    data-caption="Referensi lama masih buram dan belum menunjukkan kondisi wilayah secara jelas."
-                                    aria-label="Buka peta awal Sausapor"
-                                >
-                                    <img
-                                        src="peta-awal-sausapor.jpg"
-                                        alt="Peta awal Sausapor sebelum pembaruan"
-                                        loading="lazy"
-                                    >
-                                </a>
-
-                                <span class="case-stage-label">Before</span>
-                                <span class="case-stage-number" aria-hidden="true">01</span>
-                            </div>
-
-                            <figcaption>
-                                <p class="case-stage-kicker">Peta Awal</p>
-                                <h4>
-                                    Detail wilayah belum mudah dikenali.
-                                </h4>
-                                <p>
-                                    Referensi lama membuat jalan, bangunan,
-                                    batas, dan objek penting sulit dibandingkan
-                                    dengan keadaan terbaru di lapangan.
-                                </p>
-                            </figcaption>
-                        </figure>
-
-                        <div class="case-flow-connector" aria-hidden="true">
-                            <span></span>
+                        <div class="comparison-layer comparison-before">
+                            <img
+                                src="peta-awal-sausapor.jpg"
+                                alt="Peta Sausapor sebelum pembaruan"
+                                loading="lazy"
+                            >
+                            <span class="comparison-label">
+                                Sebelum
+                            </span>
                         </div>
 
-                        <figure class="case-stage case-stage-after">
-                            <div class="case-stage-media">
-                                <a
-                                    href="peta-hasil-sausapor.png"
-                                    data-lightbox
-                                    data-title="Peta Hasil Sausapor"
-                                    data-caption="Peta disusun ulang menggunakan referensi terbaru agar lebih jelas dan siap digunakan."
-                                    aria-label="Buka peta hasil Sausapor"
-                                >
-                                    <img
-                                        src="peta-hasil-sausapor.png"
-                                        alt="Peta Sausapor setelah pembaruan"
-                                        loading="lazy"
-                                    >
-                                </a>
+                        <div
+                            class="comparison-layer comparison-after"
+                            data-comparison-after
+                        >
+                            <img
+                                src="peta-hasil-sausapor.png"
+                                alt="Peta Sausapor setelah pembaruan"
+                                loading="lazy"
+                            >
+                            <span class="comparison-label">
+                                Sesudah
+                            </span>
+                        </div>
 
-                                <span class="case-stage-label">After</span>
-                                <span class="case-stage-number" aria-hidden="true">02</span>
-                            </div>
-
-                            <figcaption>
-                                <p class="case-stage-kicker">Peta Hasil</p>
-                                <h4>
-                                    Informasi disusun lebih jelas dan terstruktur.
-                                </h4>
-                                <p>
-                                    Jalan, bangunan, batas wilayah, dan label
-                                    digambar kembali agar lebih mudah digunakan
-                                    untuk kegiatan lapangan maupun dokumentasi.
-                                </p>
-                            </figcaption>
-                        </figure>
+                        <button
+                            class="comparison-handle"
+                            type="button"
+                            role="slider"
+                            aria-label="Geser untuk membandingkan peta Sausapor"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            aria-valuenow="50"
+                            data-comparison-handle
+                        >
+                            <span class="comparison-handle-line"></span>
+                            <span class="comparison-handle-control">
+                                <svg viewBox="0 0 30 30" aria-hidden="true">
+                                    <path d="M12 8L5 15L12 22"></path>
+                                    <path d="M18 8L25 15L18 22"></path>
+                                </svg>
+                            </span>
+                        </button>
                     </div>
 
-                    <div class="case-study-summary">
-                        <div class="case-summary-heading">
-                            <p class="section-label">Hasil Pembaruan</p>
-                            <h4>
-                                Tiga perbaikan yang langsung mendukung penggunaan peta.
-                            </h4>
-                        </div>
+                    <div class="comparison-notes">
+                        <article>
+                            <p class="comparison-note-label">
+                                Sebelum Pembaruan
+                            </p>
+                            <h4>Peta dengan referensi lama.</h4>
+                            <p>
+                                Ketajaman visual masih terbatas dan sejumlah
+                                bangunan serta perubahan kondisi wilayah belum
+                                tergambarkan secara lengkap.
+                            </p>
+                        </article>
 
-                        <div class="case-result-grid case-result-grid-three">
-                            <article class="case-result-item">
-                                <span class="case-result-icon" aria-hidden="true">01</span>
-                                <div>
-                                    <strong>Lebih Jelas</strong>
-                                    <p>
-                                        Jalan, bangunan, batas, dan label
-                                        lebih mudah dibedakan.
-                                    </p>
-                                </div>
-                            </article>
+                        <article>
+                            <p class="comparison-note-label">
+                                Setelah Pembaruan
+                            </p>
+                            <h4>Informasi lebih lengkap dan jelas.</h4>
+                            <p>
+                                Referensi yang lebih mutakhir membantu
+                                menampilkan bangunan, jaringan jalan, batas
+                                wilayah, dan objek penting secara lebih lengkap.
+                            </p>
+                        </article>
+                    </div>
 
-                            <article class="case-result-item">
-                                <span class="case-result-icon" aria-hidden="true">02</span>
-                                <div>
-                                    <strong>Lebih Relevan</strong>
-                                    <p>
-                                        Referensi pembaruan disesuaikan dengan
-                                        data terbaru yang tersedia.
-                                    </p>
-                                </div>
-                            </article>
+                    <div class="case-result-grid">
+                        <article class="case-result-item">
+                            <span class="case-result-icon" aria-hidden="true">
+                                01
+                            </span>
+                            <div>
+                                <strong>Referensi Lebih Mutakhir</strong>
+                                <p>
+                                    Pembaruan menggunakan referensi terbaru
+                                    yang tersedia untuk proyek.
+                                </p>
+                            </div>
+                        </article>
 
-                            <article class="case-result-item">
-                                <span class="case-result-icon" aria-hidden="true">03</span>
-                                <div>
-                                    <strong>Siap Digunakan</strong>
-                                    <p>
-                                        Layout akhir dapat digunakan untuk
-                                        kebutuhan digital maupun cetak.
-                                    </p>
-                                </div>
-                            </article>
-                        </div>
+                        <article class="case-result-item">
+                            <span class="case-result-icon" aria-hidden="true">
+                                02
+                            </span>
+                            <div>
+                                <strong>Objek Lebih Lengkap</strong>
+                                <p>
+                                    Lebih banyak bangunan dan unsur wilayah
+                                    berhasil dikenali serta divisualisasikan.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="case-result-item">
+                            <span class="case-result-icon" aria-hidden="true">
+                                03
+                            </span>
+                            <div>
+                                <strong>Visual Lebih Tajam</strong>
+                                <p>
+                                    Detail peta lebih jelas sehingga informasi
+                                    lebih mudah dibaca dan digunakan.
+                                </p>
+                            </div>
+                        </article>
                     </div>
 
                     <footer class="case-study-footer">
                         <p>
-                            Memiliki peta lama yang perlu disesuaikan
-                            dengan kondisi terbaru?
+                            Buka perbandingan dalam tampilan penuh untuk
+                            melihat perubahan detail wilayah dengan lebih jelas.
                         </p>
 
-                        <a
-                            class="button button-green"
-                            href="https://wa.me/6285947185576?text=Halo%20Lim%27s%20Mapping%2C%20saya%20ingin%20memperbarui%20peta%20agar%20lebih%20jelas%20dan%20sesuai%20dengan%20kondisi%20lapangan."
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <button
+                            class="button button-accent"
+                            type="button"
+                            data-open-comparison
+                            data-title="Pembaruan Peta Sausapor"
+                            data-before-src="peta-awal-sausapor.jpg"
+                            data-after-src="peta-hasil-sausapor.png"
+                            data-before-alt="Peta Sausapor sebelum pembaruan"
+                            data-after-alt="Peta Sausapor setelah pembaruan"
                         >
-                            Konsultasikan Pembaruan Peta
-                        </a>
+                            Lihat Perbandingan Penuh
+                        </button>
                     </footer>
                 </article>
 
-                <!-- MAKASSAR RINGKAS -->
                 <article
                     id="studi-kasus-makassar"
-                    class="case-study case-study-featured case-study-compact"
+                    class="case-study"
                     aria-labelledby="makassar-title"
                 >
                     <header class="case-study-header">
                         <div class="case-study-meta">
-                            <span>Studi Kasus 02</span>
-                            <span>Makassar</span>
-                            <span>Before dan After</span>
+                            <span>Studi Kasus Utama 02</span>
+                            <span>Kota Makassar</span>
+                            <span>Wilayah Sensus Ekonomi 2026</span>
                         </div>
 
                         <div class="case-study-heading">
                             <div class="case-study-title">
                                 <p class="portfolio-category">
-                                    Penyempurnaan Visual Peta
+                                    Penyempurnaan Peta Wilayah Sensus
                                 </p>
 
                                 <h3 id="makassar-title">
-                                    Peta Makassar yang lebih jelas dan rapi.
+                                    Penyajian Peta Wilayah Sensus yang Lebih
+                                    Tajam dan Terstruktur
                                 </h3>
                             </div>
 
                             <p class="case-study-intro">
-                                Peta awal disempurnakan agar informasi utama,
-                                simbol, label, dan komposisi visual lebih mudah
-                                dipahami serta siap digunakan oleh klien.
+                                Peta kerja salah satu wilayah Sensus Ekonomi
+                                2026 di Kota Makassar disempurnakan melalui
+                                penataan ulang detail bangunan, batas wilayah,
+                                simbol, label, dan komposisi visual. Hasil akhir
+                                menyajikan informasi yang lebih tajam, konsisten,
+                                dan mudah digunakan sebagai referensi kerja.
                             </p>
                         </div>
                     </header>
 
                     <div
-                        class="case-study-flow case-study-flow-two"
-                        aria-label="Perbandingan peta Makassar sebelum dan sesudah penyempurnaan"
+                        class="comparison-slider"
+                        data-comparison
+                        data-start="50"
+                        aria-label="Perbandingan peta wilayah sensus sebelum dan sesudah penyempurnaan"
                     >
-                        <figure class="case-stage case-stage-before">
-                            <div class="case-stage-media">
-                                <a
-                                    href="Peta-before-Makassar.jpeg"
-                                    data-lightbox
-                                    data-title="Peta Awal Makassar"
-                                    data-caption="Tampilan peta sebelum dilakukan penyempurnaan visual."
-                                    aria-label="Buka peta Makassar sebelum diperbarui"
-                                >
-                                    <img
-                                        src="Peta-before-Makassar.jpeg"
-                                        alt="Peta Makassar sebelum penyempurnaan visual"
-                                        loading="lazy"
-                                    >
-                                </a>
-
-                                <span class="case-stage-label">Before</span>
-                                <span class="case-stage-number" aria-hidden="true">01</span>
-                            </div>
-
-                            <figcaption>
-                                <p class="case-stage-kicker">Peta Awal</p>
-                                <h4>Tampilan sebelum penyempurnaan.</h4>
-                                <p>
-                                    Peta awal menjadi dasar untuk menentukan
-                                    bagian yang perlu diperjelas dan ditata ulang.
-                                </p>
-                            </figcaption>
-                        </figure>
-
-                        <div class="case-flow-connector" aria-hidden="true">
-                            <span></span>
+                        <div class="comparison-layer comparison-before">
+                            <img
+                                src="Peta-before-Makassar.jpeg"
+                                alt="Peta wilayah sensus sebelum penyempurnaan"
+                                loading="lazy"
+                            >
+                            <span class="comparison-label">
+                                Sebelum
+                            </span>
                         </div>
 
-                        <figure class="case-stage case-stage-after">
-                            <div class="case-stage-media">
-                                <a
-                                    href="Peta-After-Makassar.jpeg"
-                                    data-lightbox
-                                    data-title="Peta Hasil Makassar"
-                                    data-caption="Hasil penyempurnaan dengan komposisi yang lebih rapi dan informasi yang lebih mudah dibaca."
-                                    aria-label="Buka peta Makassar setelah diperbarui"
-                                >
-                                    <img
-                                        src="Peta-After-Makassar.jpeg"
-                                        alt="Peta Makassar setelah penyempurnaan visual"
-                                        loading="lazy"
-                                    >
-                                </a>
-
-                                <span class="case-stage-label">After</span>
-                                <span class="case-stage-number" aria-hidden="true">02</span>
-                            </div>
-
-                            <figcaption>
-                                <p class="case-stage-kicker">Peta Hasil</p>
-                                <h4>Visual lebih jelas dan terstruktur.</h4>
-                                <p>
-                                    Elemen peta disusun kembali agar informasi
-                                    utama lebih mudah dikenali dan dipresentasikan.
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <div class="case-study-summary case-study-summary-compact">
-                        <div class="case-result-grid case-result-grid-three">
-                            <article class="case-result-item">
-                                <span class="case-result-icon" aria-hidden="true">01</span>
-                                <div>
-                                    <strong>Lebih Jelas</strong>
-                                    <p>Informasi utama lebih mudah dikenali.</p>
-                                </div>
-                            </article>
-
-                            <article class="case-result-item">
-                                <span class="case-result-icon" aria-hidden="true">02</span>
-                                <div>
-                                    <strong>Lebih Rapi</strong>
-                                    <p>Hierarki dan komposisi visual lebih teratur.</p>
-                                </div>
-                            </article>
-
-                            <article class="case-result-item">
-                                <span class="case-result-icon" aria-hidden="true">03</span>
-                                <div>
-                                    <strong>Siap Digunakan</strong>
-                                    <p>Hasil akhir siap disampaikan kepada klien.</p>
-                                </div>
-                            </article>
+                        <div
+                            class="comparison-layer comparison-after"
+                            data-comparison-after
+                        >
+                            <img
+                                src="Peta-After-Makassar.jpeg"
+                                alt="Peta wilayah sensus setelah penyempurnaan"
+                                loading="lazy"
+                            >
+                            <span class="comparison-label">
+                                Sesudah
+                            </span>
                         </div>
 
-                        <a class="portfolio-link" href="#testimoni">
-                            Lihat testimoni asli klien
-                            <span aria-hidden="true">→</span>
-                        </a>
+                        <button
+                            class="comparison-handle"
+                            type="button"
+                            role="slider"
+                            aria-label="Geser untuk membandingkan peta wilayah sensus"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            aria-valuenow="50"
+                            data-comparison-handle
+                        >
+                            <span class="comparison-handle-line"></span>
+                            <span class="comparison-handle-control">
+                                <svg viewBox="0 0 30 30" aria-hidden="true">
+                                    <path d="M12 8L5 15L12 22"></path>
+                                    <path d="M18 8L25 15L18 22"></path>
+                                </svg>
+                            </span>
+                        </button>
                     </div>
+
+                    <div class="comparison-notes">
+                        <article>
+                            <p class="comparison-note-label">
+                                Sebelum Penyempurnaan
+                            </p>
+                            <h4>Informasi belum tersaji secara optimal.</h4>
+                            <p>
+                                Detail visual masih kurang tajam, hierarki
+                                informasi belum konsisten, dan sejumlah elemen
+                                sulit dikenali dengan cepat.
+                            </p>
+                        </article>
+
+                        <article>
+                            <p class="comparison-note-label">
+                                Setelah Penyempurnaan
+                            </p>
+                            <h4>Detail lebih tajam dan terstruktur.</h4>
+                            <p>
+                                Detail bangunan, batas wilayah, simbol, dan
+                                label disusun kembali agar tampil lebih jelas,
+                                konsisten, dan mudah dibaca.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="case-result-grid">
+                        <article class="case-result-item">
+                            <span class="case-result-icon" aria-hidden="true">
+                                01
+                            </span>
+                            <div>
+                                <strong>Detail Bangunan Lebih Jelas</strong>
+                                <p>
+                                    Bentuk dan posisi elemen utama lebih mudah
+                                    dikenali pada peta hasil.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="case-result-item">
+                            <span class="case-result-icon" aria-hidden="true">
+                                02
+                            </span>
+                            <div>
+                                <strong>Batas Wilayah Lebih Tegas</strong>
+                                <p>
+                                    Delineasi dan garis batas disajikan dengan
+                                    hierarki visual yang lebih konsisten.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="case-result-item">
+                            <span class="case-result-icon" aria-hidden="true">
+                                03
+                            </span>
+                            <div>
+                                <strong>Komposisi Lebih Seimbang</strong>
+                                <p>
+                                    Simbol, label, peta, dan poin penjelasan
+                                    ditata agar seluruh informasi tetap terlihat.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <footer class="case-study-footer">
+                        <p>
+                            Kedua gambar ditampilkan dengan rasio dan skala
+                            yang sama agar seluruh peta serta poin informasinya
+                            dapat dibandingkan secara seimbang.
+                        </p>
+
+                        <button
+                            class="button button-accent"
+                            type="button"
+                            data-open-comparison
+                            data-title="Penyempurnaan Peta Wilayah Sensus Ekonomi 2026"
+                            data-before-src="Peta-before-Makassar.jpeg"
+                            data-after-src="Peta-After-Makassar.jpeg"
+                            data-before-alt="Peta wilayah sensus sebelum penyempurnaan"
+                            data-after-alt="Peta wilayah sensus setelah penyempurnaan"
+                        >
+                            Lihat Perbandingan Penuh
+                        </button>
+                    </footer>
                 </article>
             </div>
         </section>
 
-        <!-- OUTPUT YANG DITERIMA -->
-        <section id="output" class="section output-section">
+        <section
+            id="output"
+            class="section output-section"
+        >
             <div class="shell">
                 <div class="section-heading wide-heading">
-                    <p class="section-label">04 / Output Proyek</p>
+                    <p class="section-label">
+                        04 / Output Proyek
+                    </p>
 
                     <h2>
-                        Hasil yang dapat disesuaikan dengan kebutuhan Anda.
+                        Hasil yang dapat disesuaikan dengan kebutuhan.
                     </h2>
 
                     <p>
-                        Jenis file dan kelengkapan output ditentukan berdasarkan
-                        ruang lingkup pekerjaan dan kesepakatan awal proyek.
+                        Jenis file dan kelengkapan output ditentukan
+                        berdasarkan ruang lingkup pekerjaan serta kesepakatan awal.
                     </p>
                 </div>
 
                 <div class="output-grid">
                     <article class="output-card">
-                        <span class="output-number">01</span>
+                        <span>01</span>
                         <h3>PDF dan JPEG</h3>
                         <p>
-                            File siap digunakan untuk laporan, presentasi,
-                            dokumentasi, publikasi, atau kebutuhan cetak.
+                            File siap untuk laporan, presentasi,
+                            dokumentasi, atau kebutuhan cetak.
                         </p>
                     </article>
 
                     <article class="output-card">
-                        <span class="output-number">02</span>
+                        <span>02</span>
                         <h3>Data Spasial</h3>
                         <p>
-                            SHP, KML, GeoJSON, atau format lain dapat
-                            disediakan sesuai ruang lingkup pekerjaan.
+                            SHP, KML, GeoJSON, atau format lain sesuai
+                            ruang lingkup proyek.
                         </p>
                     </article>
 
                     <article class="output-card">
-                        <span class="output-number">03</span>
+                        <span>03</span>
                         <h3>Layout Lengkap</h3>
                         <p>
-                            Judul, legenda, skala, arah utara, sumber data,
-                            dan informasi pendukung lainnya.
+                            Judul, legenda, skala, arah utara,
+                            dan sumber data.
                         </p>
                     </article>
 
                     <article class="output-card">
-                        <span class="output-number">04</span>
+                        <span>04</span>
                         <h3>Sistem Koordinat</h3>
                         <p>
-                            Sistem koordinat disesuaikan dengan lokasi,
-                            data, dan tujuan penggunaan peta.
+                            Disesuaikan dengan lokasi, data,
+                            dan tujuan penggunaan.
                         </p>
                     </article>
 
                     <article class="output-card">
-                        <span class="output-number">05</span>
+                        <span>05</span>
                         <h3>Revisi</h3>
                         <p>
-                            Jumlah dan ruang lingkup revisi ditentukan
-                            dalam kesepakatan awal pengerjaan.
+                            Jumlah dan ruang lingkup mengikuti
+                            kesepakatan awal.
                         </p>
                     </article>
 
                     <article class="output-card">
-                        <span class="output-number">06</span>
+                        <span>06</span>
                         <h3>Keterangan Sumber</h3>
                         <p>
-                            Sumber data dan informasi pengolahan dapat
-                            dicantumkan sesuai kebutuhan proyek.
+                            Sumber data dan informasi pengolahan
+                            dapat dicantumkan pada hasil.
                         </p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- PROSES DAN ESTIMASI -->
-        <section id="proses" class="section process-section">
-            <div class="process-contour process-contour-one"></div>
-            <div class="process-contour process-contour-two"></div>
+        <section
+            id="proses"
+            class="section process-section"
+        >
+            <div
+                class="process-contour process-contour-one"
+                aria-hidden="true"
+            ></div>
+            <div
+                class="process-contour process-contour-two"
+                aria-hidden="true"
+            ></div>
 
             <div class="shell">
                 <div class="section-heading wide-heading process-heading">
-                    <p class="section-label">05 / Cara Kerja</p>
+                    <p class="section-label">
+                        05 / Cara Kerja
+                    </p>
 
-                    <h2>Ikuti setiap tahap dari data awal hingga hasil akhir.</h2>
+                    <h2>
+                        Proses kerja yang jelas dari data awal hingga
+                        penyerahan hasil.
+                    </h2>
 
                     <p>
-                        Timeline akan aktif mengikuti posisi scroll agar
-                        proses, kebutuhan data, dan hasil setiap tahap dapat
-                        dipahami secara bertahap.
+                        Setiap proyek dikerjakan melalui tahapan yang
+                        terstruktur, mulai dari pembahasan kebutuhan dan
+                        pemeriksaan data hingga penyusunan, peninjauan,
+                        dan penyerahan hasil akhir.
                     </p>
                 </div>
 
-                <div class="process-experience">
-                    <nav
-                        class="process-timeline"
-                        aria-label="Tahapan pengerjaan proyek"
+                <div
+                    class="process-timeline"
+                    aria-label="Empat tahap pengerjaan proyek"
+                >
+                    <span class="process-track" aria-hidden="true">
+                        <i id="process-progress"></i>
+                    </span>
+
+                    <button
+                        class="process-node is-active"
+                        type="button"
+                        data-process-target="process-step-1"
+                        aria-current="step"
                     >
-                        <div class="process-timeline-inner">
-                            <div
-                                class="process-timeline-track"
-                                aria-hidden="true"
-                            >
-                                <span id="process-timeline-progress"></span>
-                            </div>
+                        <span>01</span>
+                        <strong>Diskusi</strong>
+                    </button>
 
-                            <div class="process-timeline-nodes">
-                                <button
-                                    class="process-timeline-node is-active"
-                                    type="button"
-                                    data-process-target="process-step-1"
-                                    aria-label="Buka tahap 1, Diskusi Kebutuhan"
-                                    aria-current="step"
-                                >
-                                    <span class="process-node-circle">01</span>
-                                    <strong>Diskusi</strong>
-                                </button>
+                    <button
+                        class="process-node"
+                        type="button"
+                        data-process-target="process-step-2"
+                    >
+                        <span>02</span>
+                        <strong>Pemeriksaan</strong>
+                    </button>
 
-                                <button
-                                    class="process-timeline-node"
-                                    type="button"
-                                    data-process-target="process-step-2"
-                                    aria-label="Buka tahap 2, Pemeriksaan Data"
-                                >
-                                    <span class="process-node-circle">02</span>
-                                    <strong>Validasi</strong>
-                                </button>
+                    <button
+                        class="process-node"
+                        type="button"
+                        data-process-target="process-step-3"
+                    >
+                        <span>03</span>
+                        <strong>Pengerjaan</strong>
+                    </button>
 
-                                <button
-                                    class="process-timeline-node"
-                                    type="button"
-                                    data-process-target="process-step-3"
-                                    aria-label="Buka tahap 3, Pengerjaan dan Revisi"
-                                >
-                                    <span class="process-node-circle">03</span>
-                                    <strong>Produksi</strong>
-                                </button>
-
-                                <button
-                                    class="process-timeline-node"
-                                    type="button"
-                                    data-process-target="process-step-4"
-                                    aria-label="Buka tahap 4, Penyerahan Hasil"
-                                >
-                                    <span class="process-node-circle">04</span>
-                                    <strong>Penyerahan</strong>
-                                </button>
-                            </div>
-                        </div>
-                    </nav>
-
-                    <div class="process-grid process-grid-interactive">
-                        <article
-                            class="process-card process-card-interactive is-active"
-                            id="process-step-1"
-                            data-process-step="1"
-                        >
-                            <div class="process-card-content">
-                                <div class="process-card-top">
-                                    <div
-                                        class="process-icon"
-                                        aria-hidden="true"
-                                    >
-                                        <svg viewBox="0 0 48 48">
-                                            <circle cx="24" cy="24" r="15"></circle>
-                                            <circle cx="24" cy="24" r="6"></circle>
-                                            <path d="M24 4V12"></path>
-                                            <path d="M24 36V44"></path>
-                                            <path d="M4 24H12"></path>
-                                            <path d="M36 24H44"></path>
-                                        </svg>
-                                    </div>
-
-                                    <div>
-                                        <span class="process-kicker">Tahap</span>
-                                        <strong class="process-number">01</strong>
-                                    </div>
-                                </div>
-
-                                <div class="process-route"><span></span></div>
-
-                                <h3>Diskusi Kebutuhan</h3>
-                                <p>
-                                    Tim memahami tujuan peta, lokasi proyek,
-                                    konteks penggunaan, format keluaran, dan
-                                    tenggat yang diharapkan.
-                                </p>
-                                <span class="process-tag">Brief proyek</span>
-                            </div>
-
-                            <div class="process-detail-grid">
-                                <div class="process-detail-item">
-                                    <span>Yang dibutuhkan</span>
-                                    <strong>
-                                        Tujuan, lokasi, contoh referensi,
-                                        format hasil, dan tenggat waktu.
-                                    </strong>
-                                </div>
-
-                                <div class="process-detail-item">
-                                    <span>Hasil tahap</span>
-                                    <strong>
-                                        Ruang lingkup, kebutuhan data, metode,
-                                        serta estimasi pengerjaan awal.
-                                    </strong>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article
-                            class="process-card process-card-interactive"
-                            id="process-step-2"
-                            data-process-step="2"
-                        >
-                            <div class="process-card-content">
-                                <div class="process-card-top">
-                                    <div
-                                        class="process-icon"
-                                        aria-hidden="true"
-                                    >
-                                        <svg viewBox="0 0 48 48">
-                                            <path d="M8 13L24 6L40 13L24 20L8 13Z"></path>
-                                            <path d="M8 21L24 28L40 21"></path>
-                                            <path d="M8 29L24 36L32 32"></path>
-                                            <circle cx="37" cy="35" r="7"></circle>
-                                            <path d="M33.5 35L36 37.5L41 32.5"></path>
-                                        </svg>
-                                    </div>
-
-                                    <div>
-                                        <span class="process-kicker">Tahap</span>
-                                        <strong class="process-number">02</strong>
-                                    </div>
-                                </div>
-
-                                <div class="process-route"><span></span></div>
-
-                                <h3>Pemeriksaan Data</h3>
-                                <p>
-                                    Koordinat, tabel, citra, peta lama, dan
-                                    referensi lain diperiksa untuk memastikan
-                                    data cukup dan metode pengerjaan tepat.
-                                </p>
-                                <span class="process-tag">Validasi data</span>
-                            </div>
-
-                            <div class="process-detail-grid">
-                                <div class="process-detail-item">
-                                    <span>Yang dibutuhkan</span>
-                                    <strong>
-                                        Excel koordinat, KML, SHP, GeoJSON,
-                                        citra, gambar peta, atau dokumen pendukung.
-                                    </strong>
-                                </div>
-
-                                <div class="process-detail-item">
-                                    <span>Hasil tahap</span>
-                                    <strong>
-                                        Status kelengkapan data, sistem
-                                        koordinat, dan rencana pengolahan.
-                                    </strong>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article
-                            class="process-card process-card-interactive"
-                            id="process-step-3"
-                            data-process-step="3"
-                        >
-                            <div class="process-card-content">
-                                <div class="process-card-top">
-                                    <div
-                                        class="process-icon"
-                                        aria-hidden="true"
-                                    >
-                                        <svg viewBox="0 0 48 48">
-                                            <path d="M10 36L14 26L32 8L40 16L22 34L10 36Z"></path>
-                                            <path d="M29 11L37 19"></path>
-                                            <path d="M14 26L22 34"></path>
-                                            <path d="M8 41H40"></path>
-                                        </svg>
-                                    </div>
-
-                                    <div>
-                                        <span class="process-kicker">Tahap</span>
-                                        <strong class="process-number">03</strong>
-                                    </div>
-                                </div>
-
-                                <div class="process-route"><span></span></div>
-
-                                <h3>Pengerjaan dan Revisi</h3>
-                                <p>
-                                    Data diolah, dianalisis, dan disusun menjadi
-                                    draft peta. Hasil kemudian diperiksa dan
-                                    disempurnakan sesuai kesepakatan revisi.
-                                </p>
-                                <span class="process-tag">Produksi peta</span>
-                            </div>
-
-                            <div class="process-detail-grid">
-                                <div class="process-detail-item">
-                                    <span>Yang dibutuhkan</span>
-                                    <strong>
-                                        Data yang telah tervalidasi dan catatan
-                                        prioritas visual atau analisis.
-                                    </strong>
-                                </div>
-
-                                <div class="process-detail-item">
-                                    <span>Hasil tahap</span>
-                                    <strong>
-                                        Draft peta, preview layout, dan versi
-                                        revisi sesuai ruang lingkup pekerjaan.
-                                    </strong>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article
-                            class="process-card process-card-interactive"
-                            id="process-step-4"
-                            data-process-step="4"
-                        >
-                            <div class="process-card-content">
-                                <div class="process-card-top">
-                                    <div
-                                        class="process-icon"
-                                        aria-hidden="true"
-                                    >
-                                        <svg viewBox="0 0 48 48">
-                                            <path d="M12 6H29L38 15V42H12V6Z"></path>
-                                            <path d="M29 6V15H38"></path>
-                                            <path d="M24 20V34"></path>
-                                            <path d="M18 28L24 34L30 28"></path>
-                                        </svg>
-                                    </div>
-
-                                    <div>
-                                        <span class="process-kicker">Tahap</span>
-                                        <strong class="process-number">04</strong>
-                                    </div>
-                                </div>
-
-                                <div class="process-route"><span></span></div>
-
-                                <h3>Penyerahan Hasil</h3>
-                                <p>
-                                    File akhir diperiksa, dirapikan, lalu
-                                    dikirim dalam format yang disepakati dan
-                                    siap digunakan oleh klien.
-                                </p>
-                                <span class="process-tag">Finalisasi</span>
-                            </div>
-
-                            <div class="process-detail-grid">
-                                <div class="process-detail-item">
-                                    <span>Yang dibutuhkan</span>
-                                    <strong>
-                                        Persetujuan draft akhir dan konfirmasi
-                                        format file yang akan diserahkan.
-                                    </strong>
-                                </div>
-
-                                <div class="process-detail-item">
-                                    <span>Hasil tahap</span>
-                                    <strong>
-                                        PDF/JPEG siap pakai serta file spasial
-                                        sesuai ruang lingkup proyek.
-                                    </strong>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
+                    <button
+                        class="process-node"
+                        type="button"
+                        data-process-target="process-step-4"
+                    >
+                        <span>04</span>
+                        <strong>Penyerahan</strong>
+                    </button>
                 </div>
 
-                <aside class="pricing-panel" aria-labelledby="pricing-title">
-                    <div>
-                        <p class="section-label">Estimasi Biaya</p>
+                <div class="process-grid">
+                    <article
+                        class="process-card is-active"
+                        id="process-step-1"
+                        data-process-step="1"
+                    >
+                        <div class="process-card-header">
+                            <span class="process-card-number">01</span>
 
-                        <h3 id="pricing-title">
-                            Biaya ditentukan berdasarkan kebutuhan proyek.
+                            <span
+                                class="process-card-icon"
+                                aria-hidden="true"
+                            >
+                                <svg viewBox="0 0 48 48">
+                                    <path d="M8 10H40V31H25L16 39V31H8Z"></path>
+                                    <path d="M15 18H33"></path>
+                                    <path d="M15 24H28"></path>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <p class="process-kicker">
+                            Tahap Pertama
+                        </p>
+
+                        <h3>Diskusi Kebutuhan</h3>
+
+                        <p class="process-description">
+                            Tujuan, lokasi proyek, konteks penggunaan,
+                            format hasil, dan tenggat dibahas sejak awal.
+                        </p>
+
+                        <div class="process-information">
+                            <div>
+                                <small>Data yang Dibutuhkan</small>
+                                <p>
+                                    Tujuan proyek, lokasi, contoh referensi,
+                                    format hasil, dan tenggat waktu.
+                                </p>
+                            </div>
+
+                            <div>
+                                <small>Hasil Tahap</small>
+                                <p>
+                                    Ruang lingkup, kebutuhan data, metode,
+                                    serta estimasi pengerjaan awal.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article
+                        class="process-card"
+                        id="process-step-2"
+                        data-process-step="2"
+                    >
+                        <div class="process-card-header">
+                            <span class="process-card-number">02</span>
+
+                            <span
+                                class="process-card-icon"
+                                aria-hidden="true"
+                            >
+                                <svg viewBox="0 0 48 48">
+                                    <path d="M11 8H37V40H11Z"></path>
+                                    <path d="M17 16H31"></path>
+                                    <path d="M17 23H31"></path>
+                                    <path d="M17 30H25"></path>
+                                    <path d="M29 31L33 35L40 26"></path>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <p class="process-kicker">
+                            Tahap Kedua
+                        </p>
+
+                        <h3>Pemeriksaan Data</h3>
+
+                        <p class="process-description">
+                            File, atribut, koordinat, kualitas referensi,
+                            dan kebutuhan pelengkap diperiksa.
+                        </p>
+
+                        <div class="process-information">
+                            <div>
+                                <small>Data yang Dibutuhkan</small>
+                                <p>
+                                    Excel koordinat, KML, SHP, GeoJSON,
+                                    citra, gambar peta, atau dokumen pendukung.
+                                </p>
+                            </div>
+
+                            <div>
+                                <small>Hasil Tahap</small>
+                                <p>
+                                    Status kelengkapan data, sistem koordinat,
+                                    dan rencana pengolahan.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article
+                        class="process-card"
+                        id="process-step-3"
+                        data-process-step="3"
+                    >
+                        <div class="process-card-header">
+                            <span class="process-card-number">03</span>
+
+                            <span
+                                class="process-card-icon"
+                                aria-hidden="true"
+                            >
+                                <svg viewBox="0 0 48 48">
+                                    <path d="M10 36L14 26L32 8L40 16L22 34Z"></path>
+                                    <path d="M29 11L37 19"></path>
+                                    <path d="M14 26L22 34"></path>
+                                    <path d="M8 41H40"></path>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <p class="process-kicker">
+                            Tahap Ketiga
+                        </p>
+
+                        <h3>Pengerjaan dan Revisi</h3>
+
+                        <p class="process-description">
+                            Data diolah, dianalisis, dan disusun menjadi
+                            draft peta untuk diperiksa.
+                        </p>
+
+                        <div class="process-information">
+                            <div>
+                                <small>Data yang Dibutuhkan</small>
+                                <p>
+                                    Data yang telah diperiksa, prioritas
+                                    informasi, dan referensi tampilan.
+                                </p>
+                            </div>
+
+                            <div>
+                                <small>Hasil Tahap</small>
+                                <p>
+                                    Draft peta, catatan pemeriksaan,
+                                    dan penyesuaian sesuai kesepakatan revisi.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article
+                        class="process-card"
+                        id="process-step-4"
+                        data-process-step="4"
+                    >
+                        <div class="process-card-header">
+                            <span class="process-card-number">04</span>
+
+                            <span
+                                class="process-card-icon"
+                                aria-hidden="true"
+                            >
+                                <svg viewBox="0 0 48 48">
+                                    <path d="M12 6H29L38 15V42H12Z"></path>
+                                    <path d="M29 6V15H38"></path>
+                                    <path d="M24 20V34"></path>
+                                    <path d="M18 28L24 34L30 28"></path>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <p class="process-kicker">
+                            Tahap Keempat
+                        </p>
+
+                        <h3>Penyerahan Hasil</h3>
+
+                        <p class="process-description">
+                            File akhir diperiksa, dirapikan, lalu dikirim
+                            dalam format yang disepakati.
+                        </p>
+
+                        <div class="process-information">
+                            <div>
+                                <small>Data yang Dibutuhkan</small>
+                                <p>
+                                    Persetujuan draft, format akhir,
+                                    dan kebutuhan file pendukung.
+                                </p>
+                            </div>
+
+                            <div>
+                                <small>Hasil Tahap</small>
+                                <p>
+                                    File final yang siap digunakan beserta
+                                    data pendukung sesuai ruang lingkup.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="pricing-panel">
+                    <div>
+                        <p class="section-label">
+                            Estimasi Biaya
+                        </p>
+
+                        <h3>
+                            Biaya mengikuti kebutuhan proyek.
                         </h3>
 
                         <p>
-                            Estimasi dipengaruhi oleh luas wilayah,
-                            kelengkapan data, tingkat kerumitan, jenis
-                            analisis, format hasil, dan tenggat waktu.
+                            Estimasi dipengaruhi luas wilayah, kelengkapan
+                            data, tingkat kerumitan, jenis analisis,
+                            format hasil, dan tenggat waktu.
                         </p>
                     </div>
 
                     <a
-                        class="button button-green"
+                        class="button button-accent"
                         href="https://wa.me/6285947185576?text=Halo%20Lim%27s%20Mapping%2C%20saya%20ingin%20meminta%20estimasi%20proyek.%0A%0AJenis%20kebutuhan%3A%0ALokasi%20proyek%3A%0AData%20yang%20tersedia%3A%0AFormat%20hasil%3A%0ATenggat%20waktu%3A%0ACatatan%20tambahan%3A"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -1555,38 +1660,45 @@
             </div>
         </section>
 
-        <!-- TESTIMONI ASLI -->
-        <section id="testimoni" class="section testimonial-section">
+        <section
+            id="testimoni"
+            class="section testimonial-section"
+        >
             <div class="shell">
-                <div
-                    class="testimonial-showcase testimonial-showcase-authentic"
-                >
+                <div class="testimonial-panel">
                     <div class="testimonial-copy">
-                        <p class="section-label">06 / Testimoni Klien</p>
+                        <p class="section-label">
+                            06 / Testimoni Klien
+                        </p>
 
-                        <h2>Tanggapan langsung setelah proyek selesai.</h2>
+                        <h2>
+                            Tanggapan langsung setelah proyek selesai.
+                        </h2>
 
                         <p>
-                            Testimoni berikut berasal dari percakapan asli
-                            dengan klien setelah hasil pemetaan diterima.
-                            Informasi pribadi disamarkan untuk menjaga privasi.
+                            Testimoni berasal dari percakapan asli setelah
+                            hasil pemetaan diterima. Informasi pribadi
+                            disamarkan untuk menjaga privasi.
                         </p>
 
                         <div class="testimonial-facts">
-                            <span>Percakapan asli</span>
-                            <span>Identitas disamarkan</span>
-                            <span>Tanpa rating buatan</span>
+                            <span>Percakapan Asli</span>
+                            <span>Identitas Disamarkan</span>
+                            <span>Tanpa Rating Buatan</span>
                         </div>
 
                         <a
-                            class="portfolio-link"
+                            class="text-link"
                             href="Terstimoni-Peta-Makassar.jpeg"
                             data-lightbox
-                            data-title="Testimoni Klien Peta Makassar"
+                            data-title="Testimoni Klien"
                             data-caption="Screenshot percakapan asli setelah hasil pemetaan diterima. Informasi pribadi disamarkan."
                         >
                             Lihat gambar penuh
-                            <span aria-hidden="true">→</span>
+                            <svg viewBox="0 0 20 20" aria-hidden="true">
+                                <path d="M4 10H16"></path>
+                                <path d="M11 5L16 10L11 15"></path>
+                            </svg>
                         </a>
                     </div>
 
@@ -1594,65 +1706,104 @@
                         <a
                             href="Terstimoni-Peta-Makassar.jpeg"
                             data-lightbox
-                            data-title="Testimoni Klien Peta Makassar"
+                            data-title="Testimoni Klien"
                             data-caption="Screenshot percakapan asli setelah hasil pemetaan diterima. Informasi pribadi disamarkan."
                             aria-label="Buka screenshot testimoni klien"
                         >
                             <img
                                 src="Terstimoni-Peta-Makassar.jpeg"
-                                alt="Screenshot testimoni WhatsApp klien peta Makassar"
+                                alt="Screenshot testimoni WhatsApp klien"
                                 loading="lazy"
+                                width="700"
+                                height="1200"
                             >
                         </a>
 
                         <figcaption>
-                            Testimoni asli klien dengan informasi pribadi
-                            yang telah disamarkan.
+                            Informasi pribadi pada percakapan telah disamarkan.
                         </figcaption>
                     </figure>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ -->
-        <section id="faq" class="section faq-section">
+        <section
+            id="faq"
+            class="section faq-section"
+        >
             <div class="shell faq-layout">
                 <div class="section-heading">
-                    <p class="section-label">07 / Pertanyaan Umum</p>
-                    <h2>Informasi sebelum memulai proyek.</h2>
+                    <p class="section-label">
+                        07 / Pertanyaan Umum
+                    </p>
+
+                    <h2>
+                        Informasi sebelum memulai proyek.
+                    </h2>
+
                     <p>
-                        Beberapa jawaban singkat mengenai data, format hasil,
+                        Jawaban singkat mengenai data, format hasil,
                         waktu pengerjaan, revisi, dan kerahasiaan proyek.
                     </p>
                 </div>
 
                 <div class="faq-list">
                     <details class="faq-item">
-                        <summary>Data apa yang perlu dikirim?</summary>
+                        <summary>
+                            <span>Data apa yang perlu dikirim?</span>
+
+                            <span class="faq-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path class="faq-icon-horizontal" d="M5 12H19"></path>
+                                    <path class="faq-icon-vertical" d="M12 5V19"></path>
+                                </svg>
+                            </span>
+                        </summary>
+
                         <div class="faq-answer">
                             <p>
                                 Data dapat berupa koordinat, Excel, gambar
-                                peta, citra, KML, SHP, dokumen pendukung,
-                                atau informasi lokasi yang tersedia.
+                                peta, citra, KML, SHP, GeoJSON, dokumen
+                                pendukung, atau informasi lokasi yang tersedia.
                             </p>
                         </div>
                     </details>
 
                     <details class="faq-item">
                         <summary>
-                            Apakah proyek bisa dikerjakan secara daring?
+                            <span>
+                                Apakah proyek bisa dikerjakan secara daring?
+                            </span>
+
+                            <span class="faq-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path class="faq-icon-horizontal" d="M5 12H19"></path>
+                                    <path class="faq-icon-vertical" d="M12 5V19"></path>
+                                </svg>
+                            </span>
                         </summary>
+
                         <div class="faq-answer">
                             <p>
                                 Ya. Pengiriman data, diskusi, pemeriksaan
-                                hasil, dan penyerahan file dapat dilakukan
-                                secara daring.
+                                hasil, revisi, dan penyerahan file dapat
+                                dilakukan secara daring.
                             </p>
                         </div>
                     </details>
 
                     <details class="faq-item">
-                        <summary>Format hasil apa yang tersedia?</summary>
+                        <summary>
+                            <span>Format hasil apa yang tersedia?</span>
+
+                            <span class="faq-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path class="faq-icon-horizontal" d="M5 12H19"></path>
+                                    <path class="faq-icon-vertical" d="M12 5V19"></path>
+                                </svg>
+                            </span>
+                        </summary>
+
                         <div class="faq-answer">
                             <p>
                                 Hasil dapat berupa PDF, JPEG, KML, SHP,
@@ -1663,18 +1814,38 @@
                     </details>
 
                     <details class="faq-item">
-                        <summary>Berapa lama waktu pengerjaan?</summary>
+                        <summary>
+                            <span>Berapa lama waktu pengerjaan?</span>
+
+                            <span class="faq-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path class="faq-icon-horizontal" d="M5 12H19"></path>
+                                    <path class="faq-icon-vertical" d="M12 5V19"></path>
+                                </svg>
+                            </span>
+                        </summary>
+
                         <div class="faq-answer">
                             <p>
                                 Durasi bergantung pada luas wilayah,
                                 kelengkapan data, jenis analisis, tingkat
-                                kerumitan, dan jumlah revisi.
+                                kerumitan, tenggat, dan jumlah revisi.
                             </p>
                         </div>
                     </details>
 
                     <details class="faq-item">
-                        <summary>Apakah hasil dapat direvisi?</summary>
+                        <summary>
+                            <span>Apakah hasil dapat direvisi?</span>
+
+                            <span class="faq-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path class="faq-icon-horizontal" d="M5 12H19"></path>
+                                    <path class="faq-icon-vertical" d="M12 5V19"></path>
+                                </svg>
+                            </span>
+                        </summary>
+
                         <div class="faq-answer">
                             <p>
                                 Revisi tersedia sesuai jumlah dan ruang
@@ -1685,13 +1856,22 @@
 
                     <details class="faq-item">
                         <summary>
-                            Bagaimana kerahasiaan data klien dijaga?
+                            <span>
+                                Bagaimana kerahasiaan data klien dijaga?
+                            </span>
+
+                            <span class="faq-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path class="faq-icon-horizontal" d="M5 12H19"></path>
+                                    <path class="faq-icon-vertical" d="M12 5V19"></path>
+                                </svg>
+                            </span>
                         </summary>
+
                         <div class="faq-answer">
                             <p>
                                 Data digunakan untuk kebutuhan pengerjaan
-                                dan tidak dipublikasikan tanpa persetujuan
-                                klien.
+                                dan tidak dipublikasikan tanpa persetujuan klien.
                             </p>
                         </div>
                     </details>
@@ -1699,20 +1879,28 @@
             </div>
         </section>
 
-        <!-- KONTAK -->
-        <section id="kontak" class="contact-section">
-            <div class="contact-contour"></div>
+        <section
+            id="kontak"
+            class="contact-section"
+        >
+            <div
+                class="contact-contour"
+                aria-hidden="true"
+            ></div>
 
             <div class="shell contact-layout">
                 <div>
-                    <p class="section-label">Konsultasi Proyek</p>
+                    <p class="section-label">
+                        Konsultasi Proyek
+                    </p>
 
-                    <h2>Punya data atau peta yang perlu diolah?</h2>
+                    <h2>
+                        Punya data atau peta yang perlu diolah?
+                    </h2>
 
                     <p>
-                        Kirimkan informasi awal proyek untuk mendapatkan
-                        arahan kebutuhan data, bentuk output, dan estimasi
-                        pengerjaan.
+                        Kirim informasi awal proyek untuk mendapatkan
+                        arahan kebutuhan data, bentuk output, dan estimasi.
                     </p>
                 </div>
 
@@ -1723,11 +1911,20 @@
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span class="send-icon" aria-hidden="true">➤</span>
+                        <span aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 4L21 12L4 20L7 12Z"></path>
+                                <path d="M7 12H17"></path>
+                            </svg>
+                        </span>
+
                         Konsultasi via WhatsApp
                     </a>
 
-                    <a class="contact-secondary-link" href="#portofolio">
+                    <a
+                        class="contact-secondary"
+                        href="#portofolio"
+                    >
                         Lihat kembali portofolio
                     </a>
 
@@ -1737,21 +1934,26 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
-        <div class="shell footer-layout footer-layout-expanded">
+        <div class="shell footer-main">
             <div class="footer-intro">
-                <a href="#beranda" class="footer-brand">
-                    Lim’s Mapping
+                <a
+                    href="#beranda"
+                    class="footer-brand"
+                >
+                    Lim&rsquo;s Mapping
                 </a>
 
                 <p>
-                    Layanan pemetaan, pengolahan data spasial, dan
-                    visualisasi peta untuk berbagai kebutuhan proyek.
+                    Layanan pemetaan, pengolahan data spasial,
+                    dan visualisasi peta untuk berbagai kebutuhan proyek.
                 </p>
             </div>
 
-            <nav class="footer-navigation" aria-label="Navigasi footer">
+            <nav
+                class="footer-navigation"
+                aria-label="Navigasi footer"
+            >
                 <strong>Navigasi</strong>
                 <a href="#portofolio">Portofolio</a>
                 <a href="#layanan">Layanan</a>
@@ -1762,6 +1964,7 @@
 
             <div class="footer-contact">
                 <strong>Hubungi</strong>
+
                 <a
                     href="https://wa.me/6285947185576"
                     target="_blank"
@@ -1769,15 +1972,19 @@
                 >
                     WhatsApp
                 </a>
-                <span>Proyek dapat dikerjakan secara daring</span>
+
+                <span>
+                    Proyek dapat dikerjakan secara daring
+                </span>
+
                 <span>Indonesia</span>
             </div>
         </div>
 
         <div class="shell footer-bottom">
             <p>
-                © 2024–<span data-current-year>2026</span> Lim’s Mapping.
-                Seluruh hak dilindungi.
+                &copy; 2024&ndash;<span data-current-year>2026</span>
+                Lim&rsquo;s Mapping. Seluruh hak dilindungi.
             </p>
 
             <p>
@@ -1801,16 +2008,17 @@
         <span>Atas</span>
     </button>
 
-    <!-- PORTFOLIO LIGHTBOX -->
     <div
         class="portfolio-lightbox"
         id="portfolio-lightbox"
         aria-hidden="true"
     >
-        <div
+        <button
             class="portfolio-lightbox-backdrop"
+            type="button"
             data-lightbox-close
-        ></div>
+            aria-label="Tutup tampilan gambar"
+        ></button>
 
         <section
             class="portfolio-lightbox-dialog"
@@ -1821,7 +2029,7 @@
             <header class="portfolio-lightbox-header">
                 <div class="portfolio-lightbox-heading">
                     <span class="portfolio-lightbox-kicker">
-                        Portofolio Lim’s Mapping
+                        Portofolio Lim&rsquo;s Mapping
                     </span>
 
                     <h2
@@ -1850,7 +2058,7 @@
                         rel="noopener noreferrer"
                         aria-label="Buka gambar resolusi penuh di tab baru"
                     >
-                        Resolusi Penuh ↗
+                        Resolusi Penuh
                     </a>
 
                     <button
@@ -1859,7 +2067,10 @@
                         type="button"
                         aria-label="Tutup tampilan gambar"
                     >
-                        ×
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 5L19 19"></path>
+                            <path d="M19 5L5 19"></path>
+                        </svg>
                     </button>
                 </div>
             </header>
@@ -1871,18 +2082,20 @@
                     type="button"
                     aria-label="Lihat gambar sebelumnya"
                 >
-                    ‹
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M15 5L8 12L15 19"></path>
+                    </svg>
                 </button>
 
                 <div
                     class="portfolio-lightbox-image-wrap"
                     id="portfolio-lightbox-image-wrap"
                 >
-                    <div
+                    <span
                         class="portfolio-lightbox-loader"
                         id="portfolio-lightbox-loader"
                         aria-hidden="true"
-                    ></div>
+                    ></span>
 
                     <img
                         class="portfolio-lightbox-image"
@@ -1898,7 +2111,9 @@
                     type="button"
                     aria-label="Lihat gambar berikutnya"
                 >
-                    ›
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 5L16 12L9 19"></path>
+                    </svg>
                 </button>
             </div>
 
@@ -1918,400 +2133,407 @@
         </section>
     </div>
 
+    <div
+        class="comparison-modal"
+        id="comparison-modal"
+        aria-hidden="true"
+    >
+        <button
+            class="comparison-modal-backdrop"
+            type="button"
+            data-comparison-modal-close
+            aria-label="Tutup perbandingan layar penuh"
+        ></button>
+
+        <section
+            class="comparison-modal-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="comparison-modal-title"
+        >
+            <header class="comparison-modal-header">
+                <div>
+                    <span class="comparison-modal-kicker">
+                        Perbandingan Sebelum dan Sesudah
+                    </span>
+
+                    <h2 id="comparison-modal-title">
+                        Detail Perbandingan
+                    </h2>
+                </div>
+
+                <button
+                    class="comparison-modal-close"
+                    id="comparison-modal-close"
+                    type="button"
+                    aria-label="Tutup perbandingan layar penuh"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 5L19 19"></path>
+                        <path d="M19 5L5 19"></path>
+                    </svg>
+                </button>
+            </header>
+
+            <div
+                class="comparison-slider comparison-slider-modal"
+                id="comparison-modal-slider"
+                data-comparison
+                data-start="50"
+                aria-label="Perbandingan gambar layar penuh"
+            >
+                <div class="comparison-layer comparison-before">
+                    <img
+                        id="comparison-modal-before"
+                        src=""
+                        alt=""
+                    >
+                    <span class="comparison-label">
+                        Sebelum
+                    </span>
+                </div>
+
+                <div
+                    class="comparison-layer comparison-after"
+                    data-comparison-after
+                >
+                    <img
+                        id="comparison-modal-after"
+                        src=""
+                        alt=""
+                    >
+                    <span class="comparison-label">
+                        Sesudah
+                    </span>
+                </div>
+
+                <button
+                    class="comparison-handle"
+                    type="button"
+                    role="slider"
+                    aria-label="Geser untuk membandingkan gambar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="50"
+                    data-comparison-handle
+                >
+                    <span class="comparison-handle-line"></span>
+                    <span class="comparison-handle-control">
+                        <svg viewBox="0 0 30 30" aria-hidden="true">
+                            <path d="M12 8L5 15L12 22"></path>
+                            <path d="M18 8L25 15L18 22"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </section>
+    </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const yearElements = document.querySelectorAll(
-                "[data-current-year]"
+            const body = document.body;
+            const header = document.getElementById("site-header");
+            const menuToggle = document.getElementById("menu-toggle");
+            const mobileNavigation = document.getElementById(
+                "mobile-navigation"
             );
-            const currentYear = new Date().getFullYear();
+            const progressBar = document.getElementById(
+                "site-scroll-progress-bar"
+            );
+            const backToTop = document.getElementById("back-to-top");
+            const reducedMotion = window.matchMedia(
+                "(prefers-reduced-motion: reduce)"
+            ).matches;
 
-            yearElements.forEach(function (element) {
-                element.textContent = String(currentYear);
-            });
+            document
+                .querySelectorAll("[data-current-year]")
+                .forEach(function (element) {
+                    element.textContent = String(new Date().getFullYear());
+                });
 
-            const mobileMenu = document.querySelector(".mobile-menu");
-
-            if (mobileMenu) {
-                mobileMenu
-                    .querySelectorAll("a")
-                    .forEach(function (link) {
-                        link.addEventListener("click", function () {
-                            mobileMenu.removeAttribute("open");
-                        });
-                    });
-            }
-
-            const lightbox = document.getElementById(
-                "portfolio-lightbox"
-            );
-            const lightboxImage = document.getElementById(
-                "portfolio-lightbox-image"
-            );
-            const imageWrap = document.getElementById(
-                "portfolio-lightbox-image-wrap"
-            );
-            const loader = document.getElementById(
-                "portfolio-lightbox-loader"
-            );
-            const titleElement = document.getElementById(
-                "portfolio-lightbox-title"
-            );
-            const captionElement = document.getElementById(
-                "portfolio-lightbox-caption"
-            );
-            const counterElement = document.getElementById(
-                "portfolio-lightbox-counter"
-            );
-            const originalLink = document.getElementById(
-                "portfolio-lightbox-original"
-            );
-            const closeButton = document.getElementById(
-                "portfolio-lightbox-close"
-            );
-            const previousButton = document.getElementById(
-                "portfolio-lightbox-prev"
-            );
-            const nextButton = document.getElementById(
-                "portfolio-lightbox-next"
-            );
-            const zoomButton = document.getElementById(
-                "portfolio-lightbox-zoom"
-            );
-
-            if (
-                !lightbox ||
-                !lightboxImage ||
-                !imageWrap ||
-                !loader ||
-                !titleElement ||
-                !captionElement ||
-                !counterElement ||
-                !originalLink ||
-                !closeButton ||
-                !previousButton ||
-                !nextButton ||
-                !zoomButton
-            ) {
-                return;
-            }
-
-            const imageLinks = Array.from(
-                document.querySelectorAll("a[data-lightbox]")
-            );
-            const portfolioItems = [];
-            const itemIndexes = new Map();
-
-            imageLinks.forEach(function (link) {
-                const href = link.getAttribute("href");
-
-                if (!href) {
+            function closeMobileMenu() {
+                if (!menuToggle || !mobileNavigation) {
                     return;
                 }
 
-                const absoluteUrl = new URL(
-                    href,
-                    document.baseURI
-                ).href;
-                let itemIndex;
+                menuToggle.setAttribute("aria-expanded", "false");
+                mobileNavigation.classList.remove("is-open");
+                body.classList.remove("menu-open");
+            }
 
-                if (!itemIndexes.has(absoluteUrl)) {
-                    const image = link.querySelector("img");
-                    const title =
-                        link.dataset.title ||
-                        link.getAttribute("aria-label") ||
-                        (image ? image.getAttribute("alt") : "") ||
-                        "Portofolio Lim’s Mapping";
-                    const caption =
-                        link.dataset.caption ||
-                        (image ? image.getAttribute("alt") : "") ||
-                        title;
-                    const alt =
-                        (image ? image.getAttribute("alt") : "") ||
-                        title;
+            if (menuToggle && mobileNavigation) {
+                menuToggle.addEventListener("click", function () {
+                    const isOpen =
+                        menuToggle.getAttribute("aria-expanded") === "true";
 
-                    itemIndex = portfolioItems.length;
+                    menuToggle.setAttribute(
+                        "aria-expanded",
+                        isOpen ? "false" : "true"
+                    );
+                    mobileNavigation.classList.toggle("is-open", !isOpen);
+                    body.classList.toggle("menu-open", !isOpen);
+                });
 
-                    portfolioItems.push({
-                        src: absoluteUrl,
-                        title: title,
-                        caption: caption,
-                        alt: alt
+                mobileNavigation
+                    .querySelectorAll("a")
+                    .forEach(function (link) {
+                        link.addEventListener("click", closeMobileMenu);
                     });
 
-                    itemIndexes.set(absoluteUrl, itemIndex);
-                } else {
-                    itemIndex = itemIndexes.get(absoluteUrl);
-                }
-
-                link.dataset.lightboxIndex = String(itemIndex);
-
-                link.addEventListener("click", function (event) {
+                document.addEventListener("click", function (event) {
                     if (
-                        event.metaKey ||
-                        event.ctrlKey ||
-                        event.shiftKey ||
-                        event.altKey ||
-                        event.button !== 0
+                        !mobileNavigation.classList.contains("is-open") ||
+                        !header ||
+                        header.contains(event.target)
                     ) {
                         return;
                     }
 
-                    event.preventDefault();
-                    openLightbox(
-                        Number(link.dataset.lightboxIndex),
-                        link
-                    );
-                });
-            });
-
-            let currentIndex = 0;
-            let lastFocusedElement = null;
-            let touchStartX = 0;
-
-            function resetZoom() {
-                imageWrap.classList.remove("is-zoomed");
-                zoomButton.textContent = "Perbesar";
-                zoomButton.setAttribute(
-                    "aria-label",
-                    "Perbesar gambar"
-                );
-                imageWrap.scrollTop = 0;
-                imageWrap.scrollLeft = 0;
-            }
-
-            function updateLightbox(index) {
-                if (!portfolioItems.length) {
-                    return;
-                }
-
-                currentIndex =
-                    (index + portfolioItems.length) %
-                    portfolioItems.length;
-
-                const item = portfolioItems[currentIndex];
-
-                resetZoom();
-                loader.classList.add("is-visible");
-                lightboxImage.classList.add("is-loading");
-                titleElement.textContent = item.title;
-                captionElement.textContent = item.caption;
-                counterElement.textContent =
-                    String(currentIndex + 1).padStart(2, "0") +
-                    " / " +
-                    String(portfolioItems.length).padStart(2, "0");
-                originalLink.href = item.src;
-                lightboxImage.alt = item.alt;
-                lightboxImage.src = item.src;
-
-                const showNavigation = portfolioItems.length > 1;
-                previousButton.hidden = !showNavigation;
-                nextButton.hidden = !showNavigation;
-            }
-
-            function openLightbox(index, triggerElement) {
-                lastFocusedElement = triggerElement;
-                updateLightbox(index);
-                lightbox.classList.add("is-open");
-                lightbox.setAttribute("aria-hidden", "false");
-                document.body.classList.add("lightbox-open");
-
-                window.requestAnimationFrame(function () {
-                    closeButton.focus();
+                    closeMobileMenu();
                 });
             }
 
-            function closeLightbox() {
-                lightbox.classList.remove("is-open");
-                lightbox.setAttribute("aria-hidden", "true");
-                document.body.classList.remove("lightbox-open");
-                resetZoom();
-
-                if (lastFocusedElement) {
-                    lastFocusedElement.focus();
-                }
-            }
-
-            function showPrevious() {
-                updateLightbox(currentIndex - 1);
-            }
-
-            function showNext() {
-                updateLightbox(currentIndex + 1);
-            }
-
-            function toggleZoom() {
-                const isZoomed = imageWrap.classList.toggle(
-                    "is-zoomed"
-                );
-
-                zoomButton.textContent = isZoomed
-                    ? "Kecilkan"
-                    : "Perbesar";
-                zoomButton.setAttribute(
-                    "aria-label",
-                    isZoomed
-                        ? "Kembalikan ukuran gambar"
-                        : "Perbesar gambar"
-                );
-
-                if (!isZoomed) {
-                    imageWrap.scrollTop = 0;
-                    imageWrap.scrollLeft = 0;
-                }
-            }
-
-            lightboxImage.addEventListener("load", function () {
-                loader.classList.remove("is-visible");
-                lightboxImage.classList.remove("is-loading");
-            });
-
-            lightboxImage.addEventListener("error", function () {
-                loader.classList.remove("is-visible");
-                lightboxImage.classList.remove("is-loading");
-                captionElement.textContent =
-                    "Gambar tidak dapat dimuat. Periksa kembali nama dan lokasi file di repository.";
-            });
-
-            closeButton.addEventListener("click", closeLightbox);
-            previousButton.addEventListener("click", showPrevious);
-            nextButton.addEventListener("click", showNext);
-            zoomButton.addEventListener("click", toggleZoom);
-
-            imageWrap.addEventListener("click", function (event) {
-                if (event.target === lightboxImage) {
-                    toggleZoom();
-                }
-            });
-
-            lightbox
-                .querySelectorAll("[data-lightbox-close]")
-                .forEach(function (element) {
-                    element.addEventListener("click", closeLightbox);
-                });
-
-            document.addEventListener("keydown", function (event) {
-                if (!lightbox.classList.contains("is-open")) {
-                    return;
-                }
-
-                if (event.key === "Escape") {
-                    closeLightbox();
-                } else if (event.key === "ArrowLeft") {
-                    showPrevious();
-                } else if (event.key === "ArrowRight") {
-                    showNext();
-                }
-            });
-
-            imageWrap.addEventListener(
-                "touchstart",
-                function (event) {
-                    touchStartX = event.changedTouches[0].clientX;
-                },
-                { passive: true }
-            );
-
-            imageWrap.addEventListener(
-                "touchend",
-                function (event) {
-                    if (imageWrap.classList.contains("is-zoomed")) {
-                        return;
-                    }
-
-                    const touchEndX =
-                        event.changedTouches[0].clientX;
-                    const distance = touchEndX - touchStartX;
-
-                    if (Math.abs(distance) < 55) {
-                        return;
-                    }
-
-                    if (distance > 0) {
-                        showPrevious();
-                    } else {
-                        showNext();
-                    }
-                },
-                { passive: true }
-            );
-
-
-            /* =====================================================
-               SCROLL REVEAL, NAVIGATION PROGRESS, DAN TIMELINE
-               ===================================================== */
-            const reducedMotionQuery = window.matchMedia(
-                "(prefers-reduced-motion: reduce)"
-            );
-            const prefersReducedMotion = reducedMotionQuery.matches;
-
-            const revealSelectors = [
-                ".section-heading",
-                ".credibility-item",
-                ".portfolio-card",
-                ".portfolio-subheading",
-                ".about-profile",
-                ".team-credential",
-                ".service-card",
-                ".case-study",
-                ".output-card",
-                ".process-card",
-                ".pricing-panel",
-                ".testimonial-showcase",
-                ".faq-item",
-                ".contact-layout",
-                ".footer-layout"
+            const trackedIds = [
+                "portofolio",
+                "layanan",
+                "tentang",
+                "proses",
+                "faq"
             ];
 
-            const revealElements = Array.from(
-                document.querySelectorAll(revealSelectors.join(","))
+            const trackedSections = trackedIds
+                .map(function (id) {
+                    return document.getElementById(id);
+                })
+                .filter(Boolean);
+
+            const trackedLinks = document.querySelectorAll(
+                '.desktop-nav a[href^="#"], ' +
+                '.mobile-navigation a[href^="#"], ' +
+                '.footer-navigation a[href^="#"]'
             );
 
-            revealElements.forEach(function (element, index) {
-                element.classList.add("reveal-item");
+            const processCards = Array.from(
+                document.querySelectorAll("[data-process-step]")
+            );
+            const processNodes = Array.from(
+                document.querySelectorAll("[data-process-target]")
+            );
+            const processProgress = document.getElementById(
+                "process-progress"
+            );
 
+            let activeProcess = -1;
+            let scrollFrame = null;
+
+            function setActiveProcess(index) {
                 if (
-                    element.matches(
-                        ".section-heading, .portfolio-subheading, .about-profile"
-                    )
+                    index < 0 ||
+                    index >= processCards.length ||
+                    index === activeProcess
                 ) {
-                    element.classList.add("reveal-title");
-                } else {
-                    element.classList.add("reveal-card");
+                    return;
                 }
 
-                const localIndex = index % 5;
+                activeProcess = index;
+
+                processCards.forEach(function (card, cardIndex) {
+                    card.classList.toggle("is-active", cardIndex === index);
+                    card.classList.toggle("is-complete", cardIndex < index);
+                });
+
+                processNodes.forEach(function (node, nodeIndex) {
+                    node.classList.toggle("is-active", nodeIndex === index);
+                    node.classList.toggle("is-complete", nodeIndex < index);
+
+                    if (nodeIndex === index) {
+                        node.setAttribute("aria-current", "step");
+                    } else {
+                        node.removeAttribute("aria-current");
+                    }
+                });
+
+                if (processProgress) {
+                    const denominator = Math.max(
+                        processCards.length - 1,
+                        1
+                    );
+
+                    processProgress.style.width =
+                        index / denominator * 100 + "%";
+                }
+            }
+
+            function updateProcessFromViewport() {
+                if (!processCards.length) {
+                    return;
+                }
+
+                const processSection = document.getElementById("proses");
+
+                if (!processSection) {
+                    return;
+                }
+
+                const sectionRect =
+                    processSection.getBoundingClientRect();
+
+                if (
+                    sectionRect.bottom < 0 ||
+                    sectionRect.top > window.innerHeight
+                ) {
+                    return;
+                }
+
+                const viewportCenter = window.innerHeight * 0.55;
+                let closestIndex = 0;
+                let closestDistance = Number.POSITIVE_INFINITY;
+
+                processCards.forEach(function (card, index) {
+                    const rect = card.getBoundingClientRect();
+                    const center = rect.top + rect.height / 2;
+                    const distance = Math.abs(center - viewportCenter);
+
+                    if (distance < closestDistance) {
+                        closestDistance = distance;
+                        closestIndex = index;
+                    }
+                });
+
+                setActiveProcess(closestIndex);
+            }
+
+            function updateScrollInterface() {
+                const scrollTop = window.scrollY;
+                const scrollable =
+                    document.documentElement.scrollHeight -
+                    window.innerHeight;
+                const ratio = scrollable > 0 ? scrollTop / scrollable : 0;
+
+                if (progressBar) {
+                    progressBar.style.transform =
+                        "scaleX(" +
+                        Math.min(Math.max(ratio, 0), 1) +
+                        ")";
+                }
+
+                if (header) {
+                    header.classList.toggle("is-scrolled", scrollTop > 24);
+                }
+
+                if (backToTop) {
+                    const visible = scrollTop > 700;
+
+                    backToTop.classList.toggle("is-visible", visible);
+                    backToTop.setAttribute(
+                        "aria-hidden",
+                        visible ? "false" : "true"
+                    );
+                    backToTop.tabIndex = visible ? 0 : -1;
+                }
+
+                const marker =
+                    (header ? header.offsetHeight : 0) +
+                    window.innerHeight * 0.32;
+
+                let activeId = "";
+
+                trackedSections.forEach(function (section) {
+                    if (section.getBoundingClientRect().top <= marker) {
+                        activeId = section.id;
+                    }
+                });
+
+                trackedLinks.forEach(function (link) {
+                    const active =
+                        activeId &&
+                        link.getAttribute("href") === "#" + activeId;
+
+                    link.classList.toggle("is-active", Boolean(active));
+
+                    if (active) {
+                        link.setAttribute("aria-current", "location");
+                    } else {
+                        link.removeAttribute("aria-current");
+                    }
+                });
+
+                updateProcessFromViewport();
+            }
+
+            window.addEventListener(
+                "scroll",
+                function () {
+                    if (scrollFrame !== null) {
+                        return;
+                    }
+
+                    scrollFrame = window.requestAnimationFrame(function () {
+                        updateScrollInterface();
+                        scrollFrame = null;
+                    });
+                },
+                { passive: true }
+            );
+
+            window.addEventListener("resize", function () {
+                if (window.innerWidth > 920) {
+                    closeMobileMenu();
+                }
+
+                updateScrollInterface();
+            });
+
+            if (backToTop) {
+                backToTop.addEventListener("click", function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: reducedMotion ? "auto" : "smooth"
+                    });
+                });
+            }
+
+            processNodes.forEach(function (node, index) {
+                node.addEventListener("click", function () {
+                    const targetId = node.getAttribute(
+                        "data-process-target"
+                    );
+                    const target = document.getElementById(targetId);
+
+                    setActiveProcess(index);
+
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: reducedMotion ? "auto" : "smooth",
+                            block: "center"
+                        });
+                    }
+                });
+            });
+
+            setActiveProcess(0);
+
+            const revealTargets = document.querySelectorAll(
+                ".section-heading, .credibility-item, " +
+                ".featured-case-card, .portfolio-card, .about-copy, " +
+                ".service-card, .case-study, .output-card, " +
+                ".process-card, .pricing-panel, .testimonial-panel, " +
+                ".faq-item, .contact-layout"
+            );
+
+            revealTargets.forEach(function (element, index) {
+                element.classList.add("reveal");
                 element.style.setProperty(
                     "--reveal-delay",
-                    Math.min(localIndex * 65, 260) + "ms"
+                    Math.min((index % 4) * 70, 210) + "ms"
                 );
             });
 
-            const numberElements = document.querySelectorAll(
-                ".section-label, .service-number, .output-number, .process-number"
-            );
-
-            numberElements.forEach(function (element) {
-                element.classList.add("reveal-number");
-            });
-
-            const mediaElements = document.querySelectorAll(
-                ".showcase-frame, .portfolio-image, .case-stage-media, .testimonial-proof"
-            );
-
-            mediaElements.forEach(function (element) {
-                element.classList.add("reveal-media");
-            });
-
-            if (prefersReducedMotion || !("IntersectionObserver" in window)) {
-                revealElements.forEach(function (element) {
-                    element.classList.add("is-visible");
-                });
-
-                numberElements.forEach(function (element) {
-                    element.classList.add("is-visible");
-                });
-
-                mediaElements.forEach(function (element) {
+            if (
+                reducedMotion ||
+                !("IntersectionObserver" in window)
+            ) {
+                revealTargets.forEach(function (element) {
                     element.classList.add("is-visible");
                 });
             } else {
@@ -2327,329 +2549,586 @@
                         });
                     },
                     {
-                        threshold: 0.12,
-                        rootMargin: "0px 0px -8% 0px"
+                        threshold: 0.1,
+                        rootMargin: "0px 0px -7% 0px"
                     }
                 );
 
-                revealElements.forEach(function (element) {
-                    revealObserver.observe(element);
-                });
-
-                numberElements.forEach(function (element) {
-                    revealObserver.observe(element);
-                });
-
-                mediaElements.forEach(function (element) {
+                revealTargets.forEach(function (element) {
                     revealObserver.observe(element);
                 });
             }
 
-            window.requestAnimationFrame(function () {
-                document.body.classList.add("page-ready");
-            });
-
-            const progressBar = document.getElementById(
-                "site-scroll-progress-bar"
-            );
-            const backToTopButton = document.getElementById(
-                "back-to-top"
-            );
-            const siteHeader = document.querySelector(".site-header");
-            const trackedSectionIds = [
-                "portofolio",
-                "tentang",
-                "layanan",
-                "proses",
-                "faq"
-            ];
-            const trackedSections = trackedSectionIds
-                .map(function (id) {
-                    return document.getElementById(id);
-                })
-                .filter(Boolean);
-            const trackedNavigationLinks = document.querySelectorAll(
-                '.desktop-nav a[href^="#"], ' +
-                '.mobile-menu-content a[href^="#"], ' +
-                '.footer-navigation a[href^="#"]'
-            );
-
-            let currentActiveSection = "";
-            let scrollTicking = false;
-
-            function updatePageProgress() {
-                if (!progressBar) {
+            function initializeComparison(comparison) {
+                if (!comparison || comparison.dataset.ready === "true") {
                     return;
                 }
 
-                const scrollableHeight =
-                    document.documentElement.scrollHeight -
-                    window.innerHeight;
-                const progress = scrollableHeight > 0
-                    ? window.scrollY / scrollableHeight
-                    : 0;
+                const afterLayer = comparison.querySelector(
+                    "[data-comparison-after]"
+                );
+                const handle = comparison.querySelector(
+                    "[data-comparison-handle]"
+                );
 
-                progressBar.style.transform =
-                    "scaleX(" + Math.min(Math.max(progress, 0), 1) + ")";
-            }
+                if (!afterLayer || !handle) {
+                    return;
+                }
 
-            function getActiveSectionId() {
-                const headerHeight = siteHeader
-                    ? siteHeader.offsetHeight
-                    : 0;
-                const marker = headerHeight + window.innerHeight * 0.34;
-                let activeId = "";
+                comparison.dataset.ready = "true";
 
-                trackedSections.forEach(function (section) {
-                    if (section.getBoundingClientRect().top <= marker) {
-                        activeId = section.id;
+                let position = Number(comparison.dataset.start || 50);
+                let dragging = false;
+
+                function setPosition(value) {
+                    position = Math.min(Math.max(value, 0), 100);
+
+                    comparison.style.setProperty(
+                        "--comparison-position",
+                        position + "%"
+                    );
+                    handle.style.left = position + "%";
+                    handle.setAttribute(
+                        "aria-valuenow",
+                        String(Math.round(position))
+                    );
+                }
+
+                function positionFromPointer(clientX) {
+                    const rect = comparison.getBoundingClientRect();
+
+                    if (!rect.width) {
+                        return position;
                     }
-                });
 
-                return activeId;
-            }
-
-            function setActiveNavigation(activeId) {
-                if (!activeId || activeId === currentActiveSection) {
-                    return;
+                    return (clientX - rect.left) / rect.width * 100;
                 }
 
-                currentActiveSection = activeId;
+                handle.addEventListener("keydown", function (event) {
+                    let nextPosition = position;
+                    const increment = event.shiftKey ? 10 : 2;
 
-                trackedNavigationLinks.forEach(function (link) {
-                    const isActive =
-                        link.getAttribute("href") === "#" + activeId;
-
-                    link.classList.toggle("is-active", isActive);
-
-                    if (isActive) {
-                        link.setAttribute("aria-current", "location");
+                    if (
+                        event.key === "ArrowLeft" ||
+                        event.key === "ArrowDown"
+                    ) {
+                        nextPosition -= increment;
+                    } else if (
+                        event.key === "ArrowRight" ||
+                        event.key === "ArrowUp"
+                    ) {
+                        nextPosition += increment;
+                    } else if (event.key === "Home") {
+                        nextPosition = 0;
+                    } else if (event.key === "End") {
+                        nextPosition = 100;
                     } else {
-                        link.removeAttribute("aria-current");
-                    }
-                });
-
-                if (
-                    window.history &&
-                    typeof window.history.replaceState === "function" &&
-                    window.location.hash !== "#" + activeId
-                ) {
-                    window.history.replaceState(
-                        null,
-                        "",
-                        window.location.pathname +
-                            window.location.search +
-                            "#" + activeId
-                    );
-                }
-            }
-
-            function updateBackToTop() {
-                if (!backToTopButton) {
-                    return;
-                }
-
-                const shouldShow = window.scrollY > 720;
-                backToTopButton.classList.toggle(
-                    "is-visible",
-                    shouldShow
-                );
-                backToTopButton.setAttribute(
-                    "aria-hidden",
-                    shouldShow ? "false" : "true"
-                );
-                backToTopButton.tabIndex = shouldShow ? 0 : -1;
-            }
-
-            const processSection = document.getElementById("proses");
-            const processCards = Array.from(
-                document.querySelectorAll("[data-process-step]")
-            );
-            const processNodes = Array.from(
-                document.querySelectorAll("[data-process-target]")
-            );
-            const processTimelineProgress = document.getElementById(
-                "process-timeline-progress"
-            );
-            let activeProcessIndex = -1;
-
-            function setActiveProcess(index) {
-                if (
-                    index < 0 ||
-                    index >= processCards.length ||
-                    index === activeProcessIndex
-                ) {
-                    return;
-                }
-
-                activeProcessIndex = index;
-
-                processCards.forEach(function (card, cardIndex) {
-                    card.classList.toggle(
-                        "is-active",
-                        cardIndex === index
-                    );
-                    card.classList.toggle(
-                        "is-complete",
-                        cardIndex < index
-                    );
-                });
-
-                processNodes.forEach(function (node, nodeIndex) {
-                    node.classList.toggle(
-                        "is-active",
-                        nodeIndex === index
-                    );
-                    node.classList.toggle(
-                        "is-complete",
-                        nodeIndex < index
-                    );
-
-                    if (nodeIndex === index) {
-                        node.setAttribute("aria-current", "step");
-                    } else {
-                        node.removeAttribute("aria-current");
-                    }
-                });
-
-                if (processTimelineProgress) {
-                    const denominator = Math.max(
-                        processCards.length - 1,
-                        1
-                    );
-                    const percentage = index / denominator * 100;
-                    processTimelineProgress.style.width =
-                        percentage + "%";
-                }
-
-                const processTimeline = document.querySelector(
-                    ".process-timeline"
-                );
-                const activeNode = processNodes[index];
-
-                if (
-                    processTimeline &&
-                    activeNode &&
-                    window.innerWidth <= 650
-                ) {
-                    const targetLeft =
-                        activeNode.offsetLeft -
-                        processTimeline.clientWidth / 2 +
-                        activeNode.offsetWidth / 2;
-
-                    processTimeline.scrollTo({
-                        left: Math.max(targetLeft, 0),
-                        behavior: prefersReducedMotion
-                            ? "auto"
-                            : "smooth"
-                    });
-                }
-            }
-
-            function updateProcessTimeline() {
-                if (!processSection || !processCards.length) {
-                    return;
-                }
-
-                const sectionRect = processSection.getBoundingClientRect();
-
-                if (
-                    sectionRect.bottom < 0 ||
-                    sectionRect.top > window.innerHeight
-                ) {
-                    return;
-                }
-
-                const viewportCenter = window.innerHeight * 0.52;
-                let closestIndex = 0;
-                let closestDistance = Number.POSITIVE_INFINITY;
-
-                processCards.forEach(function (card, index) {
-                    const rect = card.getBoundingClientRect();
-                    const cardCenter = rect.top + rect.height / 2;
-                    const distance = Math.abs(
-                        cardCenter - viewportCenter
-                    );
-
-                    if (distance < closestDistance) {
-                        closestDistance = distance;
-                        closestIndex = index;
-                    }
-                });
-
-                setActiveProcess(closestIndex);
-            }
-
-            processNodes.forEach(function (node) {
-                node.addEventListener("click", function () {
-                    const target = document.getElementById(
-                        node.dataset.processTarget
-                    );
-
-                    if (!target) {
                         return;
                     }
 
-                    target.scrollIntoView({
-                        behavior: prefersReducedMotion
-                            ? "auto"
-                            : "smooth",
-                        block: "center"
-                    });
+                    event.preventDefault();
+                    setPosition(nextPosition);
                 });
-            });
 
-            if (backToTopButton) {
-                backToTopButton.addEventListener("click", function () {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: prefersReducedMotion
-                            ? "auto"
-                            : "smooth"
-                    });
+                comparison.addEventListener("pointerdown", function (event) {
+                    if (event.button !== 0) {
+                        return;
+                    }
+
+                    dragging = true;
+                    comparison.setPointerCapture(event.pointerId);
+                    setPosition(positionFromPointer(event.clientX));
+                });
+
+                comparison.addEventListener("pointermove", function (event) {
+                    if (!dragging) {
+                        return;
+                    }
+
+                    setPosition(positionFromPointer(event.clientX));
+                });
+
+                function stopDragging(event) {
+                    if (!dragging) {
+                        return;
+                    }
+
+                    dragging = false;
 
                     if (
-                        window.history &&
-                        typeof window.history.replaceState === "function"
+                        comparison.hasPointerCapture &&
+                        comparison.hasPointerCapture(event.pointerId)
                     ) {
-                        window.history.replaceState(
-                            null,
-                            "",
-                            window.location.pathname +
-                                window.location.search
-                        );
+                        comparison.releasePointerCapture(event.pointerId);
+                    }
+                }
+
+                comparison.addEventListener(
+                    "pointerup",
+                    stopDragging
+                );
+                comparison.addEventListener(
+                    "pointercancel",
+                    stopDragging
+                );
+
+                setPosition(position);
+                comparison.setComparisonPosition = setPosition;
+            }
+
+            document
+                .querySelectorAll("[data-comparison]")
+                .forEach(initializeComparison);
+
+            const comparisonModal = document.getElementById(
+                "comparison-modal"
+            );
+            const comparisonModalTitle = document.getElementById(
+                "comparison-modal-title"
+            );
+            const comparisonModalBefore = document.getElementById(
+                "comparison-modal-before"
+            );
+            const comparisonModalAfter = document.getElementById(
+                "comparison-modal-after"
+            );
+            const comparisonModalSlider = document.getElementById(
+                "comparison-modal-slider"
+            );
+            const comparisonModalClose = document.getElementById(
+                "comparison-modal-close"
+            );
+
+            let comparisonModalTrigger = null;
+
+            function openComparisonModal(trigger) {
+                if (
+                    !comparisonModal ||
+                    !comparisonModalTitle ||
+                    !comparisonModalBefore ||
+                    !comparisonModalAfter ||
+                    !comparisonModalSlider
+                ) {
+                    return;
+                }
+
+                comparisonModalTrigger = trigger;
+                comparisonModalTitle.textContent =
+                    trigger.dataset.title || "Detail Perbandingan";
+                comparisonModalBefore.src =
+                    trigger.dataset.beforeSrc || "";
+                comparisonModalAfter.src =
+                    trigger.dataset.afterSrc || "";
+                comparisonModalBefore.alt =
+                    trigger.dataset.beforeAlt || "Gambar sebelum";
+                comparisonModalAfter.alt =
+                    trigger.dataset.afterAlt || "Gambar sesudah";
+
+                initializeComparison(comparisonModalSlider);
+
+                if (
+                    typeof comparisonModalSlider.setComparisonPosition ===
+                    "function"
+                ) {
+                    comparisonModalSlider.setComparisonPosition(50);
+                }
+
+                comparisonModal.classList.add("is-open");
+                comparisonModal.setAttribute("aria-hidden", "false");
+                body.classList.add("modal-open");
+
+                window.requestAnimationFrame(function () {
+                    if (comparisonModalClose) {
+                        comparisonModalClose.focus();
                     }
                 });
             }
 
-            function updateScrollInteractions() {
-                updatePageProgress();
-                setActiveNavigation(getActiveSectionId());
-                updateBackToTop();
-                updateProcessTimeline();
-            }
-
-            function requestScrollUpdate() {
-                if (scrollTicking) {
+            function closeComparisonModal() {
+                if (!comparisonModal) {
                     return;
                 }
 
-                scrollTicking = true;
+                comparisonModal.classList.remove("is-open");
+                comparisonModal.setAttribute("aria-hidden", "true");
+                body.classList.remove("modal-open");
+
+                if (comparisonModalTrigger) {
+                    comparisonModalTrigger.focus();
+                }
+            }
+
+            document
+                .querySelectorAll("[data-open-comparison]")
+                .forEach(function (button) {
+                    button.addEventListener("click", function () {
+                        openComparisonModal(button);
+                    });
+                });
+
+            if (comparisonModalClose) {
+                comparisonModalClose.addEventListener(
+                    "click",
+                    closeComparisonModal
+                );
+            }
+
+            if (comparisonModal) {
+                comparisonModal
+                    .querySelectorAll("[data-comparison-modal-close]")
+                    .forEach(function (element) {
+                        element.addEventListener(
+                            "click",
+                            closeComparisonModal
+                        );
+                    });
+            }
+
+            const faqItems = Array.from(
+                document.querySelectorAll(".faq-item")
+            );
+
+            faqItems.forEach(function (item) {
+                item.addEventListener("toggle", function () {
+                    if (!item.open) {
+                        return;
+                    }
+
+                    faqItems.forEach(function (otherItem) {
+                        if (otherItem !== item) {
+                            otherItem.open = false;
+                        }
+                    });
+                });
+            });
+
+            const lightbox = document.getElementById(
+                "portfolio-lightbox"
+            );
+            const lightboxImage = document.getElementById(
+                "portfolio-lightbox-image"
+            );
+            const lightboxWrap = document.getElementById(
+                "portfolio-lightbox-image-wrap"
+            );
+            const lightboxLoader = document.getElementById(
+                "portfolio-lightbox-loader"
+            );
+            const lightboxTitle = document.getElementById(
+                "portfolio-lightbox-title"
+            );
+            const lightboxCaption = document.getElementById(
+                "portfolio-lightbox-caption"
+            );
+            const lightboxCounter = document.getElementById(
+                "portfolio-lightbox-counter"
+            );
+            const lightboxOriginal = document.getElementById(
+                "portfolio-lightbox-original"
+            );
+            const lightboxClose = document.getElementById(
+                "portfolio-lightbox-close"
+            );
+            const lightboxPrev = document.getElementById(
+                "portfolio-lightbox-prev"
+            );
+            const lightboxNext = document.getElementById(
+                "portfolio-lightbox-next"
+            );
+            const lightboxZoom = document.getElementById(
+                "portfolio-lightbox-zoom"
+            );
+
+            const lightboxLinks = Array.from(
+                document.querySelectorAll("a[data-lightbox]")
+            );
+            const lightboxItems = [];
+            const lightboxIndexByUrl = new Map();
+
+            let currentLightboxIndex = 0;
+            let lightboxTrigger = null;
+            let touchStartX = 0;
+
+            lightboxLinks.forEach(function (link) {
+                const href = link.getAttribute("href");
+
+                if (!href) {
+                    return;
+                }
+
+                const absoluteUrl = new URL(href, document.baseURI).href;
+                let itemIndex = lightboxIndexByUrl.get(absoluteUrl);
+
+                if (typeof itemIndex !== "number") {
+                    const nestedImage = link.querySelector("img");
+
+                    itemIndex = lightboxItems.length;
+                    lightboxIndexByUrl.set(absoluteUrl, itemIndex);
+
+                    lightboxItems.push({
+                        src: absoluteUrl,
+                        title:
+                            link.getAttribute("data-title") ||
+                            (nestedImage
+                                ? nestedImage.alt
+                                : "Detail Peta"),
+                        caption:
+                            link.getAttribute("data-caption") || "",
+                        alt:
+                            nestedImage && nestedImage.alt
+                                ? nestedImage.alt
+                                : "Gambar portofolio Lim's Mapping"
+                    });
+                }
+
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    openLightbox(itemIndex, link);
+                });
+            });
+
+            function resetLightboxZoom() {
+                if (!lightboxWrap || !lightboxZoom) {
+                    return;
+                }
+
+                lightboxWrap.classList.remove("is-zoomed");
+                lightboxWrap.scrollTop = 0;
+                lightboxWrap.scrollLeft = 0;
+                lightboxZoom.textContent = "Perbesar";
+                lightboxZoom.setAttribute(
+                    "aria-label",
+                    "Perbesar gambar"
+                );
+            }
+
+            function updateLightbox(index) {
+                if (
+                    !lightboxItems.length ||
+                    !lightboxImage ||
+                    !lightboxTitle ||
+                    !lightboxCaption ||
+                    !lightboxCounter ||
+                    !lightboxOriginal
+                ) {
+                    return;
+                }
+
+                currentLightboxIndex =
+                    (index + lightboxItems.length) %
+                    lightboxItems.length;
+
+                const item = lightboxItems[currentLightboxIndex];
+
+                resetLightboxZoom();
+
+                if (lightboxLoader) {
+                    lightboxLoader.classList.add("is-visible");
+                }
+
+                lightboxImage.classList.add("is-loading");
+                lightboxTitle.textContent = item.title;
+                lightboxCaption.textContent = item.caption;
+                lightboxCounter.textContent =
+                    String(currentLightboxIndex + 1).padStart(2, "0") +
+                    " / " +
+                    String(lightboxItems.length).padStart(2, "0");
+                lightboxOriginal.href = item.src;
+                lightboxImage.alt = item.alt;
+                lightboxImage.src = item.src;
+
+                const showNavigation = lightboxItems.length > 1;
+
+                if (lightboxPrev) {
+                    lightboxPrev.hidden = !showNavigation;
+                }
+
+                if (lightboxNext) {
+                    lightboxNext.hidden = !showNavigation;
+                }
+            }
+
+            function openLightbox(index, trigger) {
+                if (!lightbox || !lightboxClose) {
+                    return;
+                }
+
+                lightboxTrigger = trigger;
+                updateLightbox(index);
+                lightbox.classList.add("is-open");
+                lightbox.setAttribute("aria-hidden", "false");
+                body.classList.add("lightbox-open");
 
                 window.requestAnimationFrame(function () {
-                    updateScrollInteractions();
-                    scrollTicking = false;
+                    lightboxClose.focus();
                 });
             }
 
-            window.addEventListener("scroll", requestScrollUpdate, {
-                passive: true
+            function closeLightbox() {
+                if (!lightbox) {
+                    return;
+                }
+
+                lightbox.classList.remove("is-open");
+                lightbox.setAttribute("aria-hidden", "true");
+                body.classList.remove("lightbox-open");
+                resetLightboxZoom();
+
+                if (lightboxTrigger) {
+                    lightboxTrigger.focus();
+                }
+            }
+
+            function toggleLightboxZoom() {
+                if (!lightboxWrap || !lightboxZoom) {
+                    return;
+                }
+
+                const zoomed =
+                    lightboxWrap.classList.toggle("is-zoomed");
+
+                lightboxZoom.textContent =
+                    zoomed ? "Kecilkan" : "Perbesar";
+                lightboxZoom.setAttribute(
+                    "aria-label",
+                    zoomed
+                        ? "Kembalikan ukuran gambar"
+                        : "Perbesar gambar"
+                );
+
+                if (!zoomed) {
+                    lightboxWrap.scrollTop = 0;
+                    lightboxWrap.scrollLeft = 0;
+                }
+            }
+
+            if (lightboxImage) {
+                lightboxImage.addEventListener("load", function () {
+                    if (lightboxLoader) {
+                        lightboxLoader.classList.remove("is-visible");
+                    }
+
+                    lightboxImage.classList.remove("is-loading");
+                });
+
+                lightboxImage.addEventListener("error", function () {
+                    if (lightboxLoader) {
+                        lightboxLoader.classList.remove("is-visible");
+                    }
+
+                    lightboxImage.classList.remove("is-loading");
+
+                    if (lightboxCaption) {
+                        lightboxCaption.textContent =
+                            "Gambar tidak dapat dimuat. Periksa nama dan lokasi file di repository.";
+                    }
+                });
+            }
+
+            if (lightboxClose) {
+                lightboxClose.addEventListener("click", closeLightbox);
+            }
+
+            if (lightboxPrev) {
+                lightboxPrev.addEventListener("click", function () {
+                    updateLightbox(currentLightboxIndex - 1);
+                });
+            }
+
+            if (lightboxNext) {
+                lightboxNext.addEventListener("click", function () {
+                    updateLightbox(currentLightboxIndex + 1);
+                });
+            }
+
+            if (lightboxZoom) {
+                lightboxZoom.addEventListener(
+                    "click",
+                    toggleLightboxZoom
+                );
+            }
+
+            if (lightboxWrap) {
+                lightboxWrap.addEventListener("click", function (event) {
+                    if (event.target === lightboxImage) {
+                        toggleLightboxZoom();
+                    }
+                });
+
+                lightboxWrap.addEventListener(
+                    "touchstart",
+                    function (event) {
+                        touchStartX = event.changedTouches[0].clientX;
+                    },
+                    { passive: true }
+                );
+
+                lightboxWrap.addEventListener(
+                    "touchend",
+                    function (event) {
+                        if (
+                            lightboxWrap.classList.contains("is-zoomed")
+                        ) {
+                            return;
+                        }
+
+                        const distance =
+                            touchStartX -
+                            event.changedTouches[0].clientX;
+
+                        if (Math.abs(distance) < 55) {
+                            return;
+                        }
+
+                        updateLightbox(
+                            currentLightboxIndex +
+                            (distance > 0 ? 1 : -1)
+                        );
+                    },
+                    { passive: true }
+                );
+            }
+
+            if (lightbox) {
+                lightbox
+                    .querySelectorAll("[data-lightbox-close]")
+                    .forEach(function (element) {
+                        element.addEventListener(
+                            "click",
+                            closeLightbox
+                        );
+                    });
+            }
+
+            document.addEventListener("keydown", function (event) {
+                if (
+                    comparisonModal &&
+                    comparisonModal.classList.contains("is-open")
+                ) {
+                    if (event.key === "Escape") {
+                        closeComparisonModal();
+                    }
+
+                    return;
+                }
+
+                if (
+                    !lightbox ||
+                    !lightbox.classList.contains("is-open")
+                ) {
+                    return;
+                }
+
+                if (event.key === "Escape") {
+                    closeLightbox();
+                } else if (event.key === "ArrowLeft") {
+                    updateLightbox(currentLightboxIndex - 1);
+                } else if (event.key === "ArrowRight") {
+                    updateLightbox(currentLightboxIndex + 1);
+                }
             });
-            window.addEventListener("resize", requestScrollUpdate);
 
-            setActiveProcess(0);
-            updateScrollInteractions();
-
+            updateScrollInterface();
         });
     </script>
 </body>
