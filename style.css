@@ -3395,3 +3395,35 @@ summary:focus-visible {
 .orientation-card .portfolio-copy {
     padding: 30px;
 }
+/* FIX SELECTED MAPPING PROJECTS */
+
+.portfolio-card {
+    height: 560px;
+}
+
+
+.portfolio-image {
+    height: 250px;
+    flex-shrink:0;
+}
+
+.portfolio-copy {
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+
+.portfolio-copy h3 {
+    min-height:70px;
+}
+
+
+.portfolio-copy p:last-child {
+    margin-top:auto;
+}
+.portfolio-image img {
+    max-height:210px;
+    object-fit:contain;
+}
