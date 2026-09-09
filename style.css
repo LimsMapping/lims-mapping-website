@@ -982,8 +982,8 @@ summary:focus-visible {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
 }
-
 .portfolio-card {
     background: var(--cream);
     border: 1px solid rgba(13, 52, 93, 0.08);
@@ -992,6 +992,7 @@ summary:focus-visible {
     display: flex;
     flex-direction: column;
     min-width: 0;
+    height: fit-content;
     overflow: hidden;
     transition:
         box-shadow 0.25s ease,
@@ -2732,12 +2733,13 @@ summary:focus-visible {
     }
 
     .portfolio-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+         align-items: start;
     }
 
     .case-study-heading {
         align-items: start;
-        gap: 28px;
+        gap: 24px;
         grid-template-columns: 1fr;
     }
 
@@ -3047,11 +3049,16 @@ summary:focus-visible {
     }
 
     .portfolio-image {
-        min-height: 270px;
+        min-height: 230px;
+        overflow: hidden;
     }
-
+    
     .portfolio-image img {
-        height: 230px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
     }
 
     .service-grid {
