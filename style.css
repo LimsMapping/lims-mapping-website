@@ -1009,9 +1009,10 @@ summary:focus-visible {
     background: #e5ebe2;
     display: flex;
     justify-content: center;
-    min-height: 285px;
-    padding: 20px;
+    height: 230px;
+    padding: 15px;
     position: relative;
+    overflow: hidden;
 }
 
 .portfolio-image a {
@@ -3049,7 +3050,7 @@ summary:focus-visible {
     }
 
     .portfolio-image {
-        min-height: 230px;
+        height: 230px;
         overflow: hidden;
     }
     
