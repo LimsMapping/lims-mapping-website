@@ -3409,3 +3409,16 @@ summary:focus-visible {
         transform: none;
     }
 }
+.orientation-card {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+}
+
+.orientation-card .portfolio-image {
+    height: 260px;
+}
+
+.orientation-card .portfolio-copy {
+    padding: 30px;
+}
